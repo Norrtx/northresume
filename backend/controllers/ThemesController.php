@@ -3,16 +3,16 @@
 namespace backend\controllers;
 
 use Yii;
-use app\models\Layout;
+use app\models\Themes;
 use yii\data\ActiveDataProvider;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
- * LayoutController implements the CRUD actions for Layout model.
+ * ThemesController implements the CRUD actions for Themes model.
  */
-class LayoutController extends Controller
+class ThemesController extends Controller
 {
     /**
      * {@inheritdoc}
@@ -30,13 +30,13 @@ class LayoutController extends Controller
     }
 
     /**
-     * Lists all Layout models.
+     * Lists all Themes models.
      * @return mixed
      */
     public function actionIndex()
     {
         $dataProvider = new ActiveDataProvider([
-            'query' => Layout::find(),
+            'query' => Themes::find(),
         ]);
 
         return $this->render('index', [
@@ -45,7 +45,7 @@ class LayoutController extends Controller
     }
 
     /**
-     * Displays a single Layout model.
+     * Displays a single Themes model.
      * @param integer $id
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
@@ -58,13 +58,13 @@ class LayoutController extends Controller
     }
 
     /**
-     * Creates a new Layout model.
+     * Creates a new Themes model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
     public function actionCreate()
     {
-        $model = new Layout();
+        $model = new Themes();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
@@ -76,7 +76,7 @@ class LayoutController extends Controller
     }
 
     /**
-     * Updates an existing Layout model.
+     * Updates an existing Themes model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id
      * @return mixed
@@ -96,7 +96,7 @@ class LayoutController extends Controller
     }
 
     /**
-     * Deletes an existing Layout model.
+     * Deletes an existing Themes model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $id
      * @return mixed
@@ -110,15 +110,15 @@ class LayoutController extends Controller
     }
 
     /**
-     * Finds the Layout model based on its primary key value.
+     * Finds the Themes model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
-     * @return Layout the loaded model
+     * @return Themes the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = Layout::findOne($id)) !== null) {
+        if (($model = Themes::findOne($id)) !== null) {
             return $model;
         }
 

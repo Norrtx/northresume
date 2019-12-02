@@ -6,15 +6,15 @@ use yii\grid\GridView;
 /* @var $this yii\web\View */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Layouts';
+$this->title = 'Themes';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="layout-index">
+<div class="themes-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Create Layout', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Create Themes', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
 

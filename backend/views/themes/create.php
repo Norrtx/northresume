@@ -3,13 +3,13 @@
 use yii\helpers\Html;
 
 /* @var $this yii\web\View */
-/* @var $model app\models\Layout */
+/* @var $model app\models\Themes */
 
-$this->title = 'Create Layout';
-$this->params['breadcrumbs'][] = ['label' => 'Layouts', 'url' => ['index']];
+$this->title = 'Create Themes';
+$this->params['breadcrumbs'][] = ['label' => 'Themes', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="layout-create">
+<div class="themes-create">
 
     <h1><?= Html::encode($this->title) ?></h1>
 

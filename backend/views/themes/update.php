@@ -3,14 +3,14 @@
 use yii\helpers\Html;
 
 /* @var $this yii\web\View */
-/* @var $model app\models\Layout */
+/* @var $model app\models\Themes */
 
-$this->title = 'Update Layout: ' . $model->name;
-$this->params['breadcrumbs'][] = ['label' => 'Layouts', 'url' => ['index']];
+$this->title = 'Update Themes: ' . $model->name;
+$this->params['breadcrumbs'][] = ['label' => 'Themes', 'url' => ['index']];
 $this->params['breadcrumbs'][] = ['label' => $model->name, 'url' => ['view', 'id' => $model->id]];
 $this->params['breadcrumbs'][] = 'Update';
 ?>
-<div class="layout-update">
+<div class="themes-update">
 
     <h1><?= Html::encode($this->title) ?></h1>
 

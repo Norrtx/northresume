@@ -5,7 +5,7 @@ namespace app\models;
 use Yii;
 
 /**
- * This is the model class for table "layout".
+ * This is the model class for table "themes".
  *
  * @property int $id
  * @property string $name
@@ -16,14 +16,14 @@ use Yii;
  * @property int $date_update
  * @property int $status
  */
-class Layout extends \yii\db\ActiveRecord
+class Themes extends \yii\db\ActiveRecord
 {
     /**
      * {@inheritdoc}
      */
     public static function tableName()
     {
-        return 'layout';
+        return 'themes';
     }
 
     /**

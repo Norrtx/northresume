@@ -45,7 +45,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="" class="d-block">Alexander Pierce</a>
+          <a href="" class="d-block">My Resume</a>
         </div>
       </div>
 
@@ -53,14 +53,20 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <nav class="mt-2">
       <?php
     NavBar::begin([
-        'brandLabel' => Yii::$app->name,
-        'brandUrl' => Yii::$app->homeUrl,
+        //'brandLabel' => Yii::$app->name,
+       'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'nav nav-pills nav-sidebar flex-column',
         ],
     ]);
     $menuItems = [
         ['label' => 'Home', 'url' => ['/site/index']],
+        ['label' => 'Profile', 'url' => ['/profile/index']],
+        ['label' => 'Skill', 'url' => ['/skill/index']],
+        ['label' => 'Education', 'url' => ['/education/index']],
+        ['label' => 'Chattemplate', 'url' => ['/chattemplate/index']],
+        ['label' => 'Jobhistory', 'url' => ['/jobhistory/index']],
+        ['label' => 'Layout', 'url' => ['/themes/index']],
     ];
     if (Yii::$app->user->isGuest) {
         $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
