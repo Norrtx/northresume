@@ -63,6 +63,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             'class' => 'nav nav-pills nav-sidebar flex-column',
         ],
     ]);
+   
     $menuItems = [
         ['label' => 'Home', 'url' => ['/site/index']],
         ['label' => 'Profile', 'url' => ['/profile/index']],
@@ -71,6 +72,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         ['label' => 'ChartTemplate', 'url' => ['/charttemplate/index']],
         ['label' => 'JobHistory', 'url' => ['/jobhistory/index']],
         ['label' => 'Layout', 'url' => ['/themes/index']],
+        ['label' => 'Test', 'url' => ['/site/hoho']],
     ];
     if (Yii::$app->user->isGuest) {
         $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];

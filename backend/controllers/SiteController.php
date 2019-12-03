@@ -26,7 +26,7 @@ class SiteController extends Controller
                         'allow' => true,
                     ],
                     [
-                        'actions' => ['logout', 'index','skill'],
+                        'actions' => ['logout', 'index','hoho'],
                         'allow' => true,
                         'roles' => ['@'],
                     ],
@@ -62,7 +62,10 @@ class SiteController extends Controller
     {
         return $this->render('index');
     }
-
+    public function actionHoho()
+    {
+        return $this->render('hoho');
+    }
     /**
      * Login action.
      *
@@ -73,8 +76,10 @@ class SiteController extends Controller
         if (!Yii::$app->user->isGuest) {
             return $this->goHome();
         }
+        $this->layout='mainlogin';
 
         $model = new LoginForm();
+        
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
             return $this->goBack();
         } else {

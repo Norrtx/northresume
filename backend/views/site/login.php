@@ -6,17 +6,15 @@
 
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
+use yii\helpers\Url;
 
 $this->title = 'Login';
-$this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="site-login">
-    <h1><?= Html::encode($this->title) ?></h1>
-
-    <p>Please fill out the following fields to login:</p>
-
-    <div class="row">
-        <div class="col-lg-5">
+<div class="site-login"><br><br><br><br><br><br><br><br><br>
+    
+    <div class="row2">
+    <h1><?= Html::encode($this->title) ?></h1><br><br>
+        <div class="col-lg-5"><br>
             <?php $form = ActiveForm::begin(['id' => 'login-form']); ?>
 
                 <?= $form->field($model, 'username')->textInput(['autofocus' => true]) ?>
@@ -33,3 +31,5 @@ $this->params['breadcrumbs'][] = $this->title;
         </div>
     </div>
 </div>
+
+ 

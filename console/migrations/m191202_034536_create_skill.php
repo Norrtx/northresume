@@ -17,7 +17,7 @@ class m191202_034536_create_skill extends Migration
             'name' =>$this->string(),
             'score' =>$this->integer(11),
             'maxscore' =>$this->integer(11),
-            'chat_type' =>$this->string(),
+            'chart_type' =>$this->string(),
             'user_id'=>$this->integer(),
             'date_create' => $this->integer(11),
             'date_update' => $this->integer(11),
