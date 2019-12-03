@@ -27,7 +27,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
 </head>
-<body  background="<?=Url::to(['../../frontend/web/img/5.jpg'])?>" class="hold-transition sidebar-mini">
+<body   background="<?=Url::to(['../../frontend/web/img/13.jpg'])?>" class="hold-transition sidebar-mini">
+    
 <?php $this->beginBody() ?>
 <div class="row mb-2">
         <!-- Main content -->
@@ -42,7 +43,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
   
        
-           
+     
   
 <?php $this->endBody() ?>
 </body>

@@ -231,6 +231,7 @@ th {
 label {
   display: inline-block;
   margin-bottom: 0.5rem;
+  color: #000;
 }
 
 button {
@@ -372,7 +373,7 @@ h1, h2, h3, h4, h5, h6,
   font-family: inherit;
   font-weight: 500;
   line-height: 1.2;
-  color: inherit;
+  color: #001F3F;
 }
 
 h1, .h1 {
@@ -28491,3 +28492,7 @@ a.text-muted:hover {
   border-color: #dee2e6;
 }
 /*# sourceMappingURL=adminlte.css.map */
+.page-content img {
+    max-width: 100%;
+    height: auto;
+}
