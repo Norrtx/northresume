@@ -14,7 +14,7 @@ class m191202_034903_create_job_history extends Migration
     {
         $this->createTable('job_history', [
             'id' => $this->primaryKey()->unsigned()->notNull(),
-            'school_company' =>$this->string(),
+            'company_name' =>$this->string(),
             'position' =>$this->string(),
             'date_from' => $this->integer(11),
             'date_to' => $this->integer(11),

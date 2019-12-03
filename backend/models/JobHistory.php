@@ -8,7 +8,7 @@ use Yii;
  * This is the model class for table "job_history".
  *
  * @property int $id
- * @property string $school_company
+ * @property string $company_name
  * @property string $position
  * @property int $date_from
  * @property int $date_to
@@ -36,7 +36,7 @@ class JobHistory extends \yii\db\ActiveRecord
         return [
             [['date_from', 'date_to', 'user_id', 'date_create', 'date_update', 'status'], 'integer'],
             [['description'], 'string'],
-            [['school_company', 'position'], 'string', 'max' => 255],
+            [['company_name', 'position'], 'string', 'max' => 255],
         ];
     }
 
@@ -47,7 +47,7 @@ class JobHistory extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'school_company' => 'School Company',
+            'company_name' => 'Company Name',
             'position' => 'Position',
             'date_from' => 'Date From',
             'date_to' => 'Date To',

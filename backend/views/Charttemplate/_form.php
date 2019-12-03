@@ -4,11 +4,11 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
 /* @var $this yii\web\View */
-/* @var $model app\models\Chattemplate */
+/* @var $model app\models\Charttemplate */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
-<div class="chattemplate-form">
+<div class="charttemplate-form">
 
     <?php $form = ActiveForm::begin(); ?>
 

@@ -27,6 +27,13 @@ use yii\widgets\ActiveForm;
     <?= $form->field($model, 'date_update')->textInput() ?>
 
     <?= $form->field($model, 'status')->textInput() ?>
+    
+    <div class="form-group field-skill-status">
+        <label class="control-label" for="skill-status">test</label>
+        <input type="text" id="skill-status" class="form-control" name="test" aria-invalid="false">
+
+        <div class="help-block"></div>
+    </div>
 
     <div class="form-group">
         <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>

@@ -5,7 +5,7 @@ namespace app\models;
 use Yii;
 
 /**
- * This is the model class for table "chat_template".
+ * This is the model class for table "chart_template".
  *
  * @property int $id
  * @property string $name
@@ -16,14 +16,14 @@ use Yii;
  * @property int $date_update
  * @property int $status
  */
-class ChatTemplate extends \yii\db\ActiveRecord
+class ChartTemplate extends \yii\db\ActiveRecord
 {
     /**
      * {@inheritdoc}
      */
     public static function tableName()
     {
-        return 'chat_template';
+        return 'chart_template';
     }
 
     /**

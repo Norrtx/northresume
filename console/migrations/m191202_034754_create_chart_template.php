@@ -5,14 +5,14 @@ use yii\db\Migration;
 /**
  * Class m191202_034754_create_chat_template
  */
-class m191202_034754_create_chat_template extends Migration
+class m191202_034754_create_chart_template extends Migration
 {
     /**
      * {@inheritdoc}
      */
     public function safeUp()
     {
-        $this->createTable('chat_template', [
+        $this->createTable('chart_template', [
             'id' => $this->primaryKey()->unsigned()->notNull(),
             'name' =>$this->string(),
             'score' =>$this->integer(11),
@@ -29,7 +29,7 @@ class m191202_034754_create_chat_template extends Migration
      */
     public function safeDown()
     {
-        $this->dropTable('chat_template');
+        $this->dropTable('chart_template');
     }
 
     /*

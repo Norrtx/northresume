@@ -8,7 +8,8 @@ use yii\data\ActiveDataProvider;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
-
+use app\models\Education;
+use common\models\LoginForm;
 /**
  * SkillController implements the CRUD actions for Skill model.
  */
@@ -17,6 +18,7 @@ class SkillController extends Controller
     /**
      * {@inheritdoc}
      */
+    
     public function behaviors()
     {
         return [
@@ -63,8 +65,14 @@ class SkillController extends Controller
      * @return mixed
      */
     public function actionCreate()
-    {
+    {   
+        $educationmodel = new Education();
         $model = new Skill();
+
+        $name = Yii::$app->request->post('test');
+
+        $educationmodel->school_name=$name;
+        $educationmodel->save();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);

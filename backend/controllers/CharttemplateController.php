@@ -3,16 +3,16 @@
 namespace backend\controllers;
 
 use Yii;
-use app\models\Chattemplate;
+use app\models\Charttemplate;
 use yii\data\ActiveDataProvider;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
- * ChattemplateController implements the CRUD actions for Chattemplate model.
+ * CharttemplateController implements the CRUD actions for Charttemplate model.
  */
-class ChattemplateController extends Controller
+class CharttemplateController extends Controller
 {
     /**
      * {@inheritdoc}
@@ -30,13 +30,13 @@ class ChattemplateController extends Controller
     }
 
     /**
-     * Lists all Chattemplate models.
+     * Lists all Charttemplate models.
      * @return mixed
      */
     public function actionIndex()
     {
         $dataProvider = new ActiveDataProvider([
-            'query' => Chattemplate::find(),
+            'query' => Charttemplate::find(),
         ]);
 
         return $this->render('index', [
@@ -45,7 +45,7 @@ class ChattemplateController extends Controller
     }
 
     /**
-     * Displays a single Chattemplate model.
+     * Displays a single Charttemplate model.
      * @param integer $id
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
@@ -58,13 +58,13 @@ class ChattemplateController extends Controller
     }
 
     /**
-     * Creates a new Chattemplate model.
+     * Creates a new Charttemplate model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
     public function actionCreate()
     {
-        $model = new Chattemplate();
+        $model = new Charttemplate();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
@@ -76,7 +76,7 @@ class ChattemplateController extends Controller
     }
 
     /**
-     * Updates an existing Chattemplate model.
+     * Updates an existing Charttemplate model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id
      * @return mixed
@@ -96,7 +96,7 @@ class ChattemplateController extends Controller
     }
 
     /**
-     * Deletes an existing Chattemplate model.
+     * Deletes an existing Charttemplate model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $id
      * @return mixed
@@ -110,15 +110,15 @@ class ChattemplateController extends Controller
     }
 
     /**
-     * Finds the Chattemplate model based on its primary key value.
+     * Finds the Charttemplate model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
-     * @return Chattemplate the loaded model
+     * @return Charttemplate the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = Chattemplate::findOne($id)) !== null) {
+        if (($model = Charttemplate::findOne($id)) !== null) {
             return $model;
         }
 
