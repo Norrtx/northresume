@@ -31,7 +31,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <?php $this->beginBody() ?>
 <div class="wrapper">
 
-  
+ 
+
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
       <!-- Brand Logo -->
@@ -54,61 +55,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
       </div>
 
       <!-- Sidebar Menu -->
-      <nav class="mt-2">
-      <?php
-    NavBar::begin([
-        //'brandLabel' => Yii::$app->name,
-       'brandUrl' => Yii::$app->homeUrl,
-        'options' => [
-            'class' => 'nav nav-pills nav-sidebar flex-column',
-        ],
-    ]);
-   
-    $menuItems = [
-        ['label' => 'Home', 'url' => ['/site/index']],
-        ['label' => 'Profile', 'url' => ['/profile/index']],
-        ['label' => 'Skill', 'url' => ['/skill/index']],
-        ['label' => 'Education', 'url' => ['/education/index']],
-        ['label' => 'ChartTemplate', 'url' => ['/charttemplate/index']],
-        ['label' => 'JobHistory', 'url' => ['/jobhistory/index']],
-        ['label' => 'Layout', 'url' => ['/themes/index']],
-        ['label' => 'Test', 'url' => ['/site/hoho']],
-    ];
-    if (Yii::$app->user->isGuest) {
-        $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
-    } else {
-        $menuItems[] = '<li>'
-            . Html::beginForm(['/site/logout'], 'post')
-            . Html::submitButton(
-                'Logout (' . Yii::$app->user->identity->username . ')',
-                ['class' => 'btn btn-link logout']
-            )
-            . Html::endForm()
-            . '</li>';
-    }
-    echo Nav::widget([
-        'options' => ['class' => 'nav nav-pills nav-sidebar flex-column'],
-        'items' => $menuItems,
-    ]);
-    NavBar::end();
-    ?>
-      </nav>
-      <!-- /.sidebar-menu -->
-    </div>
-    <!-- /.sidebar -->
-  </aside>
-
-  <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <div class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Starter Page</h1>
-          </div><!-- /.col -->
-         
-    <!-- /.content-header -->
+      <?= $this->render('menu') ?>
+     
 
     <!-- Main content -->
     <div class="container">

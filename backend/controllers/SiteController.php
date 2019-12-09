@@ -26,7 +26,7 @@ class SiteController extends Controller
                         'allow' => true,
                     ],
                     [
-                        'actions' => ['logout', 'index','hoho'],
+                        'actions' => ['logout', 'index','hoho','ggg'],
                         'allow' => true,
                         'roles' => ['@'],
                     ],
@@ -64,7 +64,12 @@ class SiteController extends Controller
     }
     public function actionHoho()
     {
+        $this->layout='from';
         return $this->render('hoho');
+    }
+    public function actionGgg()
+    {
+        return $this->render('ggg');
     }
     /**
      * Login action.

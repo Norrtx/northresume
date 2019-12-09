@@ -28496,3 +28496,26 @@ a.text-muted:hover {
     max-width: 100%;
     height: auto;
 }
+.abt-language {
+    font-family: Kanit,Helvetica Neue,Helvetica,Roboto,Arial,Thonburi,Tahoma,sans-serif;
+    height: 33px;
+    line-height: 33px;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 127px;
+    border: 1px solid #f3efef;
+    display: inline-block;
+    background-color: #2d2e33;
+    font-size: .9rem;
+    cursor: pointer;
+    color:rgb(248, 245, 245)!important;
+    text-align: center;
+}
+ .card{background:#06A763;}
+ .card .skills-title{margin:15px 0;}
+ .card .skills-title h6{color:#fff;text-shadow:2px 2px 4px rgba(0, 0, 0, 0.29);}
+ .card .skillbar{position:relative;display:block;margin-bottom:17px;margin-top:45px;width:100%;padding:0 0;background:#05985a;height:4px;-webkit-transition:0.4s linear;transition:0.4s linear;-webkit-transition-property:width, background-color;transition-property:width, background-color;}
+ .card .skillbar .skillbar-title{position:absolute;top:0;left:0;font-size:1em;}
+ .card .skillbar .skillbar-title span{display:block;padding:3px 0;margin-top:-25px;line-height:15px;color:#fff;}
+ .card .skillbar .skillbar-bar{height:5px;width:0;background:#fff !important;}
+ .card .skillbar .skill-bar-percent{position:absolute;right:1px;top:-20px;font-size:.8em;line-height:15px;color:#fff;}
