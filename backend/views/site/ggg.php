@@ -1,1403 +1,2070 @@
 
-<!doctype html>
 
-<html lang="en">
 
-    <head>
 
-        <title>Desmond Resume Template</title>
 
-        <meta name="description" content="">
 
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-        <!-- Google Font: Lato -->
-        <link href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
-        <!-- FontAwesome -->
-        <link rel="stylesheet" href="assets/plugins/font-awesome/css/fontawesome.min.css">
-        <link rel="stylesheet" href="assets/plugins/font-awesome/css/brands.min.css">
 
-        <!-- Nivo Lightbox-->
-        <link rel="stylesheet" href="assets/plugins/nivo-lightbox/nivo-lightbox.css" />
-        <link rel="stylesheet" href="assets/plugins/nivo-lightbox/themes/default/default.css" />
+<div id="content" class="site-content row">
+	
+	
+ 
+<div id="intro" class="row">
+	<header class="entry-header">
+		<h1 class="entry-title"> RESUME ONLINE </h1>							 
+	</header>
+</div> 	
+
+
+	
+<div id="step-2" class="row">
+
+	<header class="entry-header">
+		<h2 class="entry-title"><span>2</span> กรอกข้อมูลของ RESUME</h2>							 
+	</header>
+	
+	<section class="tab-language">
+		<a href="https://campus.campus-star.com/resume"  class="bt-language">ภาษาไทย</a>
+		<a href="https://campus.campus-star.com/resume/en" class="bt-language">ภาษาอังกฤษ</a>
+	</section>
+	 
+	<div class="content-area columns large-6">
+		
+		 <section id="avatar">
+			  <div class="row">
+				<div class="column small-3">
+					<div class="icon-photo" ><i class="fa fa-user" aria-hidden="true"></i></div>
+				</div>
+				<div class="column small-9">
+					 <label class="text-photo">รูปถ่าย</label><label class="experience_demo">(ใช้ภาพแนวตั้ง)</label>
+					 <input id="avatar"  type="file" name="avatar"  >
+				</div>
+			  </div> 
+		 </section>
+		
+		<section id="profile">
+			<h2 class="post-headline-primary"><i class="fa fa-user" aria-hidden="true"></i> ประวัติ</h2>	
+			<div class="row">
+				<div class="small-3 columns">
+					<label>ชื่อ-นามสกุล</label>
+				</div>
+				<div class="small-3 columns">
+					<select id="prefix" name="prefix">
+						<option value="นาย">นาย</option>
+						<option value="นางสาว">นางสาว</option>
+						<option value="นาง">นาง</option>
+					</select>
+				</div>
+				<div class="small-6 columns">
+					 <input type="text" name="fullname_th" placeholder="ภาษาไทย">
+				</div>
+			</div>
+			<div class="row">
+				<div class="small-3 column">
+					<label>ชื่อ-นามสกุล</label>
+				</div>
+				<div class="small-9 column">
+					 <input type="text" name="fullname_en" placeholder="ภาษาอังกฤษ"> 
+				</div>
+			</div>
+			<div class="row">
+				<div class="small-3 column">
+					<label>เพศ</label>
+				</div>
+				<div class="small-3 column">
+					 <select id="sex" name="sex">
+						 <option value="male">ชาย</option>
+						<option value="female">หญิง</option>
+					</select>
+				</div>
+				<div class="small-6 column"></div>
+			</div>
+			<div class="row">
+				<div class="small-3 column">
+					<label>วันเกิด</label>
+				</div>
+				<div class="small-3 column">
+					<select name="birth_date" id="birth_date">
+						<option value="">วัน</option>
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+												<option value="5">5</option>
+												<option value="6">6</option>
+												<option value="7">7</option>
+												<option value="8">8</option>
+												<option value="9">9</option>
+												<option value="10">10</option>
+												<option value="11">11</option>
+												<option value="12">12</option>
+												<option value="13">13</option>
+												<option value="14">14</option>
+												<option value="15">15</option>
+												<option value="16">16</option>
+												<option value="17">17</option>
+												<option value="18">18</option>
+												<option value="19">19</option>
+												<option value="20">20</option>
+												<option value="21">21</option>
+												<option value="22">22</option>
+												<option value="23">23</option>
+												<option value="24">24</option>
+												<option value="25">25</option>
+												<option value="26">26</option>
+												<option value="27">27</option>
+												<option value="28">28</option>
+												<option value="29">29</option>
+												<option value="30">30</option>
+												<option value="31">31</option>
+											</select>
+				</div>
+				<div class="small-3 column">
+					<select name="birth_month" id="birth_month">
+						<option value="">เดือน</option>
+						<option value="01">มกราคม</option>
+						<option value="02">กุมภาพันธ์</option>
+						<option value="03">มีนาคม</option>
+						<option value="04">เมษายน</option>
+						<option value="05">พฤษภาคม</option>
+						<option value="06">มิถุนายน</option>
+						<option value="07">กรกฎาคม</option>
+						<option value="08">สิงหาคม</option>
+						<option value="09">กันยายน</option>
+						<option value="10">ตุลาคม</option>
+						<option value="11">พฤศจิกายน</option>
+						<option value="12">ธันวาคม</option>
+					</select>
+				</div>
+				<div class="small-3 column">
+					<select name="birth_year" id="birth_year">
+						<option value="">ปี</option>
+					 						<option value="2550">2550</option>
+					 						<option value="2549">2549</option>
+					 						<option value="2548">2548</option>
+					 						<option value="2547">2547</option>
+					 						<option value="2546">2546</option>
+					 						<option value="2545">2545</option>
+					 						<option value="2544">2544</option>
+					 						<option value="2543">2543</option>
+					 						<option value="2542">2542</option>
+					 						<option value="2541">2541</option>
+					 						<option value="2540">2540</option>
+					 						<option value="2539">2539</option>
+					 						<option value="2538">2538</option>
+					 						<option value="2537">2537</option>
+					 						<option value="2536">2536</option>
+					 						<option value="2535">2535</option>
+					 						<option value="2534">2534</option>
+					 						<option value="2533">2533</option>
+					 						<option value="2532">2532</option>
+					 						<option value="2531">2531</option>
+					 						<option value="2530">2530</option>
+					 						<option value="2529">2529</option>
+					 						<option value="2528">2528</option>
+					 						<option value="2527">2527</option>
+					 						<option value="2526">2526</option>
+					 						<option value="2525">2525</option>
+					 						<option value="2524">2524</option>
+					 						<option value="2523">2523</option>
+					 						<option value="2522">2522</option>
+					 						<option value="2521">2521</option>
+					 						<option value="2520">2520</option>
+					 						<option value="2519">2519</option>
+					 						<option value="2518">2518</option>
+					 						<option value="2517">2517</option>
+					 						<option value="2516">2516</option>
+					 						<option value="2515">2515</option>
+					 						<option value="2514">2514</option>
+					 						<option value="2513">2513</option>
+					 						<option value="2512">2512</option>
+					 						<option value="2511">2511</option>
+					 						<option value="2510">2510</option>
+					 						<option value="2509">2509</option>
+					 						<option value="2508">2508</option>
+					 						<option value="2507">2507</option>
+					 						<option value="2506">2506</option>
+					 						<option value="2505">2505</option>
+					 						<option value="2504">2504</option>
+					 						<option value="2503">2503</option>
+					 						<option value="2502">2502</option>
+					 						<option value="2501">2501</option>
+					 						<option value="2500">2500</option>
+					 						<option value="2499">2499</option>
+					 						<option value="2498">2498</option>
+					 						<option value="2497">2497</option>
+					 						<option value="2496">2496</option>
+					 						<option value="2495">2495</option>
+					 						<option value="2494">2494</option>
+					 						<option value="2493">2493</option>
+					 						<option value="2492">2492</option>
+					 						<option value="2491">2491</option>
+					 						<option value="2490">2490</option>
+					 						<option value="2489">2489</option>
+					 						<option value="2488">2488</option>
+					 						<option value="2487">2487</option>
+					 						<option value="2486">2486</option>
+					 						<option value="2485">2485</option>
+					 						<option value="2484">2484</option>
+					 						<option value="2483">2483</option>
+					 					</select>
+				</div>
+			</div>
+			<div class="row">
+				<div class="small-3 column">
+					<label>อายุ</label>
+				</div>
+				<div class="small-3 column">
+					<input type="text" id="age" name="age" readonly> 
+				</div>
+				<div class="small-6 column">
+					<label>ปี</label>
+				</div>
+			</div>
+			<div class="row">
+				<div class="small-3 column">
+					<label>สถานภาพ</label>
+				</div>
+				<div class="small-9 column">
+					<select name="marital_status">
+						<option value="single">โสด</option>
+						<option value="married">แต่งงานแล้ว</option>
+						<option value="widowed">เป็นหม้าย</option>
+						<option value="married_no_children">แต่งงานแล้วแต่ยังไม่มีบุตร</option>
+						<option value="divorced">แยกทางกัน</option>
+					</select>
+				</div>
+			</div>
+			<div class="row row_military" >
+				<div class="small-3 column">
+					<label>เกณฑ์ทหาร</label>
+				</div>
+				<div class="small-9 column">
+					<select id="military" name="military">
+						<option value="exempted">ได้รับการยกเว้น</option>
+						<option value="completed">ผ่านการเกณฑ์ทหารมาแล้ว</option>
+						<option value="wait">ยังไม่เกณฑ์ทหาร</option>
+					</select>
+				</div>
+			</div>
+			<div class="row">
+				<div class="small-3 column">
+					<label>สัญชาติ</label>
+				</div>
+				<div class="small-9 column">
+					 <input type="text" name="nationality"> 
+				</div>
+			</div>  
+      	</section>
+      	
+      	<section id="contact">		
+			<h2 class="post-headline-primary"><i class="fa fa-phone-square" aria-hidden="true"></i> ติดต่อ</h2>	
+			<div class="row">
+				<div class="small-3 column">
+					<label>เบอร์โทร</label>
+				</div>
+				<div class="small-9 column">
+					<input type="text" name="telephone">
+				</div>
+			</div>
+			<div class="row">
+				<div class="small-3 column">
+					<label>อีเมล์</label>
+				</div>
+				<div class="small-9 column">
+					<input type="text" name="email">
+				</div>
+			</div>
+			<div class="row">
+				<div class="small-3 column">
+					<label>ที่อยู่</label>
+				</div>
+				<div class="small-9 column">
+					<textarea name="address"></textarea>
+				</div>
+			</div>
+      	</section>
+ 
+ 
+		<section id="social">	
+			<h2 class="post-headline-primary"><i class="fa fa-globe" aria-hidden="true"></i> โซเชียล</h2>
+			<div class="row">
+				<div class="small-3 column">
+					<label>Facebook</label>
+				</div>
+				<div class="small-9 column">
+					<input type="text" name="facebook" placeholder="Name / ID">
+				</div>
+			</div>
+			<div class="row">
+				<div class="small-3 column">
+					<label>Instagram</label>
+				</div>
+				<div class="small-9 column">
+					<input type="text" name="instagram" placeholder="Name / ID">
+				</div>
+			</div>
+			<div class="row">
+				<div class="small-3 column">
+					<label>Twitter</label>
+				</div>
+				<div class="small-9 column">
+					<input type="text" name="twitter" placeholder="Name / ID">
+				</div>
+			</div>
+			<div class="row">
+				<div class="small-3 column">
+					<input type="text" name="social_other_name" placeholder="Other">
+				</div>
+				<div class="small-9 column">
+					<input type="text" name="social_other_value" placeholder="Name / ID">
+				</div>
+			</div>
+		</section>
+ 	
+		<section id="web">
+			
+			<h2 class="post-headline-primary"><i class="fa fa-share-alt" aria-hidden="true"></i> เว็บไซต์ส่วนตัว</h2>
+			<div class="row">
+				<div class="small-3 column">
+					<label>Portfolio</label>
+				</div>
+				<div class="small-9 column">
+					<input type="text" name="web_portfollio" placeholder="Link...">
+				</div>
+			</div>
+			<div class="row">
+				<div class="small-3 column">
+					<input type="text" name="web_other_name" placeholder="Web other">
+				</div>
+				<div class="small-9 column">
+					<input type="text" name="web_other_value" placeholder="Link...">
+				</div>
+			</div>		
+		</section>
+ 
+		<section id="hobby">			
+			<h2 class="post-headline-primary"><i class="fa fa-universal-access" aria-hidden="true"></i> งานอดิเรก</h2>	
+			<div class="row">
+				<div class="small-12 column">
+					<input type="text" name="hobby1">
+				</div>
+			</div>		
+			<div class="row">
+				<div class="small-12 column">
+					<input type="text" name="hobby2">
+				</div>
+			</div>			
+			<div class="row">
+				<div class="small-12 column">
+					<input type="text" name="hobby3">
+				</div>
+			</div>
+			<div class="row">
+				<div class="small-12 column">
+					<input type="text" name="hobby4">
+				</div>
+			</div>
+		</section>	
+		
+		<section id="interest">			
+			<h2 class="post-headline-primary"><i class="fa fa-heart-o" aria-hidden="true"></i> ความสนใจ</h2>	
+			<div class="row">
+				<div class="small-12 column">
+					<input type="text" name="interest1">
+				</div>
+			</div>
+			<div class="row">
+				<div class="small-12 column">
+					<input type="text" name="interest2">
+				</div>
+			</div>	
+			<div class="row">
+				<div class="small-12 column">
+					<input type="text" name="interest3">
+				</div>
+			</div>
+			<div class="row">
+				<div class="small-12 column">
+					<input type="text" name="interest4">
+				</div>
+			</div>
+		</section>	
+
+	</div> <!-- content-area columns large-6 --> 
+ 
+	<div class="content-area columns large-6">
+		
+		<section id="introduce">	
+			<h2 class="post-headline-primary"><i class="fa fa-credit-card" aria-hidden="true"></i> อธิบายเกี่ยวกับตัวเอง</h2>	
+			<div class="row">
+				<div class="small-12 column">
+					<textarea type="text" rows="5" name="introduce" placeholder="พิมพ์ข้อความ..."></textarea>
+				</div>
+			</div>
+		</section>	
+
+		<section id="experience">	
+			<h2 class="post-headline-primary"><i class="fa fa-briefcase" aria-hidden="true"></i> ประสบการณ์ทำงาน</h2>	
+			<div class="row boxgray">
+				<div class="small-12 column">
+					<div class="column small-1"> 
+						<label>จาก </label>
+					</div>
+					<div class="column small-3"> 
+						<select name="experience_year_start1" class="experience_select">
+														<option value="2019">2019</option>
+							 							<option value="2018">2018</option>
+							 							<option value="2017">2017</option>
+							 							<option value="2016">2016</option>
+							 							<option value="2015">2015</option>
+							 							<option value="2014">2014</option>
+							 							<option value="2013">2013</option>
+							 							<option value="2012">2012</option>
+							 							<option value="2011">2011</option>
+							 							<option value="2010">2010</option>
+							 							<option value="2009">2009</option>
+							 							<option value="2008">2008</option>
+							 							<option value="2007">2007</option>
+							 							<option value="2006">2006</option>
+							 							<option value="2005">2005</option>
+							 							<option value="2004">2004</option>
+							 							<option value="2003">2003</option>
+							 							<option value="2002">2002</option>
+							 							<option value="2001">2001</option>
+							 							<option value="2000">2000</option>
+							 							<option value="1999">1999</option>
+							 							<option value="1998">1998</option>
+							 							<option value="1997">1997</option>
+							 							<option value="1996">1996</option>
+							 							<option value="1995">1995</option>
+							 							<option value="1994">1994</option>
+							 							<option value="1993">1993</option>
+							 							<option value="1992">1992</option>
+							 							<option value="1991">1991</option>
+							 							<option value="1990">1990</option>
+							 							<option value="1989">1989</option>
+							 							<option value="1988">1988</option>
+							 							<option value="1987">1987</option>
+							 							<option value="1986">1986</option>
+							 							<option value="1985">1985</option>
+							 							<option value="1984">1984</option>
+							 							<option value="1983">1983</option>
+							 							<option value="1982">1982</option>
+							 							<option value="1981">1981</option>
+							 							<option value="1980">1980</option>
+							 							<option value="1979">1979</option>
+							 							<option value="1978">1978</option>
+							 							<option value="1977">1977</option>
+							 							<option value="1976">1976</option>
+							 							<option value="1975">1975</option>
+							 							<option value="1974">1974</option>
+							 							<option value="1973">1973</option>
+							 							<option value="1972">1972</option>
+							 							<option value="1971">1971</option>
+							 							<option value="1970">1970</option>
+							 							<option value="1969">1969</option>
+							 							<option value="1968">1968</option>
+							 							<option value="1967">1967</option>
+							 							<option value="1966">1966</option>
+							 							<option value="1965">1965</option>
+							 							<option value="1964">1964</option>
+							 							<option value="1963">1963</option>
+							 							<option value="1962">1962</option>
+							 							<option value="1961">1961</option>
+							 							<option value="1960">1960</option>
+							 							<option value="1959">1959</option>
+							 							<option value="1958">1958</option>
+							 							<option value="1957">1957</option>
+							 							<option value="1956">1956</option>
+							 							<option value="1955">1955</option>
+							 							<option value="1954">1954</option>
+							 							<option value="1953">1953</option>
+							 							<option value="1952">1952</option>
+							 							<option value="1951">1951</option>
+							 							<option value="1950">1950</option>
+							 							<option value="1949">1949</option>
+							 							<option value="1948">1948</option>
+							 							<option value="1947">1947</option>
+							 							<option value="1946">1946</option>
+							 							<option value="1945">1945</option>
+							 							<option value="1944">1944</option>
+							 							<option value="1943">1943</option>
+							 							<option value="1942">1942</option>
+							 							<option value="1941">1941</option>
+							 							<option value="1940">1940</option>
+							 						</select>
+					 </div>
+					<div class="column small-1"> 
+						<label>ถึง </label>
+					</div>
+					<div class="column small-3"> 
+						<select name="experience_year_end1" class="experience_select"> 
+														<option value="2019">2019</option>
+							 							<option value="2018">2018</option>
+							 							<option value="2017">2017</option>
+							 							<option value="2016">2016</option>
+							 							<option value="2015">2015</option>
+							 							<option value="2014">2014</option>
+							 							<option value="2013">2013</option>
+							 							<option value="2012">2012</option>
+							 							<option value="2011">2011</option>
+							 							<option value="2010">2010</option>
+							 							<option value="2009">2009</option>
+							 							<option value="2008">2008</option>
+							 							<option value="2007">2007</option>
+							 							<option value="2006">2006</option>
+							 							<option value="2005">2005</option>
+							 							<option value="2004">2004</option>
+							 							<option value="2003">2003</option>
+							 							<option value="2002">2002</option>
+							 							<option value="2001">2001</option>
+							 							<option value="2000">2000</option>
+							 							<option value="1999">1999</option>
+							 							<option value="1998">1998</option>
+							 							<option value="1997">1997</option>
+							 							<option value="1996">1996</option>
+							 							<option value="1995">1995</option>
+							 							<option value="1994">1994</option>
+							 							<option value="1993">1993</option>
+							 							<option value="1992">1992</option>
+							 							<option value="1991">1991</option>
+							 							<option value="1990">1990</option>
+							 							<option value="1989">1989</option>
+							 							<option value="1988">1988</option>
+							 							<option value="1987">1987</option>
+							 							<option value="1986">1986</option>
+							 							<option value="1985">1985</option>
+							 							<option value="1984">1984</option>
+							 							<option value="1983">1983</option>
+							 							<option value="1982">1982</option>
+							 							<option value="1981">1981</option>
+							 							<option value="1980">1980</option>
+							 							<option value="1979">1979</option>
+							 							<option value="1978">1978</option>
+							 							<option value="1977">1977</option>
+							 							<option value="1976">1976</option>
+							 							<option value="1975">1975</option>
+							 							<option value="1974">1974</option>
+							 							<option value="1973">1973</option>
+							 							<option value="1972">1972</option>
+							 							<option value="1971">1971</option>
+							 							<option value="1970">1970</option>
+							 							<option value="1969">1969</option>
+							 							<option value="1968">1968</option>
+							 							<option value="1967">1967</option>
+							 							<option value="1966">1966</option>
+							 							<option value="1965">1965</option>
+							 							<option value="1964">1964</option>
+							 							<option value="1963">1963</option>
+							 							<option value="1962">1962</option>
+							 							<option value="1961">1961</option>
+							 							<option value="1960">1960</option>
+							 							<option value="1959">1959</option>
+							 							<option value="1958">1958</option>
+							 							<option value="1957">1957</option>
+							 							<option value="1956">1956</option>
+							 							<option value="1955">1955</option>
+							 							<option value="1954">1954</option>
+							 							<option value="1953">1953</option>
+							 							<option value="1952">1952</option>
+							 							<option value="1951">1951</option>
+							 							<option value="1950">1950</option>
+							 							<option value="1949">1949</option>
+							 							<option value="1948">1948</option>
+							 							<option value="1947">1947</option>
+							 							<option value="1946">1946</option>
+							 							<option value="1945">1945</option>
+							 							<option value="1944">1944</option>
+							 							<option value="1943">1943</option>
+							 							<option value="1942">1942</option>
+							 							<option value="1941">1941</option>
+							 							<option value="1940">1940</option>
+							 						</select>
+					</div>
+					<div class="column small-4"> 
+						<label class="experience_demo">ตัวอย่าง จาก 2014 ถึง 2016</label>
+					</div>
+				</div>
+				<div class="small-12 column">
+					<div class="column small-1"> 
+						<label> บริษัท </label> 
+					</div> 
+					<div class="column small-5"> 
+						<input type="text" name="experience_company1" class="input-company"> 
+					</div> 
+					<div class="column small-2"> 
+						<label> ตำแหน่ง </label>
+					</div> 
+					<div class="column small-4"> 
+						<input type="text" name="experience_position1" class="input-position">
+					</div> 
+				</div>
+			</div>
+			<div class="row boxgray">
+				<div class="small-12 column">
+					<div class="column small-1"> 
+						<label>จาก </label>
+					</div>
+					<div class="column small-3"> 
+						<select name="experience_year_start2" class="experience_select">
+														<option value="2019">2019</option>
+							 							<option value="2018">2018</option>
+							 							<option value="2017">2017</option>
+							 							<option value="2016">2016</option>
+							 							<option value="2015">2015</option>
+							 							<option value="2014">2014</option>
+							 							<option value="2013">2013</option>
+							 							<option value="2012">2012</option>
+							 							<option value="2011">2011</option>
+							 							<option value="2010">2010</option>
+							 							<option value="2009">2009</option>
+							 							<option value="2008">2008</option>
+							 							<option value="2007">2007</option>
+							 							<option value="2006">2006</option>
+							 							<option value="2005">2005</option>
+							 							<option value="2004">2004</option>
+							 							<option value="2003">2003</option>
+							 							<option value="2002">2002</option>
+							 							<option value="2001">2001</option>
+							 							<option value="2000">2000</option>
+							 							<option value="1999">1999</option>
+							 							<option value="1998">1998</option>
+							 							<option value="1997">1997</option>
+							 							<option value="1996">1996</option>
+							 							<option value="1995">1995</option>
+							 							<option value="1994">1994</option>
+							 							<option value="1993">1993</option>
+							 							<option value="1992">1992</option>
+							 							<option value="1991">1991</option>
+							 							<option value="1990">1990</option>
+							 							<option value="1989">1989</option>
+							 							<option value="1988">1988</option>
+							 							<option value="1987">1987</option>
+							 							<option value="1986">1986</option>
+							 							<option value="1985">1985</option>
+							 							<option value="1984">1984</option>
+							 							<option value="1983">1983</option>
+							 							<option value="1982">1982</option>
+							 							<option value="1981">1981</option>
+							 							<option value="1980">1980</option>
+							 							<option value="1979">1979</option>
+							 							<option value="1978">1978</option>
+							 							<option value="1977">1977</option>
+							 							<option value="1976">1976</option>
+							 							<option value="1975">1975</option>
+							 							<option value="1974">1974</option>
+							 							<option value="1973">1973</option>
+							 							<option value="1972">1972</option>
+							 							<option value="1971">1971</option>
+							 							<option value="1970">1970</option>
+							 							<option value="1969">1969</option>
+							 							<option value="1968">1968</option>
+							 							<option value="1967">1967</option>
+							 							<option value="1966">1966</option>
+							 							<option value="1965">1965</option>
+							 							<option value="1964">1964</option>
+							 							<option value="1963">1963</option>
+							 							<option value="1962">1962</option>
+							 							<option value="1961">1961</option>
+							 							<option value="1960">1960</option>
+							 							<option value="1959">1959</option>
+							 							<option value="1958">1958</option>
+							 							<option value="1957">1957</option>
+							 							<option value="1956">1956</option>
+							 							<option value="1955">1955</option>
+							 							<option value="1954">1954</option>
+							 							<option value="1953">1953</option>
+							 							<option value="1952">1952</option>
+							 							<option value="1951">1951</option>
+							 							<option value="1950">1950</option>
+							 							<option value="1949">1949</option>
+							 							<option value="1948">1948</option>
+							 							<option value="1947">1947</option>
+							 							<option value="1946">1946</option>
+							 							<option value="1945">1945</option>
+							 							<option value="1944">1944</option>
+							 							<option value="1943">1943</option>
+							 							<option value="1942">1942</option>
+							 							<option value="1941">1941</option>
+							 							<option value="1940">1940</option>
+							 						</select>
+					 </div>
+					<div class="column small-1"> 
+						<label>ถึง </label>
+					</div>
+					<div class="column small-3"> 
+						<select name="experience_year_end2" class="experience_select"> 
+														<option value="2019">2019</option>
+							 							<option value="2018">2018</option>
+							 							<option value="2017">2017</option>
+							 							<option value="2016">2016</option>
+							 							<option value="2015">2015</option>
+							 							<option value="2014">2014</option>
+							 							<option value="2013">2013</option>
+							 							<option value="2012">2012</option>
+							 							<option value="2011">2011</option>
+							 							<option value="2010">2010</option>
+							 							<option value="2009">2009</option>
+							 							<option value="2008">2008</option>
+							 							<option value="2007">2007</option>
+							 							<option value="2006">2006</option>
+							 							<option value="2005">2005</option>
+							 							<option value="2004">2004</option>
+							 							<option value="2003">2003</option>
+							 							<option value="2002">2002</option>
+							 							<option value="2001">2001</option>
+							 							<option value="2000">2000</option>
+							 							<option value="1999">1999</option>
+							 							<option value="1998">1998</option>
+							 							<option value="1997">1997</option>
+							 							<option value="1996">1996</option>
+							 							<option value="1995">1995</option>
+							 							<option value="1994">1994</option>
+							 							<option value="1993">1993</option>
+							 							<option value="1992">1992</option>
+							 							<option value="1991">1991</option>
+							 							<option value="1990">1990</option>
+							 							<option value="1989">1989</option>
+							 							<option value="1988">1988</option>
+							 							<option value="1987">1987</option>
+							 							<option value="1986">1986</option>
+							 							<option value="1985">1985</option>
+							 							<option value="1984">1984</option>
+							 							<option value="1983">1983</option>
+							 							<option value="1982">1982</option>
+							 							<option value="1981">1981</option>
+							 							<option value="1980">1980</option>
+							 							<option value="1979">1979</option>
+							 							<option value="1978">1978</option>
+							 							<option value="1977">1977</option>
+							 							<option value="1976">1976</option>
+							 							<option value="1975">1975</option>
+							 							<option value="1974">1974</option>
+							 							<option value="1973">1973</option>
+							 							<option value="1972">1972</option>
+							 							<option value="1971">1971</option>
+							 							<option value="1970">1970</option>
+							 							<option value="1969">1969</option>
+							 							<option value="1968">1968</option>
+							 							<option value="1967">1967</option>
+							 							<option value="1966">1966</option>
+							 							<option value="1965">1965</option>
+							 							<option value="1964">1964</option>
+							 							<option value="1963">1963</option>
+							 							<option value="1962">1962</option>
+							 							<option value="1961">1961</option>
+							 							<option value="1960">1960</option>
+							 							<option value="1959">1959</option>
+							 							<option value="1958">1958</option>
+							 							<option value="1957">1957</option>
+							 							<option value="1956">1956</option>
+							 							<option value="1955">1955</option>
+							 							<option value="1954">1954</option>
+							 							<option value="1953">1953</option>
+							 							<option value="1952">1952</option>
+							 							<option value="1951">1951</option>
+							 							<option value="1950">1950</option>
+							 							<option value="1949">1949</option>
+							 							<option value="1948">1948</option>
+							 							<option value="1947">1947</option>
+							 							<option value="1946">1946</option>
+							 							<option value="1945">1945</option>
+							 							<option value="1944">1944</option>
+							 							<option value="1943">1943</option>
+							 							<option value="1942">1942</option>
+							 							<option value="1941">1941</option>
+							 							<option value="1940">1940</option>
+							 						</select>
+					</div>
+					<div class="column small-4"> 
+						<label class="experience_demo">ตัวอย่าง จาก 2014 ถึง 2016</label>
+					</div>
+				</div>
+				<div class="small-12 column">
+					<div class="column small-1"> 
+						<label> บริษัท </label> 
+					</div> 
+					<div class="column small-5"> 
+						<input type="text" name="experience_company2" class="input-company"> 
+					</div> 
+					<div class="column small-2"> 
+						<label> ตำแหน่ง </label>
+					</div> 
+					<div class="column small-4"> 
+						<input type="text" name="experience_position2" class="input-position">
+					</div> 
+				</div>
+			</div>
+			<div class="row boxgray">
+				<div class="small-12 column">
+					<div class="column small-1"> 
+						<label>จาก </label>
+					</div>
+					<div class="column small-3"> 
+						<select name="experience_year_start3" class="experience_select">
+														<option value="2019">2019</option>
+							 							<option value="2018">2018</option>
+							 							<option value="2017">2017</option>
+							 							<option value="2016">2016</option>
+							 							<option value="2015">2015</option>
+							 							<option value="2014">2014</option>
+							 							<option value="2013">2013</option>
+							 							<option value="2012">2012</option>
+							 							<option value="2011">2011</option>
+							 							<option value="2010">2010</option>
+							 							<option value="2009">2009</option>
+							 							<option value="2008">2008</option>
+							 							<option value="2007">2007</option>
+							 							<option value="2006">2006</option>
+							 							<option value="2005">2005</option>
+							 							<option value="2004">2004</option>
+							 							<option value="2003">2003</option>
+							 							<option value="2002">2002</option>
+							 							<option value="2001">2001</option>
+							 							<option value="2000">2000</option>
+							 							<option value="1999">1999</option>
+							 							<option value="1998">1998</option>
+							 							<option value="1997">1997</option>
+							 							<option value="1996">1996</option>
+							 							<option value="1995">1995</option>
+							 							<option value="1994">1994</option>
+							 							<option value="1993">1993</option>
+							 							<option value="1992">1992</option>
+							 							<option value="1991">1991</option>
+							 							<option value="1990">1990</option>
+							 							<option value="1989">1989</option>
+							 							<option value="1988">1988</option>
+							 							<option value="1987">1987</option>
+							 							<option value="1986">1986</option>
+							 							<option value="1985">1985</option>
+							 							<option value="1984">1984</option>
+							 							<option value="1983">1983</option>
+							 							<option value="1982">1982</option>
+							 							<option value="1981">1981</option>
+							 							<option value="1980">1980</option>
+							 							<option value="1979">1979</option>
+							 							<option value="1978">1978</option>
+							 							<option value="1977">1977</option>
+							 							<option value="1976">1976</option>
+							 							<option value="1975">1975</option>
+							 							<option value="1974">1974</option>
+							 							<option value="1973">1973</option>
+							 							<option value="1972">1972</option>
+							 							<option value="1971">1971</option>
+							 							<option value="1970">1970</option>
+							 							<option value="1969">1969</option>
+							 							<option value="1968">1968</option>
+							 							<option value="1967">1967</option>
+							 							<option value="1966">1966</option>
+							 							<option value="1965">1965</option>
+							 							<option value="1964">1964</option>
+							 							<option value="1963">1963</option>
+							 							<option value="1962">1962</option>
+							 							<option value="1961">1961</option>
+							 							<option value="1960">1960</option>
+							 							<option value="1959">1959</option>
+							 							<option value="1958">1958</option>
+							 							<option value="1957">1957</option>
+							 							<option value="1956">1956</option>
+							 							<option value="1955">1955</option>
+							 							<option value="1954">1954</option>
+							 							<option value="1953">1953</option>
+							 							<option value="1952">1952</option>
+							 							<option value="1951">1951</option>
+							 							<option value="1950">1950</option>
+							 							<option value="1949">1949</option>
+							 							<option value="1948">1948</option>
+							 							<option value="1947">1947</option>
+							 							<option value="1946">1946</option>
+							 							<option value="1945">1945</option>
+							 							<option value="1944">1944</option>
+							 							<option value="1943">1943</option>
+							 							<option value="1942">1942</option>
+							 							<option value="1941">1941</option>
+							 							<option value="1940">1940</option>
+							 						</select>
+					 </div>
+					<div class="column small-1"> 
+						<label>ถึง </label>
+					</div>
+					<div class="column small-3"> 
+						<select name="experience_year_end3" class="experience_select"> 
+														<option value="2019">2019</option>
+							 							<option value="2018">2018</option>
+							 							<option value="2017">2017</option>
+							 							<option value="2016">2016</option>
+							 							<option value="2015">2015</option>
+							 							<option value="2014">2014</option>
+							 							<option value="2013">2013</option>
+							 							<option value="2012">2012</option>
+							 							<option value="2011">2011</option>
+							 							<option value="2010">2010</option>
+							 							<option value="2009">2009</option>
+							 							<option value="2008">2008</option>
+							 							<option value="2007">2007</option>
+							 							<option value="2006">2006</option>
+							 							<option value="2005">2005</option>
+							 							<option value="2004">2004</option>
+							 							<option value="2003">2003</option>
+							 							<option value="2002">2002</option>
+							 							<option value="2001">2001</option>
+							 							<option value="2000">2000</option>
+							 							<option value="1999">1999</option>
+							 							<option value="1998">1998</option>
+							 							<option value="1997">1997</option>
+							 							<option value="1996">1996</option>
+							 							<option value="1995">1995</option>
+							 							<option value="1994">1994</option>
+							 							<option value="1993">1993</option>
+							 							<option value="1992">1992</option>
+							 							<option value="1991">1991</option>
+							 							<option value="1990">1990</option>
+							 							<option value="1989">1989</option>
+							 							<option value="1988">1988</option>
+							 							<option value="1987">1987</option>
+							 							<option value="1986">1986</option>
+							 							<option value="1985">1985</option>
+							 							<option value="1984">1984</option>
+							 							<option value="1983">1983</option>
+							 							<option value="1982">1982</option>
+							 							<option value="1981">1981</option>
+							 							<option value="1980">1980</option>
+							 							<option value="1979">1979</option>
+							 							<option value="1978">1978</option>
+							 							<option value="1977">1977</option>
+							 							<option value="1976">1976</option>
+							 							<option value="1975">1975</option>
+							 							<option value="1974">1974</option>
+							 							<option value="1973">1973</option>
+							 							<option value="1972">1972</option>
+							 							<option value="1971">1971</option>
+							 							<option value="1970">1970</option>
+							 							<option value="1969">1969</option>
+							 							<option value="1968">1968</option>
+							 							<option value="1967">1967</option>
+							 							<option value="1966">1966</option>
+							 							<option value="1965">1965</option>
+							 							<option value="1964">1964</option>
+							 							<option value="1963">1963</option>
+							 							<option value="1962">1962</option>
+							 							<option value="1961">1961</option>
+							 							<option value="1960">1960</option>
+							 							<option value="1959">1959</option>
+							 							<option value="1958">1958</option>
+							 							<option value="1957">1957</option>
+							 							<option value="1956">1956</option>
+							 							<option value="1955">1955</option>
+							 							<option value="1954">1954</option>
+							 							<option value="1953">1953</option>
+							 							<option value="1952">1952</option>
+							 							<option value="1951">1951</option>
+							 							<option value="1950">1950</option>
+							 							<option value="1949">1949</option>
+							 							<option value="1948">1948</option>
+							 							<option value="1947">1947</option>
+							 							<option value="1946">1946</option>
+							 							<option value="1945">1945</option>
+							 							<option value="1944">1944</option>
+							 							<option value="1943">1943</option>
+							 							<option value="1942">1942</option>
+							 							<option value="1941">1941</option>
+							 							<option value="1940">1940</option>
+							 						</select>
+					</div>
+					<div class="column small-4"> 
+						<label class="experience_demo">ตัวอย่าง จาก 2014 ถึง 2016</label>
+					</div>
+				</div>
+				<div class="small-12 column">
+					<div class="column small-1"> 
+						<label> บริษัท </label> 
+					</div> 
+					<div class="column small-5"> 
+						<input type="text" name="experience_company3" class="input-company"> 
+					</div> 
+					<div class="column small-2"> 
+						<label> ตำแหน่ง </label>
+					</div> 
+					<div class="column small-4"> 
+						<input type="text" name="experience_position3" class="input-position">
+					</div> 
+				</div>
+			</div>
+			<div class="row boxgray">
+				<div class="small-12 column">
+					<div class="column small-1"> 
+						<label>จาก </label>
+					</div>
+					<div class="column small-3"> 
+						<select name="experience_year_start4" class="experience_select">
+														<option value="2019">2019</option>
+							 							<option value="2018">2018</option>
+							 							<option value="2017">2017</option>
+							 							<option value="2016">2016</option>
+							 							<option value="2015">2015</option>
+							 							<option value="2014">2014</option>
+							 							<option value="2013">2013</option>
+							 							<option value="2012">2012</option>
+							 							<option value="2011">2011</option>
+							 							<option value="2010">2010</option>
+							 							<option value="2009">2009</option>
+							 							<option value="2008">2008</option>
+							 							<option value="2007">2007</option>
+							 							<option value="2006">2006</option>
+							 							<option value="2005">2005</option>
+							 							<option value="2004">2004</option>
+							 							<option value="2003">2003</option>
+							 							<option value="2002">2002</option>
+							 							<option value="2001">2001</option>
+							 							<option value="2000">2000</option>
+							 							<option value="1999">1999</option>
+							 							<option value="1998">1998</option>
+							 							<option value="1997">1997</option>
+							 							<option value="1996">1996</option>
+							 							<option value="1995">1995</option>
+							 							<option value="1994">1994</option>
+							 							<option value="1993">1993</option>
+							 							<option value="1992">1992</option>
+							 							<option value="1991">1991</option>
+							 							<option value="1990">1990</option>
+							 							<option value="1989">1989</option>
+							 							<option value="1988">1988</option>
+							 							<option value="1987">1987</option>
+							 							<option value="1986">1986</option>
+							 							<option value="1985">1985</option>
+							 							<option value="1984">1984</option>
+							 							<option value="1983">1983</option>
+							 							<option value="1982">1982</option>
+							 							<option value="1981">1981</option>
+							 							<option value="1980">1980</option>
+							 							<option value="1979">1979</option>
+							 							<option value="1978">1978</option>
+							 							<option value="1977">1977</option>
+							 							<option value="1976">1976</option>
+							 							<option value="1975">1975</option>
+							 							<option value="1974">1974</option>
+							 							<option value="1973">1973</option>
+							 							<option value="1972">1972</option>
+							 							<option value="1971">1971</option>
+							 							<option value="1970">1970</option>
+							 							<option value="1969">1969</option>
+							 							<option value="1968">1968</option>
+							 							<option value="1967">1967</option>
+							 							<option value="1966">1966</option>
+							 							<option value="1965">1965</option>
+							 							<option value="1964">1964</option>
+							 							<option value="1963">1963</option>
+							 							<option value="1962">1962</option>
+							 							<option value="1961">1961</option>
+							 							<option value="1960">1960</option>
+							 							<option value="1959">1959</option>
+							 							<option value="1958">1958</option>
+							 							<option value="1957">1957</option>
+							 							<option value="1956">1956</option>
+							 							<option value="1955">1955</option>
+							 							<option value="1954">1954</option>
+							 							<option value="1953">1953</option>
+							 							<option value="1952">1952</option>
+							 							<option value="1951">1951</option>
+							 							<option value="1950">1950</option>
+							 							<option value="1949">1949</option>
+							 							<option value="1948">1948</option>
+							 							<option value="1947">1947</option>
+							 							<option value="1946">1946</option>
+							 							<option value="1945">1945</option>
+							 							<option value="1944">1944</option>
+							 							<option value="1943">1943</option>
+							 							<option value="1942">1942</option>
+							 							<option value="1941">1941</option>
+							 							<option value="1940">1940</option>
+							 						</select>
+					 </div>
+					<div class="column small-1"> 
+						<label>ถึง </label>
+					</div>
+					<div class="column small-3"> 
+						<select name="experience_year_end4" class="experience_select"> 
+														<option value="2019">2019</option>
+							 							<option value="2018">2018</option>
+							 							<option value="2017">2017</option>
+							 							<option value="2016">2016</option>
+							 							<option value="2015">2015</option>
+							 							<option value="2014">2014</option>
+							 							<option value="2013">2013</option>
+							 							<option value="2012">2012</option>
+							 							<option value="2011">2011</option>
+							 							<option value="2010">2010</option>
+							 							<option value="2009">2009</option>
+							 							<option value="2008">2008</option>
+							 							<option value="2007">2007</option>
+							 							<option value="2006">2006</option>
+							 							<option value="2005">2005</option>
+							 							<option value="2004">2004</option>
+							 							<option value="2003">2003</option>
+							 							<option value="2002">2002</option>
+							 							<option value="2001">2001</option>
+							 							<option value="2000">2000</option>
+							 							<option value="1999">1999</option>
+							 							<option value="1998">1998</option>
+							 							<option value="1997">1997</option>
+							 							<option value="1996">1996</option>
+							 							<option value="1995">1995</option>
+							 							<option value="1994">1994</option>
+							 							<option value="1993">1993</option>
+							 							<option value="1992">1992</option>
+							 							<option value="1991">1991</option>
+							 							<option value="1990">1990</option>
+							 							<option value="1989">1989</option>
+							 							<option value="1988">1988</option>
+							 							<option value="1987">1987</option>
+							 							<option value="1986">1986</option>
+							 							<option value="1985">1985</option>
+							 							<option value="1984">1984</option>
+							 							<option value="1983">1983</option>
+							 							<option value="1982">1982</option>
+							 							<option value="1981">1981</option>
+							 							<option value="1980">1980</option>
+							 							<option value="1979">1979</option>
+							 							<option value="1978">1978</option>
+							 							<option value="1977">1977</option>
+							 							<option value="1976">1976</option>
+							 							<option value="1975">1975</option>
+							 							<option value="1974">1974</option>
+							 							<option value="1973">1973</option>
+							 							<option value="1972">1972</option>
+							 							<option value="1971">1971</option>
+							 							<option value="1970">1970</option>
+							 							<option value="1969">1969</option>
+							 							<option value="1968">1968</option>
+							 							<option value="1967">1967</option>
+							 							<option value="1966">1966</option>
+							 							<option value="1965">1965</option>
+							 							<option value="1964">1964</option>
+							 							<option value="1963">1963</option>
+							 							<option value="1962">1962</option>
+							 							<option value="1961">1961</option>
+							 							<option value="1960">1960</option>
+							 							<option value="1959">1959</option>
+							 							<option value="1958">1958</option>
+							 							<option value="1957">1957</option>
+							 							<option value="1956">1956</option>
+							 							<option value="1955">1955</option>
+							 							<option value="1954">1954</option>
+							 							<option value="1953">1953</option>
+							 							<option value="1952">1952</option>
+							 							<option value="1951">1951</option>
+							 							<option value="1950">1950</option>
+							 							<option value="1949">1949</option>
+							 							<option value="1948">1948</option>
+							 							<option value="1947">1947</option>
+							 							<option value="1946">1946</option>
+							 							<option value="1945">1945</option>
+							 							<option value="1944">1944</option>
+							 							<option value="1943">1943</option>
+							 							<option value="1942">1942</option>
+							 							<option value="1941">1941</option>
+							 							<option value="1940">1940</option>
+							 						</select>
+					</div>
+					<div class="column small-4"> 
+						<label class="experience_demo">ตัวอย่าง จาก 2014 ถึง 2016</label>
+					</div>
+				</div>
+				<div class="small-12 column">
+					<div class="column small-1"> 
+						<label> บริษัท </label> 
+					</div> 
+					<div class="column small-5"> 
+						<input type="text" name="experience_company4" class="input-company"> 
+					</div> 
+					<div class="column small-2"> 
+						<label> ตำแหน่ง </label>
+					</div> 
+					<div class="column small-4"> 
+						<input type="text" name="experience_position4" class="input-position">
+					</div> 
+				</div>
+			</div>
+		</section>	
+		
+		<section id="education" class="row column" >
+			<h2 class="post-headline-primary"><i class="fa fa-graduation-cap" aria-hidden="true"></i> การศึกษา</h2>	
+			<div class="row boxgray">
+				<div class="small-12 column">
+					<div class="column small-1"> 
+						<label>จาก </label>
+					</div>
+					<div class="column small-3"> 
+						<select name="education_year_start1" class="education_select">
+							 							<option value="2019">2019</option>
+							 							<option value="2018">2018</option>
+							 							<option value="2017">2017</option>
+							 							<option value="2016">2016</option>
+							 							<option value="2015">2015</option>
+							 							<option value="2014">2014</option>
+							 							<option value="2013">2013</option>
+							 							<option value="2012">2012</option>
+							 							<option value="2011">2011</option>
+							 							<option value="2010">2010</option>
+							 							<option value="2009">2009</option>
+							 							<option value="2008">2008</option>
+							 							<option value="2007">2007</option>
+							 							<option value="2006">2006</option>
+							 							<option value="2005">2005</option>
+							 							<option value="2004">2004</option>
+							 							<option value="2003">2003</option>
+							 							<option value="2002">2002</option>
+							 							<option value="2001">2001</option>
+							 							<option value="2000">2000</option>
+							 							<option value="1999">1999</option>
+							 							<option value="1998">1998</option>
+							 							<option value="1997">1997</option>
+							 							<option value="1996">1996</option>
+							 							<option value="1995">1995</option>
+							 							<option value="1994">1994</option>
+							 							<option value="1993">1993</option>
+							 							<option value="1992">1992</option>
+							 							<option value="1991">1991</option>
+							 							<option value="1990">1990</option>
+							 							<option value="1989">1989</option>
+							 							<option value="1988">1988</option>
+							 							<option value="1987">1987</option>
+							 							<option value="1986">1986</option>
+							 							<option value="1985">1985</option>
+							 							<option value="1984">1984</option>
+							 							<option value="1983">1983</option>
+							 							<option value="1982">1982</option>
+							 							<option value="1981">1981</option>
+							 							<option value="1980">1980</option>
+							 							<option value="1979">1979</option>
+							 							<option value="1978">1978</option>
+							 							<option value="1977">1977</option>
+							 							<option value="1976">1976</option>
+							 							<option value="1975">1975</option>
+							 							<option value="1974">1974</option>
+							 							<option value="1973">1973</option>
+							 							<option value="1972">1972</option>
+							 							<option value="1971">1971</option>
+							 							<option value="1970">1970</option>
+							 							<option value="1969">1969</option>
+							 							<option value="1968">1968</option>
+							 							<option value="1967">1967</option>
+							 							<option value="1966">1966</option>
+							 							<option value="1965">1965</option>
+							 							<option value="1964">1964</option>
+							 							<option value="1963">1963</option>
+							 							<option value="1962">1962</option>
+							 							<option value="1961">1961</option>
+							 							<option value="1960">1960</option>
+							 							<option value="1959">1959</option>
+							 							<option value="1958">1958</option>
+							 							<option value="1957">1957</option>
+							 							<option value="1956">1956</option>
+							 							<option value="1955">1955</option>
+							 							<option value="1954">1954</option>
+							 							<option value="1953">1953</option>
+							 							<option value="1952">1952</option>
+							 							<option value="1951">1951</option>
+							 							<option value="1950">1950</option>
+							 							<option value="1949">1949</option>
+							 							<option value="1948">1948</option>
+							 							<option value="1947">1947</option>
+							 							<option value="1946">1946</option>
+							 							<option value="1945">1945</option>
+							 							<option value="1944">1944</option>
+							 							<option value="1943">1943</option>
+							 							<option value="1942">1942</option>
+							 							<option value="1941">1941</option>
+							 							<option value="1940">1940</option>
+							 						</select>
+					 </div>
+					<div class="column small-1"> 
+						<label>ถึง </label>
+					</div>
+					<div class="column small-3"> 
+						<select name="education_year_end1" class="education_select"> 
+														<option value="2019">2019</option>
+							 							<option value="2018">2018</option>
+							 							<option value="2017">2017</option>
+							 							<option value="2016">2016</option>
+							 							<option value="2015">2015</option>
+							 							<option value="2014">2014</option>
+							 							<option value="2013">2013</option>
+							 							<option value="2012">2012</option>
+							 							<option value="2011">2011</option>
+							 							<option value="2010">2010</option>
+							 							<option value="2009">2009</option>
+							 							<option value="2008">2008</option>
+							 							<option value="2007">2007</option>
+							 							<option value="2006">2006</option>
+							 							<option value="2005">2005</option>
+							 							<option value="2004">2004</option>
+							 							<option value="2003">2003</option>
+							 							<option value="2002">2002</option>
+							 							<option value="2001">2001</option>
+							 							<option value="2000">2000</option>
+							 							<option value="1999">1999</option>
+							 							<option value="1998">1998</option>
+							 							<option value="1997">1997</option>
+							 							<option value="1996">1996</option>
+							 							<option value="1995">1995</option>
+							 							<option value="1994">1994</option>
+							 							<option value="1993">1993</option>
+							 							<option value="1992">1992</option>
+							 							<option value="1991">1991</option>
+							 							<option value="1990">1990</option>
+							 							<option value="1989">1989</option>
+							 							<option value="1988">1988</option>
+							 							<option value="1987">1987</option>
+							 							<option value="1986">1986</option>
+							 							<option value="1985">1985</option>
+							 							<option value="1984">1984</option>
+							 							<option value="1983">1983</option>
+							 							<option value="1982">1982</option>
+							 							<option value="1981">1981</option>
+							 							<option value="1980">1980</option>
+							 							<option value="1979">1979</option>
+							 							<option value="1978">1978</option>
+							 							<option value="1977">1977</option>
+							 							<option value="1976">1976</option>
+							 							<option value="1975">1975</option>
+							 							<option value="1974">1974</option>
+							 							<option value="1973">1973</option>
+							 							<option value="1972">1972</option>
+							 							<option value="1971">1971</option>
+							 							<option value="1970">1970</option>
+							 							<option value="1969">1969</option>
+							 							<option value="1968">1968</option>
+							 							<option value="1967">1967</option>
+							 							<option value="1966">1966</option>
+							 							<option value="1965">1965</option>
+							 							<option value="1964">1964</option>
+							 							<option value="1963">1963</option>
+							 							<option value="1962">1962</option>
+							 							<option value="1961">1961</option>
+							 							<option value="1960">1960</option>
+							 							<option value="1959">1959</option>
+							 							<option value="1958">1958</option>
+							 							<option value="1957">1957</option>
+							 							<option value="1956">1956</option>
+							 							<option value="1955">1955</option>
+							 							<option value="1954">1954</option>
+							 							<option value="1953">1953</option>
+							 							<option value="1952">1952</option>
+							 							<option value="1951">1951</option>
+							 							<option value="1950">1950</option>
+							 							<option value="1949">1949</option>
+							 							<option value="1948">1948</option>
+							 							<option value="1947">1947</option>
+							 							<option value="1946">1946</option>
+							 							<option value="1945">1945</option>
+							 							<option value="1944">1944</option>
+							 							<option value="1943">1943</option>
+							 							<option value="1942">1942</option>
+							 							<option value="1941">1941</option>
+							 							<option value="1940">1940</option>
+							 						</select>
+					</div>
+					<div class="column small-4"> 
+						<input type="text" name="faculty1" class="input-faculty" placeholder="ชื่อคณะ">
+					</div>
+				</div>
+				<div class="small-12 column">
+					<div class="column small-1">&nbsp;</div>
+					<div class="column small-4"> 
+						<select name="degree1" class="degree_select"> 
+							<option value="">ระดับการศึกษา</option>
+							<option value="ปริญญาตรี">ปริญญาตรี</option>
+							<option value="ปริญญาโท">ปริญญาโท</option>
+							<option value="ปริญญาเอก">ปริญญาเอก</option>						
+							<option value="ปวส.">ปวส.</option>
+							<option value="ปวช.">ปวช.</option>
+							<option value="มัธยมศึกษาตอนปลาย">มัธยมศึกษาตอนปลาย</option>				
+						</select>
+					</div> 
+					<div class="column small-7"> 
+						<input type="text" name="academy1" class="input-academy" placeholder="ชื่อสถานศึกษา">
+					</div>
+				</div>
+			</div>
+			<div class="row boxgray">
+				<div class="small-12 column">
+					<div class="column small-1"> 
+						<label>จาก </label>
+					</div>
+					<div class="column small-3"> 
+						<select name="education_year_start2" class="education_select">
+							 							<option value="2019">2019</option>
+							 							<option value="2018">2018</option>
+							 							<option value="2017">2017</option>
+							 							<option value="2016">2016</option>
+							 							<option value="2015">2015</option>
+							 							<option value="2014">2014</option>
+							 							<option value="2013">2013</option>
+							 							<option value="2012">2012</option>
+							 							<option value="2011">2011</option>
+							 							<option value="2010">2010</option>
+							 							<option value="2009">2009</option>
+							 							<option value="2008">2008</option>
+							 							<option value="2007">2007</option>
+							 							<option value="2006">2006</option>
+							 							<option value="2005">2005</option>
+							 							<option value="2004">2004</option>
+							 							<option value="2003">2003</option>
+							 							<option value="2002">2002</option>
+							 							<option value="2001">2001</option>
+							 							<option value="2000">2000</option>
+							 							<option value="1999">1999</option>
+							 							<option value="1998">1998</option>
+							 							<option value="1997">1997</option>
+							 							<option value="1996">1996</option>
+							 							<option value="1995">1995</option>
+							 							<option value="1994">1994</option>
+							 							<option value="1993">1993</option>
+							 							<option value="1992">1992</option>
+							 							<option value="1991">1991</option>
+							 							<option value="1990">1990</option>
+							 							<option value="1989">1989</option>
+							 							<option value="1988">1988</option>
+							 							<option value="1987">1987</option>
+							 							<option value="1986">1986</option>
+							 							<option value="1985">1985</option>
+							 							<option value="1984">1984</option>
+							 							<option value="1983">1983</option>
+							 							<option value="1982">1982</option>
+							 							<option value="1981">1981</option>
+							 							<option value="1980">1980</option>
+							 							<option value="1979">1979</option>
+							 							<option value="1978">1978</option>
+							 							<option value="1977">1977</option>
+							 							<option value="1976">1976</option>
+							 							<option value="1975">1975</option>
+							 							<option value="1974">1974</option>
+							 							<option value="1973">1973</option>
+							 							<option value="1972">1972</option>
+							 							<option value="1971">1971</option>
+							 							<option value="1970">1970</option>
+							 							<option value="1969">1969</option>
+							 							<option value="1968">1968</option>
+							 							<option value="1967">1967</option>
+							 							<option value="1966">1966</option>
+							 							<option value="1965">1965</option>
+							 							<option value="1964">1964</option>
+							 							<option value="1963">1963</option>
+							 							<option value="1962">1962</option>
+							 							<option value="1961">1961</option>
+							 							<option value="1960">1960</option>
+							 							<option value="1959">1959</option>
+							 							<option value="1958">1958</option>
+							 							<option value="1957">1957</option>
+							 							<option value="1956">1956</option>
+							 							<option value="1955">1955</option>
+							 							<option value="1954">1954</option>
+							 							<option value="1953">1953</option>
+							 							<option value="1952">1952</option>
+							 							<option value="1951">1951</option>
+							 							<option value="1950">1950</option>
+							 							<option value="1949">1949</option>
+							 							<option value="1948">1948</option>
+							 							<option value="1947">1947</option>
+							 							<option value="1946">1946</option>
+							 							<option value="1945">1945</option>
+							 							<option value="1944">1944</option>
+							 							<option value="1943">1943</option>
+							 							<option value="1942">1942</option>
+							 							<option value="1941">1941</option>
+							 							<option value="1940">1940</option>
+							 						</select>
+					 </div>
+					<div class="column small-1"> 
+						<label>ถึง </label>
+					</div>
+					<div class="column small-3"> 
+						<select name="education_year_end2" class="education_select"> 
+														<option value="2019">2019</option>
+							 							<option value="2018">2018</option>
+							 							<option value="2017">2017</option>
+							 							<option value="2016">2016</option>
+							 							<option value="2015">2015</option>
+							 							<option value="2014">2014</option>
+							 							<option value="2013">2013</option>
+							 							<option value="2012">2012</option>
+							 							<option value="2011">2011</option>
+							 							<option value="2010">2010</option>
+							 							<option value="2009">2009</option>
+							 							<option value="2008">2008</option>
+							 							<option value="2007">2007</option>
+							 							<option value="2006">2006</option>
+							 							<option value="2005">2005</option>
+							 							<option value="2004">2004</option>
+							 							<option value="2003">2003</option>
+							 							<option value="2002">2002</option>
+							 							<option value="2001">2001</option>
+							 							<option value="2000">2000</option>
+							 							<option value="1999">1999</option>
+							 							<option value="1998">1998</option>
+							 							<option value="1997">1997</option>
+							 							<option value="1996">1996</option>
+							 							<option value="1995">1995</option>
+							 							<option value="1994">1994</option>
+							 							<option value="1993">1993</option>
+							 							<option value="1992">1992</option>
+							 							<option value="1991">1991</option>
+							 							<option value="1990">1990</option>
+							 							<option value="1989">1989</option>
+							 							<option value="1988">1988</option>
+							 							<option value="1987">1987</option>
+							 							<option value="1986">1986</option>
+							 							<option value="1985">1985</option>
+							 							<option value="1984">1984</option>
+							 							<option value="1983">1983</option>
+							 							<option value="1982">1982</option>
+							 							<option value="1981">1981</option>
+							 							<option value="1980">1980</option>
+							 							<option value="1979">1979</option>
+							 							<option value="1978">1978</option>
+							 							<option value="1977">1977</option>
+							 							<option value="1976">1976</option>
+							 							<option value="1975">1975</option>
+							 							<option value="1974">1974</option>
+							 							<option value="1973">1973</option>
+							 							<option value="1972">1972</option>
+							 							<option value="1971">1971</option>
+							 							<option value="1970">1970</option>
+							 							<option value="1969">1969</option>
+							 							<option value="1968">1968</option>
+							 							<option value="1967">1967</option>
+							 							<option value="1966">1966</option>
+							 							<option value="1965">1965</option>
+							 							<option value="1964">1964</option>
+							 							<option value="1963">1963</option>
+							 							<option value="1962">1962</option>
+							 							<option value="1961">1961</option>
+							 							<option value="1960">1960</option>
+							 							<option value="1959">1959</option>
+							 							<option value="1958">1958</option>
+							 							<option value="1957">1957</option>
+							 							<option value="1956">1956</option>
+							 							<option value="1955">1955</option>
+							 							<option value="1954">1954</option>
+							 							<option value="1953">1953</option>
+							 							<option value="1952">1952</option>
+							 							<option value="1951">1951</option>
+							 							<option value="1950">1950</option>
+							 							<option value="1949">1949</option>
+							 							<option value="1948">1948</option>
+							 							<option value="1947">1947</option>
+							 							<option value="1946">1946</option>
+							 							<option value="1945">1945</option>
+							 							<option value="1944">1944</option>
+							 							<option value="1943">1943</option>
+							 							<option value="1942">1942</option>
+							 							<option value="1941">1941</option>
+							 							<option value="1940">1940</option>
+							 						</select>
+					</div>
+					<div class="column small-4"> 
+						<input type="text" name="faculty2" class="input-faculty" placeholder="ชื่อคณะ">
+					</div>
+				</div>
+				<div class="small-12 column">
+					<div class="column small-1">&nbsp;</div>
+					<div class="column small-4"> 
+						<select name="degree2" class="degree_select"> 
+							<option value="">ระดับการศึกษา</option>
+							<option value="ปริญญาตรี">ปริญญาตรี</option>
+							<option value="ปริญญาโท">ปริญญาโท</option>
+							<option value="ปริญญาเอก">ปริญญาเอก</option>						
+							<option value="ปวส.">ปวส.</option>
+							<option value="ปวช.">ปวช.</option>
+							<option value="มัธยมศึกษาตอนปลาย">มัธยมศึกษาตอนปลาย</option>				
+						</select>
+					</div> 
+					<div class="column small-7"> 
+						<input type="text" name="academy2" class="input-academy" placeholder="ชื่อสถานศึกษา">
+					</div>
+				</div>
+			</div>
+			<div class="row boxgray">
+				<div class="small-12 column">
+					<div class="column small-1"> 
+						<label>จาก </label>
+					</div>
+					<div class="column small-3"> 
+						<select name="education_year_start3" class="education_select">
+							 							<option value="2019">2019</option>
+							 							<option value="2018">2018</option>
+							 							<option value="2017">2017</option>
+							 							<option value="2016">2016</option>
+							 							<option value="2015">2015</option>
+							 							<option value="2014">2014</option>
+							 							<option value="2013">2013</option>
+							 							<option value="2012">2012</option>
+							 							<option value="2011">2011</option>
+							 							<option value="2010">2010</option>
+							 							<option value="2009">2009</option>
+							 							<option value="2008">2008</option>
+							 							<option value="2007">2007</option>
+							 							<option value="2006">2006</option>
+							 							<option value="2005">2005</option>
+							 							<option value="2004">2004</option>
+							 							<option value="2003">2003</option>
+							 							<option value="2002">2002</option>
+							 							<option value="2001">2001</option>
+							 							<option value="2000">2000</option>
+							 							<option value="1999">1999</option>
+							 							<option value="1998">1998</option>
+							 							<option value="1997">1997</option>
+							 							<option value="1996">1996</option>
+							 							<option value="1995">1995</option>
+							 							<option value="1994">1994</option>
+							 							<option value="1993">1993</option>
+							 							<option value="1992">1992</option>
+							 							<option value="1991">1991</option>
+							 							<option value="1990">1990</option>
+							 							<option value="1989">1989</option>
+							 							<option value="1988">1988</option>
+							 							<option value="1987">1987</option>
+							 							<option value="1986">1986</option>
+							 							<option value="1985">1985</option>
+							 							<option value="1984">1984</option>
+							 							<option value="1983">1983</option>
+							 							<option value="1982">1982</option>
+							 							<option value="1981">1981</option>
+							 							<option value="1980">1980</option>
+							 							<option value="1979">1979</option>
+							 							<option value="1978">1978</option>
+							 							<option value="1977">1977</option>
+							 							<option value="1976">1976</option>
+							 							<option value="1975">1975</option>
+							 							<option value="1974">1974</option>
+							 							<option value="1973">1973</option>
+							 							<option value="1972">1972</option>
+							 							<option value="1971">1971</option>
+							 							<option value="1970">1970</option>
+							 							<option value="1969">1969</option>
+							 							<option value="1968">1968</option>
+							 							<option value="1967">1967</option>
+							 							<option value="1966">1966</option>
+							 							<option value="1965">1965</option>
+							 							<option value="1964">1964</option>
+							 							<option value="1963">1963</option>
+							 							<option value="1962">1962</option>
+							 							<option value="1961">1961</option>
+							 							<option value="1960">1960</option>
+							 							<option value="1959">1959</option>
+							 							<option value="1958">1958</option>
+							 							<option value="1957">1957</option>
+							 							<option value="1956">1956</option>
+							 							<option value="1955">1955</option>
+							 							<option value="1954">1954</option>
+							 							<option value="1953">1953</option>
+							 							<option value="1952">1952</option>
+							 							<option value="1951">1951</option>
+							 							<option value="1950">1950</option>
+							 							<option value="1949">1949</option>
+							 							<option value="1948">1948</option>
+							 							<option value="1947">1947</option>
+							 							<option value="1946">1946</option>
+							 							<option value="1945">1945</option>
+							 							<option value="1944">1944</option>
+							 							<option value="1943">1943</option>
+							 							<option value="1942">1942</option>
+							 							<option value="1941">1941</option>
+							 							<option value="1940">1940</option>
+							 						</select>
+					 </div>
+					<div class="column small-1"> 
+						<label>ถึง </label>
+					</div>
+					<div class="column small-3"> 
+						<select name="education_year_end3" class="education_select"> 
+														<option value="2019">2019</option>
+							 							<option value="2018">2018</option>
+							 							<option value="2017">2017</option>
+							 							<option value="2016">2016</option>
+							 							<option value="2015">2015</option>
+							 							<option value="2014">2014</option>
+							 							<option value="2013">2013</option>
+							 							<option value="2012">2012</option>
+							 							<option value="2011">2011</option>
+							 							<option value="2010">2010</option>
+							 							<option value="2009">2009</option>
+							 							<option value="2008">2008</option>
+							 							<option value="2007">2007</option>
+							 							<option value="2006">2006</option>
+							 							<option value="2005">2005</option>
+							 							<option value="2004">2004</option>
+							 							<option value="2003">2003</option>
+							 							<option value="2002">2002</option>
+							 							<option value="2001">2001</option>
+							 							<option value="2000">2000</option>
+							 							<option value="1999">1999</option>
+							 							<option value="1998">1998</option>
+							 							<option value="1997">1997</option>
+							 							<option value="1996">1996</option>
+							 							<option value="1995">1995</option>
+							 							<option value="1994">1994</option>
+							 							<option value="1993">1993</option>
+							 							<option value="1992">1992</option>
+							 							<option value="1991">1991</option>
+							 							<option value="1990">1990</option>
+							 							<option value="1989">1989</option>
+							 							<option value="1988">1988</option>
+							 							<option value="1987">1987</option>
+							 							<option value="1986">1986</option>
+							 							<option value="1985">1985</option>
+							 							<option value="1984">1984</option>
+							 							<option value="1983">1983</option>
+							 							<option value="1982">1982</option>
+							 							<option value="1981">1981</option>
+							 							<option value="1980">1980</option>
+							 							<option value="1979">1979</option>
+							 							<option value="1978">1978</option>
+							 							<option value="1977">1977</option>
+							 							<option value="1976">1976</option>
+							 							<option value="1975">1975</option>
+							 							<option value="1974">1974</option>
+							 							<option value="1973">1973</option>
+							 							<option value="1972">1972</option>
+							 							<option value="1971">1971</option>
+							 							<option value="1970">1970</option>
+							 							<option value="1969">1969</option>
+							 							<option value="1968">1968</option>
+							 							<option value="1967">1967</option>
+							 							<option value="1966">1966</option>
+							 							<option value="1965">1965</option>
+							 							<option value="1964">1964</option>
+							 							<option value="1963">1963</option>
+							 							<option value="1962">1962</option>
+							 							<option value="1961">1961</option>
+							 							<option value="1960">1960</option>
+							 							<option value="1959">1959</option>
+							 							<option value="1958">1958</option>
+							 							<option value="1957">1957</option>
+							 							<option value="1956">1956</option>
+							 							<option value="1955">1955</option>
+							 							<option value="1954">1954</option>
+							 							<option value="1953">1953</option>
+							 							<option value="1952">1952</option>
+							 							<option value="1951">1951</option>
+							 							<option value="1950">1950</option>
+							 							<option value="1949">1949</option>
+							 							<option value="1948">1948</option>
+							 							<option value="1947">1947</option>
+							 							<option value="1946">1946</option>
+							 							<option value="1945">1945</option>
+							 							<option value="1944">1944</option>
+							 							<option value="1943">1943</option>
+							 							<option value="1942">1942</option>
+							 							<option value="1941">1941</option>
+							 							<option value="1940">1940</option>
+							 						</select>
+					</div>
+					<div class="column small-4"> 
+						<input type="text" name="faculty3" class="input-faculty" placeholder="ชื่อคณะ">
+					</div>
+				</div>
+				<div class="small-12 column">
+					<div class="column small-1">&nbsp;</div>
+					<div class="column small-4"> 
+						<select name="degree3" class="degree_select"> 
+							<option value="">ระดับการศึกษา</option>
+							<option value="ปริญญาตรี">ปริญญาตรี</option>
+							<option value="ปริญญาโท">ปริญญาโท</option>
+							<option value="ปริญญาเอก">ปริญญาเอก</option>						
+							<option value="ปวส.">ปวส.</option>
+							<option value="ปวช.">ปวช.</option>
+							<option value="มัธยมศึกษาตอนปลาย">มัธยมศึกษาตอนปลาย</option>				
+						</select>
+					</div> 
+					<div class="column small-7"> 
+						<input type="text" name="academy3" class="input-academy" placeholder="ชื่อสถานศึกษา">
+					</div>
+				</div>
+			</div>
+			<div class="row boxgray">
+				<div class="small-12 column">
+					<div class="column small-1"> 
+						<label>จาก </label>
+					</div>
+					<div class="column small-3"> 
+						<select name="education_year_start4" class="education_select">
+							 							<option value="2019">2019</option>
+							 							<option value="2018">2018</option>
+							 							<option value="2017">2017</option>
+							 							<option value="2016">2016</option>
+							 							<option value="2015">2015</option>
+							 							<option value="2014">2014</option>
+							 							<option value="2013">2013</option>
+							 							<option value="2012">2012</option>
+							 							<option value="2011">2011</option>
+							 							<option value="2010">2010</option>
+							 							<option value="2009">2009</option>
+							 							<option value="2008">2008</option>
+							 							<option value="2007">2007</option>
+							 							<option value="2006">2006</option>
+							 							<option value="2005">2005</option>
+							 							<option value="2004">2004</option>
+							 							<option value="2003">2003</option>
+							 							<option value="2002">2002</option>
+							 							<option value="2001">2001</option>
+							 							<option value="2000">2000</option>
+							 							<option value="1999">1999</option>
+							 							<option value="1998">1998</option>
+							 							<option value="1997">1997</option>
+							 							<option value="1996">1996</option>
+							 							<option value="1995">1995</option>
+							 							<option value="1994">1994</option>
+							 							<option value="1993">1993</option>
+							 							<option value="1992">1992</option>
+							 							<option value="1991">1991</option>
+							 							<option value="1990">1990</option>
+							 							<option value="1989">1989</option>
+							 							<option value="1988">1988</option>
+							 							<option value="1987">1987</option>
+							 							<option value="1986">1986</option>
+							 							<option value="1985">1985</option>
+							 							<option value="1984">1984</option>
+							 							<option value="1983">1983</option>
+							 							<option value="1982">1982</option>
+							 							<option value="1981">1981</option>
+							 							<option value="1980">1980</option>
+							 							<option value="1979">1979</option>
+							 							<option value="1978">1978</option>
+							 							<option value="1977">1977</option>
+							 							<option value="1976">1976</option>
+							 							<option value="1975">1975</option>
+							 							<option value="1974">1974</option>
+							 							<option value="1973">1973</option>
+							 							<option value="1972">1972</option>
+							 							<option value="1971">1971</option>
+							 							<option value="1970">1970</option>
+							 							<option value="1969">1969</option>
+							 							<option value="1968">1968</option>
+							 							<option value="1967">1967</option>
+							 							<option value="1966">1966</option>
+							 							<option value="1965">1965</option>
+							 							<option value="1964">1964</option>
+							 							<option value="1963">1963</option>
+							 							<option value="1962">1962</option>
+							 							<option value="1961">1961</option>
+							 							<option value="1960">1960</option>
+							 							<option value="1959">1959</option>
+							 							<option value="1958">1958</option>
+							 							<option value="1957">1957</option>
+							 							<option value="1956">1956</option>
+							 							<option value="1955">1955</option>
+							 							<option value="1954">1954</option>
+							 							<option value="1953">1953</option>
+							 							<option value="1952">1952</option>
+							 							<option value="1951">1951</option>
+							 							<option value="1950">1950</option>
+							 							<option value="1949">1949</option>
+							 							<option value="1948">1948</option>
+							 							<option value="1947">1947</option>
+							 							<option value="1946">1946</option>
+							 							<option value="1945">1945</option>
+							 							<option value="1944">1944</option>
+							 							<option value="1943">1943</option>
+							 							<option value="1942">1942</option>
+							 							<option value="1941">1941</option>
+							 							<option value="1940">1940</option>
+							 						</select>
+					 </div>
+					<div class="column small-1"> 
+						<label>ถึง </label>
+					</div>
+					<div class="column small-3"> 
+						<select name="education_year_end4" class="education_select"> 
+														<option value="2019">2019</option>
+							 							<option value="2018">2018</option>
+							 							<option value="2017">2017</option>
+							 							<option value="2016">2016</option>
+							 							<option value="2015">2015</option>
+							 							<option value="2014">2014</option>
+							 							<option value="2013">2013</option>
+							 							<option value="2012">2012</option>
+							 							<option value="2011">2011</option>
+							 							<option value="2010">2010</option>
+							 							<option value="2009">2009</option>
+							 							<option value="2008">2008</option>
+							 							<option value="2007">2007</option>
+							 							<option value="2006">2006</option>
+							 							<option value="2005">2005</option>
+							 							<option value="2004">2004</option>
+							 							<option value="2003">2003</option>
+							 							<option value="2002">2002</option>
+							 							<option value="2001">2001</option>
+							 							<option value="2000">2000</option>
+							 							<option value="1999">1999</option>
+							 							<option value="1998">1998</option>
+							 							<option value="1997">1997</option>
+							 							<option value="1996">1996</option>
+							 							<option value="1995">1995</option>
+							 							<option value="1994">1994</option>
+							 							<option value="1993">1993</option>
+							 							<option value="1992">1992</option>
+							 							<option value="1991">1991</option>
+							 							<option value="1990">1990</option>
+							 							<option value="1989">1989</option>
+							 							<option value="1988">1988</option>
+							 							<option value="1987">1987</option>
+							 							<option value="1986">1986</option>
+							 							<option value="1985">1985</option>
+							 							<option value="1984">1984</option>
+							 							<option value="1983">1983</option>
+							 							<option value="1982">1982</option>
+							 							<option value="1981">1981</option>
+							 							<option value="1980">1980</option>
+							 							<option value="1979">1979</option>
+							 							<option value="1978">1978</option>
+							 							<option value="1977">1977</option>
+							 							<option value="1976">1976</option>
+							 							<option value="1975">1975</option>
+							 							<option value="1974">1974</option>
+							 							<option value="1973">1973</option>
+							 							<option value="1972">1972</option>
+							 							<option value="1971">1971</option>
+							 							<option value="1970">1970</option>
+							 							<option value="1969">1969</option>
+							 							<option value="1968">1968</option>
+							 							<option value="1967">1967</option>
+							 							<option value="1966">1966</option>
+							 							<option value="1965">1965</option>
+							 							<option value="1964">1964</option>
+							 							<option value="1963">1963</option>
+							 							<option value="1962">1962</option>
+							 							<option value="1961">1961</option>
+							 							<option value="1960">1960</option>
+							 							<option value="1959">1959</option>
+							 							<option value="1958">1958</option>
+							 							<option value="1957">1957</option>
+							 							<option value="1956">1956</option>
+							 							<option value="1955">1955</option>
+							 							<option value="1954">1954</option>
+							 							<option value="1953">1953</option>
+							 							<option value="1952">1952</option>
+							 							<option value="1951">1951</option>
+							 							<option value="1950">1950</option>
+							 							<option value="1949">1949</option>
+							 							<option value="1948">1948</option>
+							 							<option value="1947">1947</option>
+							 							<option value="1946">1946</option>
+							 							<option value="1945">1945</option>
+							 							<option value="1944">1944</option>
+							 							<option value="1943">1943</option>
+							 							<option value="1942">1942</option>
+							 							<option value="1941">1941</option>
+							 							<option value="1940">1940</option>
+							 						</select>
+					</div>
+					<div class="column small-4"> 
+						<input type="text" name="faculty4" class="input-faculty" placeholder="ชื่อคณะ">
+					</div>
+				</div>
+				<div class="small-12 column">
+					<div class="column small-1">&nbsp;</div>
+					<div class="column small-4"> 
+						<select name="degree4" class="degree_select"> 
+							<option value="">ระดับการศึกษา</option>
+							<option value="bachelor">ปริญญาตรี</option>
+							<option value="masters">ปริญญาโท</option>
+							<option value="doctoral">ปริญญาเอก</option>						
+							<option value="high_vocational_certificate">ปวส.</option>
+							<option value="vocational_certificate">ปวช.</option>
+							<option value="มัธยมศึกษาตอนปลาย">มัธยมศึกษาตอนปลาย</option>				
+						</select>
+					</div> 
+					<div class="column small-7"> 
+						<input type="text" name="academy4" class="input-academy" placeholder="ชื่อสถานศึกษา">
+					</div>
+				</div>
+			</div>
+		</section>	
+		
+		<section id="skill">
+			<h2 class="post-headline-primary"><i class="fa fa-star-o" aria-hidden="true"></i> ทักษะ</h2>	 
+			<div class="row">
+				 <div class="small-9 column"><input type="text" name="skill_name1"></div>
+				 <div class="small-3 column">
+					<select name="skill_value1">
+						<option value="5">ดีมาก</option>
+						<option value="4">ดี</option>
+						<option value="3">พอใช้</option>
+						<option value="2">น้อย</option>
+						<option value="1">น้อยที่สุด</option>
+					</select>
+				 </div>
+			</div>
+			<div class="row">
+				 <div class="small-9 column"><input type="text" name="skill_name2"></div>
+				 <div class="small-3 column">
+					<select name="skill_value2">
+						<option value="5">ดีมาก</option>
+						<option value="4">ดี</option>
+						<option value="3">พอใช้</option>
+						<option value="2">น้อย</option>
+						<option value="1">น้อยที่สุด</option>
+					</select>
+				 </div>
+			</div>
+			<div class="row">
+				 <div class="small-9 column"><input type="text" name="skill_name3"></div>
+				 <div class="small-3 column">
+					<select name="skill_value3">
+						<option value="5">ดีมาก</option>
+						<option value="4">ดี</option>
+						<option value="3">พอใช้</option>
+						<option value="2">น้อย</option>
+						<option value="1">น้อยที่สุด</option>
+					</select>
+				 </div>
+			</div>
+			<div class="row">
+				 <div class="small-9 column"><input type="text" name="skill_name4"></div>
+				 <div class="small-3 column">
+					<select name="skill_value4">
+						<option value="5">ดีมาก</option>
+						<option value="4">ดี</option>
+						<option value="3">พอใช้</option>
+						<option value="2">น้อย</option>
+						<option value="1">น้อยที่สุด</option>
+					</select>
+				 </div>
+			</div>
+	 
+		</section>
+		 
+		
+	</div>  <!-- content-area columns large-6 --> 
+	
+</div>  <!-- step 2 --> 
+
+<div class="content-area columns large-12">
+	<div class="row box-button">
+		<button id="btn-preview" class="button round success"><i class="fa fa-search-plus" aria-hidden="true"></i> ดูตัวอย่าง</button>
+		<button id="btn-save" class="button round alert"><i class="fa fa-floppy-o" aria-hidden="true"></i> บันทึก</button>
+		<button id="btn-download" class="button round alert" style="display:none;"><i class="fa fa-floppy-o" aria-hidden="true"></i> ดาวน์โหลด</button>
+	</div>
+</div>
+
+ 
+</form>	
+
+</div><!-- #content -->
+
+
+
+<script type="text/javascript" id="tiwanon-js"  src="https://campus.campus-star.com/resume/assets/js/bundle.min.js?ver=https://"></script>
+<script src="https://campus.campus-star.com/resume/assets/lightbox/dist/js/lightbox.min.js"></script>
+	
+	 
+<!-- Load Facebook SDK for JavaScript -->
 
-        <!-- Main CSS -->
-        <link rel="stylesheet" href="assets/css/main.css">
-        
-        <!-- Themes -->
-        <!--<link rel="stylesheet" href="assets/css/themes.light.css">-->
-        <link rel="stylesheet" href="assets/css/themes.dark.css">
-        
-        <!-- Custom CSS -->
-        <!--<link rel="stylesheet" href="assets/css/custom.css">-->
 
-        <!-- jQuery -->
-        <script src="assets/js/jquery.min.js"></script>
 
-        <!-- dense.js (Retina plugin) -->
-        <script src="assets/js/dense.js"></script>
 
-        <!-- Nivo Lightbox -->
-        <script src="assets/plugins/nivo-lightbox/nivo-lightbox.min.js"></script>
-
-        <!-- ScrollReveal -->
-        <script src="assets/js/scrollreveal.min.js"></script>
-
-        <!-- Main JS -->
-        <script src="assets/js/main.js"></script>
-
-    </head>
-
-    <body>
-
-        <div class="c-preloader  js-preloader">
-            <div class="c-preloader__spinner  t-preloader__spinner"></div>
-        </div>
-
-        <div class="c-main-container  js-main-container">
-
-
-
-            <!-- ################################ -->
-            <!-- ############ HEADER ############ -->
-            <!-- ################################ -->
-            
-            <section class="o-section o-section--header  t-section  t-section--header">
-                <div class="c-header">
-
-                    <div class="o-section__header-bg  t-section__header"></div>
-                    <div class="o-section__content-bg  t-section__content"></div>
-
-                    <div class="o-container">
-                        <div class="o-section__container">
-
-                            <header class="o-section__header  c-header__header  t-section__header">
-                                <div class="c-header__inner-header">
-
-                                    <div class="c-header__avatar">
-                                        <div class="a-header  c-avatar">
-                                            <img class="c-avatar__img" src="assets/images/header/avatar.jpg" alt="">
-                                        </div><!-- /c-avatar -->
-                                    </div><!-- /c-header-avatar -->
-
-                                </div><!-- /c-header__inner-header -->
-                            </header><!-- /o-section__header -->
-
-                            <div class="o-section__content  c-header__content  t-section__content">
-                                <div class="c-header__inner-content">
-
-                                    <div class="c-header__top">
-
-                                        <div class="c-header__brand">
-
-                                            <div class="c-brand">
-                                                <h1 class="c-brand__title  t-title">
-                                                    <span class="c-brand__sizer">
-                                                        <span class="a-header  c-brand__first-word  t-title__first-word">
-                                                            Desmond
-                                                        </span>
-                                                        <span class="a-header  c-brand__second-word  t-title__second-word">
-                                                            Rambowski
-                                                        </span>
-                                                    </span>
-                                                </h1>
-                                                <h2 class="a-header  c-brand__sub-title  t-sub-title">
-                                                    <span class="c-brand__sizer">
-                                                        Web Developer &amp; Front-end Expert
-                                                    </span>
-                                                </h2>
-                                            </div><!-- /c-brand -->
-
-                                        </div><!-- /c-header__brand -->
-
-                                        <ul class="c-header__social-buttons  c-social-buttons">
-                                            <li class="a-header">
-                                                <a href="https://www.facebook.com/RuvenThemes/" target="_blank" class="c-social-button  t-social-button">
-                                                    <i class="fab  fa-lg  fa-facebook-f"></i>
-                                                </a>
-                                            </li>
-                                            <li class="a-header">
-                                                <a href="https://dribbble.com/" target="_blank" class="c-social-button  t-social-button">
-                                                    <i class="fab  fa-lg  fa-dribbble"></i>
-                                                </a>
-                                            </li>
-                                            <li class="a-header">
-                                                <a href="https://twitter.com/_Ruven" target="_blank" class="c-social-button  t-social-button">
-                                                    <i class="fab  fa-lg  fa-twitter"></i>
-                                                </a>
-                                            </li>
-                                        </ul><!-- /c-header__social-buttons -->
-
-                                    </div><!-- /c-header__top -->
-
-                                    <div class="c-header__contact">
-
-                                        <hr class="a-header  c-header__contact-divider" />
-
-                                        <div class="o-grid">
-
-                                            <div class="o-grid__col-md-3  o-grid__col-sm-6">
-                                                <div class="a-header  o-content">
-                                                    <div class="o-content__body">
-                                                        <h4>Location</h4>
-                                                        <address>
-                                                            Portland, OR
-                                                        </address>
-                                                    </div>
-                                                </div><!-- /o-content -->
-                                            </div><!-- /o-grid__col -->
-
-                                            <div class="o-grid__col-md-3  o-grid__col-sm-6">
-                                                <div class="a-header  o-content">
-                                                    <div class="o-content__body">
-                                                        <h4>Phone</h4>
-                                                        <p>
-                                                            534.456.886
-                                                        </p>
-                                                    </div>
-                                                </div><!-- /o-content -->
-                                            </div><!-- /o-grid__col -->
-
-                                            <div class="o-grid__col-md-3  o-grid__col-sm-6">
-                                                <div class="a-header  o-content">
-                                                    <div class="o-content__body">
-                                                        <a href="#" target="_blank" class="t-link-container">
-                                                            <h4>Web</h4>
-                                                            <p>
-                                                                <span class="t-link-container__item--blended">
-                                                                    ruventhemes.com
-                                                                </span>
-                                                            </p>
-                                                        </a><!-- /o-link-container -->
-                                                    </div>
-                                                </div><!-- /o-content -->
-                                            </div><!-- /o-grid__col -->
-
-                                            <div class="o-grid__col-md-3  o-grid__col-sm-6">
-                                                <div class="a-header  o-content">
-                                                    <div class="o-content__body">
-                                                        <a href="#" target="_blank" class="t-link-container">
-                                                            <h4>Email</h4>
-                                                            <p>
-                                                                <span class="t-link-container__item--blended">
-                                                                    hello@example.com
-                                                                </span>
-                                                            </p>
-                                                        </a><!-- /o-link-container -->
-                                                    </div>
-                                                </div><!-- /o-content -->
-                                            </div><!-- /o-grid__col -->
-
-                                        </div><!-- /o-grid -->
-                                    </div><!-- /c-header__contact -->
-
-                                </div><!-- /c-header__inner-content -->
-                            </div><!-- /o-section__content -->
-
-                        </div><!-- /o-section__container -->
-
-                    </div><!-- /o-container -->
-
-                </div><!-- /c-header -->
-            </section><!-- /o-section -->
-
-
-
-            <!-- ################################ -->
-            <!-- ############ INTRO ############# -->
-            <!-- ################################ -->
-            
-            <section class="o-section  t-section  ">
-
-                <div class="o-section__header-bg  t-section__header"></div>
-                <div class="o-section__content-bg  t-section__content"></div>
-
-                <div class="o-container">
-                    <div class="o-section__container">
-
-                        <header class="o-section__header  t-section__header">
-                            <div class="o-content">
-                                <h2 class="o-section__heading">
-                                    Intro
-                                </h2>
-                                <div class="o-content__body  o-section__description">
-                                    What I am all about.
-                                </div>
-                            </div>
-                        </header><!-- /o-section__header -->
-
-                        <div class="o-section__content  t-section__content  ">
-                            
-                            <div class="o-content">
-                                <div class="c-intro">
-                                    <div class="o-content__body">
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aaliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed
-                                            <a href="#" target="_blank">pretium</a>, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Nulla vitae mauris non felis mollis faucibus.
-                                        </p>
-                                        <p>
-                                            Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna. Fusce lacinia arcu et nulla. Nulla vitae mauris non felis mollis.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div><!-- /o-section__content -->
-
-                    </div><!-- /o-section__container -->
-                </div><!-- /o-container -->
-
-            </section><!-- /o-section -->
-
-
-
-            <!-- ################################ -->
-            <!-- ########## EXPERTISE ########### -->
-            <!-- ################################ -->
-            
-            <section class="o-section  t-section  ">
-
-                <div class="o-section__header-bg  t-section__header"></div>
-                <div class="o-section__content-bg  t-section__content"></div>
-
-                <div class="o-container">
-                    <div class="o-section__container">
-
-                        <header class="o-section__header  t-section__header">
-                            <div class="o-content">
-                                <h2 class="o-section__heading">
-                                    Expertise
-                                </h2>
-                                <div class="o-content__body  o-section__description">
-                                    Batman would be jealous.
-                                </div>
-                            </div>
-                        </header><!-- /o-section__header -->
-
-                        <div class="o-section__content  t-section__content  ">
-                            
-                            <div class="o-grid">
-
-                                <div class="o-grid__col-sm-6">
-                                    <div class="o-media  o-media--block  o-content">
-                                        <div class="o-media__figure">
-                                            <div class="c-number  t-primary-color">
-                                                01
-                                            </div>
-                                        </div>
-                                        <div class="o-media__body  o-content__body">
-                                            <h3>Advanced CSS</h3>
-                                            <p>
-                                                Cras ornare tristique elit lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id.
-                                            </p>
-                                        </div>
-                                    </div><!-- /o-media o-content -->
-                                </div><!-- /o-grid__col -->
-
-                                <div class="o-grid__col-sm-6">
-                                    <div class="o-media  o-media--block  o-content">
-                                        <div class="o-media__figure">
-                                            <div class="c-number  t-primary-color">
-                                                02
-                                            </div>
-                                        </div>
-                                        <div class="o-media__body  o-content__body">
-                                            <h3>Front-end Design</h3>
-                                            <p>
-                                                Sed adipiscing ornare risus. Morbi est est, blandit sit amet, sagittis vel, euismod vel, velit. Pellentesque egestas sem. Suspendisse commodo ullamcorper magna. Ut aliquam sollicitudin leo.
-                                            </p>
-                                        </div>
-                                    </div><!-- /o-media o-content -->
-                                </div><!-- /o-grid__col -->
-
-                                <div class="o-grid__col-sm-6">
-                                    <div class="o-media  o-media--block  o-content">
-                                        <div class="o-media__figure">
-                                            <div class="c-number  t-primary-color">
-                                                03
-                                            </div>
-                                        </div>
-                                        <div class="o-media__body  o-content__body">
-                                            <h3>Ruby on Rails</h3>
-                                            <p>
-                                                Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis. Vivamus vestibulum nulla cras ornare tristique elit nec ante.
-                                            </p>
-                                        </div>
-                                    </div><!-- /o-media o-content -->
-                                </div><!-- /o-grid__col -->
-
-                                <div class="o-grid__col-sm-6">
-                                    <div class="o-media  o-media--block  o-content">
-                                        <div class="o-media__figure">
-                                            <div class="c-number  t-primary-color">
-                                                04
-                                            </div>
-                                        </div>
-                                        <div class="o-media__body  o-content__body">
-                                            <h3>Object-oriented PHP</h3>
-                                            <p>
-                                                Morbi in sem quis dui placerat ornare. Ut aliquam sollicitudin leo. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras ante. Vivamus vestibulum nulla nec ante.
-                                            </p>
-                                        </div>
-                                    </div><!-- /o-media o-content -->
-                                </div><!-- /o-grid__col -->
-
-                                <div class="o-grid__col-sm-6">
-                                    <div class="o-media  o-media--block  o-content">
-                                        <div class="o-media__figure">
-                                            <div class="c-number  t-primary-color">
-                                                05
-                                            </div>
-                                        </div>
-                                        <div class="o-media__body  o-content__body">
-                                            <h3>WordPress</h3>
-                                            <p>
-                                                Phasellus ultrices nulla quis nibh. Fusce lobortis lorem. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Nam nulla quam, gravida non, sodales sit amet, nisi.
-                                            </p>
-                                        </div>
-                                    </div><!-- /o-media o-content -->
-                                </div><!-- /o-grid__col -->
-
-                                <div class="o-grid__col-sm-6">
-                                    <div class="o-media  o-media--block  o-content">
-                                        <div class="o-media__figure">
-                                            <div class="c-number  t-primary-color">
-                                                06
-                                            </div>
-                                        </div>
-                                        <div class="o-media__body  o-content__body">
-                                            <h3>JavaScript / jQuery</h3>
-                                            <p>
-                                                Cras ornare tristique elit lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id.
-                                            </p>
-                                        </div>
-                                    </div><!-- /o-media o-content -->
-                                </div><!-- /o-grid__col -->
-
-                            </div><!-- /o-grid -->
-
-                        </div><!-- /o-section__content -->
-
-                    </div><!-- /o-section__container -->
-                </div><!-- /o-container -->
-
-            </section><!-- /o-section -->
-
-
-
-            <!-- ################################ -->
-            <!-- ############ SKILLS ############ -->
-            <!-- ################################ -->
-            
-            <section class="o-section  t-section  ">
-
-                <div class="o-section__header-bg  t-section__header"></div>
-                <div class="o-section__content-bg  t-section__content"></div>
-
-                <div class="o-container">
-                    <div class="o-section__container">
-
-                        <header class="o-section__header  t-section__header">
-                            <div class="o-content">
-                                <h2 class="o-section__heading">
-                                    Skills
-                                </h2>
-                                <div class="o-content__body  o-section__description">
-                                    Progress bars, anyone?
-                                </div>
-                            </div>
-                        </header><!-- /o-section__header -->
-
-                        <div class="o-section__content  t-section__content  ">
-                            
-                            <div class="o-grid">
-
-                                <div class="o-grid__col-sm-6">
-                                    <div class="o-content">
-                                        <div class="o-media  o-media--block">
-                                            <div class="o-media__figure">
-                                                <div class="c-number  t-primary-color">
-                                                    80<small>%</small>
-                                                </div>
-                                            </div>
-                                            <div class="o-media__body">
-                                                <h3>Photoshop</h3>
-                                            </div>
-                                        </div>
-                                        <div class="c-progress-bar  o-content__body  t-border-color-bg  u-mt-text">
-                                            <div class="a-progress-bar  c-progress-bar__filler  t-primary-bg" data-percent="80"></div>
-                                        </div>
-                                    </div>
-                                </div><!-- /o-grid__col -->
-
-                                <div class="o-grid__col-sm-6">
-                                    <div class="o-content">
-                                        <div class="o-media  o-media--block">
-                                            <div class="o-media__figure">
-                                                <div class="c-number  t-primary-color">
-                                                    75<small>%</small>
-                                                </div>
-                                            </div>
-                                            <div class="o-media__body">
-                                                <h3>Illustrator</h3>
-                                            </div>
-                                        </div>
-                                        <div class="c-progress-bar  o-content__body  t-border-color-bg  u-mt-text">
-                                            <div class="a-progress-bar  c-progress-bar__filler  t-primary-bg" data-percent="75"></div>
-                                        </div>
-                                    </div>
-                                </div><!-- /o-grid__col -->
-
-                                <div class="o-grid__col-sm-6">
-                                    <div class="o-content">
-                                        <div class="o-media  o-media--block">
-                                            <div class="o-media__figure">
-                                                <div class="c-number  t-primary-color">
-                                                    70<small>%</small>
-                                                </div>
-                                            </div>
-                                            <div class="o-media__body">
-                                                <h3>Git</h3>
-                                            </div>
-                                        </div>
-                                        <div class="c-progress-bar  o-content__body  t-border-color-bg  u-mt-text">
-                                            <div class="a-progress-bar  c-progress-bar__filler  t-primary-bg" data-percent="70"></div>
-                                        </div>
-                                    </div>
-                                </div><!-- /o-grid__col -->
-
-                                <div class="o-grid__col-sm-6">
-                                    <div class="o-content">
-                                        <div class="o-media  o-media--block">
-                                            <div class="o-media__figure">
-                                                <div class="c-number  t-primary-color">
-                                                    65<small>%</small>
-                                                </div>
-                                            </div>
-                                            <div class="o-media__body">
-                                                <h3>After Effects</h3>
-                                            </div>
-                                        </div>
-                                        <div class="c-progress-bar  o-content__body  t-border-color-bg  u-mt-text">
-                                            <div class="a-progress-bar  c-progress-bar__filler  t-primary-bg" data-percent="65"></div>
-                                        </div>
-                                    </div>
-                                </div><!-- /o-grid__col -->
-
-                                <div class="o-grid__col-sm-6">
-                                    <div class="o-content">
-                                        <div class="o-media  o-media--block">
-                                            <div class="o-media__figure">
-                                                <div class="c-number  t-primary-color">
-                                                    90<small>%</small>
-                                                </div>
-                                            </div>
-                                            <div class="o-media__body">
-                                                <h3>Sketch</h3>
-                                            </div>
-                                        </div>
-                                        <div class="c-progress-bar  o-content__body  t-border-color-bg  u-mt-text">
-                                            <div class="a-progress-bar  c-progress-bar__filler  t-primary-bg" data-percent="90"></div>
-                                        </div>
-                                    </div>
-                                </div><!-- /o-grid__col -->
-
-                                <div class="o-grid__col-sm-6">
-                                    <div class="o-content">
-                                        <div class="o-media  o-media--block">
-                                            <div class="o-media__figure">
-                                                <div class="c-number  t-primary-color">
-                                                    50<small>%</small>
-                                                </div>
-                                            </div>
-                                            <div class="o-media__body">
-                                                <h3>CSS3 Animation</h3>
-                                            </div>
-                                        </div>
-                                        <div class="c-progress-bar  o-content__body  t-border-color-bg  u-mt-text">
-                                            <div class="a-progress-bar  c-progress-bar__filler  t-primary-bg" data-percent="50"></div>
-                                        </div>
-                                    </div>
-                                </div><!-- /o-grid__col -->
-
-                                <div class="o-grid__col-sm-6">
-                                    <div class="o-content">
-                                        <div class="o-media  o-media--block">
-                                            <div class="o-media__figure">
-                                                <div class="c-number  t-primary-color">
-                                                    85<small>%</small>
-                                                </div>
-                                            </div>
-                                            <div class="o-media__body">
-                                                <h3>PageSpeed Insights</h3>
-                                            </div>
-                                        </div>
-                                        <div class="c-progress-bar  o-content__body  t-border-color-bg  u-mt-text">
-                                            <div class="a-progress-bar  c-progress-bar__filler  t-primary-bg" data-percent="85"></div>
-                                        </div>
-                                    </div>
-                                </div><!-- /o-grid__col -->
-
-                                <div class="o-grid__col-sm-6">
-                                    <div class="o-content">
-                                        <div class="o-media  o-media--block">
-                                            <div class="o-media__figure">
-                                                <div class="c-number  t-primary-color">
-                                                    95<small>%</small>
-                                                </div>
-                                            </div>
-                                            <div class="o-media__body">
-                                                <h3>SEO</h3>
-                                            </div>
-                                        </div>
-                                        <div class="c-progress-bar  o-content__body  t-border-color-bg  u-mt-text">
-                                            <div class="a-progress-bar  c-progress-bar__filler  t-primary-bg" data-percent="95"></div>
-                                        </div>
-                                    </div>
-                                </div><!-- /o-grid__col -->
-
-                            </div><!-- /o-grid -->
-
-                        </div><!-- /o-section__content -->
-
-                    </div><!-- /o-section__container -->
-                </div><!-- /o-container -->
-
-            </section><!-- /o-section -->
-
-
-
-            <!-- ################################ -->
-            <!-- ########## EXPERIENCE ########## -->
-            <!-- ################################ -->
-            
-            <section class="o-section  t-section  ">
-
-                <div class="o-section__header-bg  t-section__header"></div>
-                <div class="o-section__content-bg  t-section__content"></div>
-
-                <div class="o-container">
-                    <div class="o-section__container">
-
-                        <header class="o-section__header  t-section__header">
-                            <div class="o-content">
-                                <h2 class="o-section__heading">
-                                    Experience
-                                </h2>
-                                <div class="o-content__body  o-section__description">
-                                    Yes. I&#39;ve been around.
-                                </div>
-                            </div>
-                        </header><!-- /o-section__header -->
-
-                        <div class="o-section__content  t-section__content  u-pb-0">
-                            
-                            <div class="a-experience-timeline  c-timeline  t-border-color">
-
-                                <div class="c-timeline__item">
-                                    <div class="c-timeline__point  t-timeline__point  t-primary-bg"></div>
-                                    <div class="o-content">
-                                        <div class="o-grid">
-                                            <div class="o-grid__col-md-5">
-                                                <div class="c-work__timeframe">
-                                                    2015 &ndash; Present
-                                                </div>
-                                                <h3 class="c-work__heading">
-                                                    Unicorn Incubator Inc.
-                                                </h3>
-                                                <h4 class="c-work__title">
-                                                    Senior Interface Designer
-                                                </h4>
-                                                <div class="c-work__location">
-                                                    Portland, OR
-                                                </div>
-                                            </div>
-                                            <div class="o-grid__col-md-7">
-                                                <p>
-                                                    Consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aaliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.
-                                                </p>
-                                            </div>
-                                        </div><!-- /o-grid -->
-                                    </div><!-- /o-content -->
-                                </div><!-- /c-timeline__item -->
-
-                                <div class="c-timeline__item">
-                                    <div class="c-timeline__point  t-timeline__point  t-primary-bg"></div>
-                                    <div class="o-content">
-                                        <div class="o-grid">
-                                            <div class="o-grid__col-md-5">
-                                                <div class="c-work__timeframe">
-                                                    2013 &ndash; 2015
-                                                </div>
-                                                <h3 class="c-work__heading">
-                                                    California Design Bureau
-                                                </h3>
-                                                <h4 class="c-work__title">
-                                                    Creative Director
-                                                </h4>
-                                                <div class="c-work__location">
-                                                    Cupertino, CA
-                                                </div>
-                                            </div>
-                                            <div class="o-grid__col-md-7">
-                                                <p>
-                                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aaliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis.
-                                                </p>
-                                            </div>
-                                        </div><!-- /o-grid -->
-                                    </div><!-- /o-content -->
-                                </div><!-- /c-timeline__item -->
-
-                                <div class="c-timeline__item">
-                                    <div class="c-timeline__point  t-timeline__point  t-primary-bg"></div>
-                                    <div class="o-content">
-                                        <div class="o-grid">
-                                            <div class="o-grid__col-md-5">
-                                                <div class="c-work__timeframe">
-                                                    2010 &ndash; 2013
-                                                </div>
-                                                <h3 class="c-work__heading">
-                                                    Dreamland Creative
-                                                </h3>
-                                                <h4 class="c-work__title">
-                                                    Front-end Designer
-                                                </h4>
-                                                <div class="c-work__location">
-                                                    New York, NY
-                                                </div>
-                                            </div>
-                                            <div class="o-grid__col-md-7">
-                                                <p>
-                                                    Fusce lacinia arcu et nulla. Nulla vitae mauris non felis mollis faucibus. Phasellus hendrerit. Pellentesque aaliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh.
-                                                </p>
-                                            </div>
-                                        </div><!-- /o-grid -->
-                                    </div><!-- /o-content -->
-                                </div><!-- /c-timeline__item -->
-
-                            </div><!-- /c-timeline -->
-
-                        </div><!-- /o-section__content -->
-
-                    </div><!-- /o-section__container -->
-                </div><!-- /o-container -->
-
-            </section><!-- /o-section -->
-
-
-
-            <!-- ################################ -->
-            <!-- ########### EDUCATION ########## -->
-            <!-- ################################ -->
-            
-            <section class="o-section  t-section  ">
-
-                <div class="o-section__header-bg  t-section__header"></div>
-                <div class="o-section__content-bg  t-section__content"></div>
-
-                <div class="o-container">
-                    <div class="o-section__container">
-
-                        <header class="o-section__header  t-section__header">
-                            <div class="o-content">
-                                <h2 class="o-section__heading">
-                                    Education
-                                </h2>
-                                <div class="o-content__body  o-section__description">
-                                    Lazy isn&#39;t in my vocabulary.
-                                </div>
-                            </div>
-                        </header><!-- /o-section__header -->
-
-                        <div class="o-section__content  t-section__content  u-pt-0">
-                            
-                            <div class="o-content">
-                                <div class="a-education-timeline  c-timeline  t-border-color  o-section__full-top-space">
-                                    <div class="c-timeline__end  t-border-color"></div>
-
-                                    <div class="c-timeline__item">
-                                        <div class="c-timeline__point  t-timeline__point  t-primary-bg"></div>
-                                        <div class="o-content">
-                                            <div class="o-grid">
-                                                <div class="o-grid__col-md-5">
-                                                    <div class="c-work__timeframe">
-                                                        2008 &ndash; 2010
-                                                    </div>
-                                                    <h3 class="c-work__heading">
-                                                        Webster Tech University
-                                                    </h3>
-                                                    <h4 class="c-work__title">
-                                                        Master of Computer Science
-                                                    </h4>
-                                                    <div class="c-work__location">
-                                                        Miami, FL
-                                                    </div>
-                                                </div>
-                                                <div class="o-grid__col-md-7">
-                                                    <p>
-                                                        Consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aaliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh.
-                                                    </p>
-                                                </div>
-                                            </div><!-- /o-grid -->
-                                        </div><!-- /o-content -->
-                                    </div><!-- /c-timeline__item -->
-
-                                    <div class="c-timeline__item">
-                                        <div class="c-timeline__point  t-timeline__point  t-primary-bg"></div>
-                                        <div class="o-content">
-                                            <div class="o-grid">
-                                                <div class="o-grid__col-md-5">
-                                                    <div class="c-work__timeframe">
-                                                        2003 &ndash; 2008
-                                                    </div>
-                                                    <h3 class="c-work__heading">
-                                                        Ninsei University
-                                                    </h3>
-                                                    <h4 class="c-work__title">
-                                                        Bachelor of Computer Science
-                                                    </h4>
-                                                    <div class="c-work__location">
-                                                        Tokyo, Japan
-                                                    </div>
-                                                </div>
-                                                <div class="o-grid__col-md-7">
-                                                    <p>
-                                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aaliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero.
-                                                    </p>
-                                                </div>
-                                            </div><!-- /o-grid -->
-                                        </div><!-- /o-content -->
-                                    </div><!-- /c-timeline__item -->
-
-                                    <div class="c-timeline__item">
-                                        <div class="c-timeline__point  t-timeline__point  t-primary-bg"></div>
-                                        <div class="o-content">
-                                            <div class="o-grid">
-                                                <div class="o-grid__col-md-5">
-                                                    <div class="c-work__timeframe">
-                                                        2000 &ndash; 2003
-                                                    </div>
-                                                    <h3 class="c-work__heading">
-                                                        Academy of Fine Arts
-                                                    </h3>
-                                                    <h4 class="c-work__title">
-                                                        Master of Arts
-                                                    </h4>
-                                                    <div class="c-work__location">
-                                                        Berlin, Germany
-                                                    </div>
-                                                </div>
-                                                <div class="o-grid__col-md-7">
-                                                    <p>
-                                                        Fusce lacinia arcu et nulla. Nulla vitae mauris non felis mollis faucibus. Phasellus hendrerit. Pellentesque aaliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales.
-                                                    </p>
-                                                </div>
-                                            </div><!-- /o-grid -->
-                                        </div><!-- /o-content -->
-                                    </div><!-- /c-timeline__item -->
-
-                                </div><!-- /c-timeline -->
-                            </div><!-- /o-content -->
-
-                        </div><!-- /o-section__content -->
-
-                    </div><!-- /o-section__container -->
-                </div><!-- /o-container -->
-
-            </section><!-- /o-section -->
-
-
-
-            <!-- ################################ -->
-            <!-- ########### PROFILES ########### -->
-            <!-- ################################ -->
-            
-            <section class="o-section  t-section  ">
-
-                <div class="o-section__header-bg  t-section__header"></div>
-                <div class="o-section__content-bg  t-section__content"></div>
-
-                <div class="o-container">
-                    <div class="o-section__container">
-
-                        <header class="o-section__header  t-section__header">
-                            <div class="o-content">
-                                <h2 class="o-section__heading">
-                                    Profiles
-                                </h2>
-                                <div class="o-content__body  o-section__description">
-                                    Busy as usual.
-                                </div>
-                            </div>
-                        </header><!-- /o-section__header -->
-
-                        <div class="o-section__content  t-section__content  ">
-                            
-                            <div class="o-grid">
-
-                                <div class="o-grid__col-xl-4  o-grid__col-sm-6">
-                                    <div class="o-content">
-                                        <a href="http://themeforest.net/user/ruventhemes/portfolio" target="_blank" class="t-link-container">
-                                            <div class="o-media  o-media--block">
-                                                <div class="o-media__figure">
-                                                    <div class="c-profile__icon">
-                                                        <i class="fab  fa-lg  fa-envira"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="o-media__body  o-content__body">
-                                                    <h3 class="t-link-container__item">
-                                                        Themeforest
-                                                    </h3>
-                                                    <p>
-                                                        An overview of the themes and templates that I sell.
-                                                    </p>
-                                                </div>
-                                            </div><!-- /o-media -->
-                                        </a><!-- /t-link-container -->
-                                    </div><!-- /o-content -->
-                                </div><!-- /o-grid__col -->
-
-                                <div class="o-grid__col-xl-4  o-grid__col-sm-6">
-                                    <div class="o-content">
-                                        <a href="https://github.com/hatra-e/" target="_blank" class="t-link-container">
-                                            <div class="o-media  o-media--block">
-                                                <div class="o-media__figure">
-                                                    <div class="c-profile__icon">
-                                                        <i class="fab  fa-lg  fa-github-alt"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="o-media__body  o-content__body">
-                                                    <h3 class="t-link-container__item">
-                                                        GitHub
-                                                    </h3>
-                                                    <p>
-                                                        All my open source projects for you analyze.
-                                                    </p>
-                                                </div>
-                                            </div><!-- /o-media -->
-                                        </a><!-- /t-link-container -->
-                                    </div><!-- /o-content -->
-                                </div><!-- /o-grid__col -->
-
-                                <div class="o-grid__col-xl-4  o-grid__col-sm-6">
-                                    <div class="o-content">
-                                        <a href="http://wordpress.com" target="_blank" class="t-link-container">
-                                            <div class="o-media  o-media--block">
-                                                <div class="o-media__figure">
-                                                    <div class="c-profile__icon">
-                                                        <i class="fab  fa-lg  fa-medium"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="o-media__body  o-content__body">
-                                                    <h3 class="t-link-container__item">
-                                                        Medium
-                                                    </h3>
-                                                    <p>
-                                                        Yes. I'm also a blogger and here you find my writings.
-                                                    </p>
-                                                </div>
-                                            </div><!-- /o-media -->
-                                        </a><!-- /t-link-container -->
-                                    </div><!-- /o-content -->
-                                </div><!-- /o-grid__col -->
-
-                                <div class="o-grid__col-xl-4  o-grid__col-sm-6">
-                                    <div class="o-content">
-                                        <a href="https://dribbble.com" target="_blank" class="t-link-container">
-                                            <div class="o-media  o-media--block">
-                                                <div class="o-media__figure">
-                                                    <div class="c-profile__icon">
-                                                        <i class="fab  fa-lg  fa-dribbble"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="o-media__body  o-content__body">
-                                                    <h3 class="t-link-container__item">
-                                                        Dribbble
-                                                    </h3>
-                                                    <p>
-                                                        Whenever a design is finalized, it lands right here.
-                                                    </p>
-                                                </div>
-                                            </div><!-- /o-media -->
-                                        </a><!-- /t-link-container -->
-                                    </div><!-- /o-content -->
-                                </div><!-- /o-grid__col -->
-
-                                <div class="o-grid__col-xl-4  o-grid__col-sm-6">
-                                    <div class="o-content">
-                                        <a href="https://www.flickr.com" target="_blank" class="t-link-container">
-                                            <div class="o-media  o-media--block">
-                                                <div class="o-media__figure">
-                                                    <div class="c-profile__icon">
-                                                        <i class="fab  fa-lg  fa-flickr"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="o-media__body  o-content__body">
-                                                    <h3 class="t-link-container__item">
-                                                        Flickr
-                                                    </h3>
-                                                    <p>
-                                                        A selection of photos I shot throughout the years.
-                                                    </p>
-                                                </div>
-                                            </div><!-- /o-media -->
-                                        </a><!-- /t-link-container -->
-                                    </div><!-- /o-content -->
-                                </div><!-- /o-grid__col -->
-
-                                <div class="o-grid__col-xl-4  o-grid__col-sm-6">
-                                    <div class="o-content">
-                                        <a href="http://www.deviantart.com" target="_blank" class="t-link-container">
-                                            <div class="o-media  o-media--block">
-                                                <div class="o-media__figure">
-                                                    <div class="c-profile__icon">
-                                                        <i class="fab  fa-lg  fa-deviantart"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="o-media__body  o-content__body">
-                                                    <h3 class="t-link-container__item">
-                                                        DeviantArt
-                                                    </h3>
-                                                    <p>
-                                                        A place for my sketches and drawings.
-                                                    </p>
-                                                </div>
-                                            </div><!-- /o-media -->
-                                        </a><!-- /t-link-container -->
-                                    </div><!-- /o-content -->
-                                </div><!-- /o-grid__col -->
-
-                            </div><!-- /o-grid -->
-
-                        </div><!-- /o-section__content -->
-
-                    </div><!-- /o-section__container -->
-                </div><!-- /o-container -->
-
-            </section><!-- /o-section -->
-
-
-
-            <!-- ################################ -->
-            <!-- ############ HEADER ############ -->
-            <!-- ################################ -->
-            
-            <section class="o-section  t-section  ">
-
-                <div class="o-section__header-bg  t-section__header"></div>
-                <div class="o-section__content-bg  t-section__content"></div>
-
-                <div class="o-container">
-                    <div class="o-section__container">
-
-                        <header class="o-section__header  t-section__header">
-                            <div class="o-content">
-                                <h2 class="o-section__heading">
-                                    Awards
-                                </h2>
-                                <div class="o-content__body  o-section__description">
-                                    Happy times!
-                                </div>
-                            </div>
-                        </header><!-- /o-section__header -->
-
-                        <div class="o-section__content  t-section__content  ">
-                            
-                            <div class="o-grid">
-
-                                <div class="o-grid__col-md-4  o-grid__col-sm-6">
-                                    <div class="o-content">
-                                        <hr class="c-deco-line  t-primary-color-line" />
-                                        <div class="o-content__body">
-                                            <h3>Unicorn Developer Award 2016</h3>
-                                            <p>
-                                                Lorem ipsum dolor sit amet, justo eget porttitor mauris sit amet felis. Neque id cursus faucibus.
-                                            </p>
-                                        </div>
-                                    </div><!-- /o-content -->
-                                </div><!-- /o-grid__col -->
-
-                                <div class="o-grid__col-md-4  o-grid__col-sm-6">
-                                    <div class="o-content">
-                                        <hr class="c-deco-line  t-primary-color-line" />
-                                        <div class="o-content__body">
-                                            <h3>Website of the Year Award 2015</h3>
-                                            <p>
-                                                Praesent dapibus dolor sit amet, justo eget porttitor mauris sit amet. Neque id cursus faucibus.
-                                            </p>
-                                        </div>
-                                    </div><!-- /o-content -->
-                                </div><!-- /o-grid__col -->
-
-                                <div class="o-grid__col-md-4  o-grid__col-sm-6">
-                                    <div class="o-content">
-                                        <hr class="c-deco-line  t-primary-color-line" />
-                                        <div class="o-content__body">
-                                            <h3>1st Place at CSShacker Conference</h3>
-                                            <p>
-                                                Lorem ipsum dolor sit amet, justo eget porttitor mauris sit amet felis. Neque id cursus faucibus.
-                                            </p>
-                                        </div>
-                                    </div><!-- /o-content -->
-                                </div><!-- /o-grid__col -->
-
-                            </div><!-- /o-grid -->
-
-                        </div><!-- /o-section__content -->
-
-                    </div><!-- /o-section__container -->
-                </div><!-- /o-container -->
-
-            </section><!-- /o-section -->
-
-
-
-            <!-- ################################ -->
-            <!-- ########### PORTFOLIO ########## -->
-            <!-- ################################ -->
-            
-            <section class="o-section  t-section  ">
-
-                <div class="o-section__header-bg  t-section__header"></div>
-                <div class="o-section__content-bg  t-section__content"></div>
-
-                <div class="o-container">
-                    <div class="o-section__container">
-
-                        <header class="o-section__header  t-section__header">
-                            <div class="o-content">
-                                <h2 class="o-section__heading">
-                                    Portfolio
-                                </h2>
-                                <div class="o-content__body  o-section__description">
-                                    Here it gets interesting.
-                                </div>
-                            </div>
-                        </header><!-- /o-section__header -->
-
-                        <div class="o-section__content  t-section__content  o-section__full-bottom-space">
-                            
-                            <div class="o-grid  o-grid--gallery">
-
-                                <div class="o-grid__col-sm-6">
-                                    <a class="c-image-overlay  t-image-overlay  js-lightbox" href="assets/images/portfolio/1_full.jpg" data-lightbox-hidpi="" title="Musée du Louvre" data-lightbox-gallery="portfolio">
-                                        <img src="assets/images/portfolio/1_thumb.jpg" alt="">
-                                        <div class="c-image-overlay__content">
-                                            <h3>
-                                                Musée du Louvre
-                                            </h3>
-                                            <hr class="c-image-overlay__deco-line  t-image-overlay__deco-line" />
-                                            <p>
-                                                Fusce lacinia arcu et nulla. Nulla vitae mauris non felis mollis faucibus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                            </p>
-                                        </div>
-                                    </a>
-                                </div><!-- /o-grid__col -->
-
-                                <div class="o-grid__col-sm-6">
-                                    <a class="c-image-overlay  t-image-overlay  js-lightbox" href="assets/images/portfolio/2_full.jpg" data-lightbox-hidpi="" title="Tunnel Effect" data-lightbox-gallery="portfolio">
-                                        <img src="assets/images/portfolio/2_thumb.jpg" alt="">
-                                        <div class="c-image-overlay__content">
-                                            <h3>
-                                                Tunnel Effect
-                                            </h3>
-                                            <hr class="c-image-overlay__deco-line  t-image-overlay__deco-line" />
-                                            <p>
-                                                Fusce lacinia arcu et nulla. Nulla vitae mauris non felis mollis faucibus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                            </p>
-                                        </div>
-                                    </a>
-                                </div><!-- /o-grid__col -->
-
-                                <div class="o-grid__col-sm-6">
-                                    <a class="c-image-overlay  t-image-overlay  js-lightbox" href="assets/images/portfolio/3_full.jpg" data-lightbox-hidpi="" title="New York, New York" data-lightbox-gallery="portfolio">
-                                        <img src="assets/images/portfolio/3_thumb.jpg" alt="">
-                                        <div class="c-image-overlay__content">
-                                            <h3>
-                                                New York, New York
-                                            </h3>
-                                            <hr class="c-image-overlay__deco-line  t-image-overlay__deco-line" />
-                                            <p>
-                                                Fusce lacinia arcu et nulla. Nulla vitae mauris non felis mollis faucibus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                            </p>
-                                        </div>
-                                    </a>
-                                </div><!-- /o-grid__col -->
-
-                                <div class="o-grid__col-sm-6">
-                                    <a class="c-image-overlay  t-image-overlay  js-lightbox" href="assets/images/portfolio/4_full.jpg" data-lightbox-hidpi="" title="Sky High" data-lightbox-gallery="portfolio">
-                                        <img src="assets/images/portfolio/4_thumb.jpg" alt="">
-                                        <div class="c-image-overlay__content">
-                                            <h3>
-                                                Sky High
-                                            </h3>
-                                            <hr class="c-image-overlay__deco-line  t-image-overlay__deco-line" />
-                                            <p>
-                                                Fusce lacinia arcu et nulla. Nulla vitae mauris non felis mollis faucibus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                            </p>
-                                        </div>
-                                    </a>
-                                </div><!-- /o-grid__col -->
-
-                                <div class="o-grid__col-sm-6">
-                                    <a class="c-image-overlay  t-image-overlay  js-lightbox" href="assets/images/portfolio/5_full.jpg" data-lightbox-hidpi="" title="The Eiffel Tower" data-lightbox-gallery="portfolio">
-                                        <img src="assets/images/portfolio/5_thumb.jpg" alt="">
-                                        <div class="c-image-overlay__content">
-                                            <h3>
-                                                The Eiffel Tower
-                                            </h3>
-                                            <hr class="c-image-overlay__deco-line  t-image-overlay__deco-line" />
-                                            <p>
-                                                Fusce lacinia arcu et nulla. Nulla vitae mauris non felis mollis faucibus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                            </p>
-                                        </div>
-                                    </a>
-                                </div><!-- /o-grid__col -->
-
-                                <div class="o-grid__col-sm-6">
-                                    <a class="c-image-overlay  t-image-overlay  js-lightbox" href="assets/images/portfolio/6_full.jpg" data-lightbox-hidpi="" title="Reaching the Clouds" data-lightbox-gallery="portfolio">
-                                        <img src="assets/images/portfolio/6_thumb.jpg" alt="">
-                                        <div class="c-image-overlay__content">
-                                            <h3>
-                                                Reaching the Clouds
-                                            </h3>
-                                            <hr class="c-image-overlay__deco-line  t-image-overlay__deco-line" />
-                                            <p>
-                                                Fusce lacinia arcu et nulla. Nulla vitae mauris non felis mollis faucibus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                            </p>
-                                        </div>
-                                    </a>
-                                </div><!-- /o-grid__col -->
-
-                            </div><!-- /o-grid -->
-
-                        </div><!-- /o-section__content -->
-
-                    </div><!-- /o-section__container -->
-                </div><!-- /o-container -->
-
-            </section><!-- /o-section -->
-
-
-
-            <!-- ################################ -->
-            <!-- ############ CLIENTS ########### -->
-            <!-- ################################ -->
-            
-            <section class="o-section  t-section  ">
-
-                <div class="o-section__header-bg  t-section__header"></div>
-                <div class="o-section__content-bg  t-section__content"></div>
-
-                <div class="o-container">
-                    <div class="o-section__container">
-
-                        <header class="o-section__header  t-section__header">
-                            <div class="o-content">
-                                <h2 class="o-section__heading">
-                                    Clients
-                                </h2>
-                                <div class="o-content__body  o-section__description">
-                                    Happy people.
-                                </div>
-                            </div>
-                        </header><!-- /o-section__header -->
-
-                        <div class="o-section__content  t-section__content  ">
-                            
-                            <ul class="c-clients  o-content">
-                                <li>
-                                    <a href="http://example.com" target="_blank">
-                                        <img src="assets/images/clients/bbc.png" alt="">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="http://example.com" target="_blank">
-                                        <img src="assets/images/clients/disney.png" alt="">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="http://example.com" target="_blank">
-                                        <img src="assets/images/clients/github.png" alt="">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="http://example.com" target="_blank">
-                                        <img src="assets/images/clients/google.png" alt="">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="http://example.com" target="_blank">
-                                        <img src="assets/images/clients/html5.png" alt="">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="http://example.com" target="_blank">
-                                        <img src="assets/images/clients/kickstarter.png" alt="">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="http://example.com" target="_blank">
-                                        <img src="assets/images/clients/youtube.png" alt="">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="http://example.com" target="_blank">
-                                        <img src="assets/images/clients/vimeo.png" alt="">
-                                    </a>
-                                </li>
-                            </ul><!-- /o-float-box -->
-
-                        </div><!-- /o-section__content -->
-
-                    </div><!-- /o-section__container -->
-                </div><!-- /o-container -->
-
-            </section><!-- /o-section -->
-
-
-
-            <!-- ################################ -->
-            <!-- ############ FOOTER ############ -->
-            <!-- ################################ -->
-            
-            <section class="o-section  t-section  o-section--footer">
-
-                <div class="o-section__header-bg  t-section__header"></div>
-                <div class="o-section__content-bg  t-section__content"></div>
-
-                <div class="o-container">
-                    <div class="o-section__container">
-
-                        <header class="o-section__header  t-section__header">
-                            <div class="o-content">
-                                <h2 class="o-section__heading">
-                                    Contact
-                                </h2>
-                                <div class="o-content__body  o-section__description">
-                                    Call me, maybe.
-                                </div>
-                            </div>
-                        </header><!-- /o-section__header -->
-
-                        <div class="o-section__content  t-section__content  ">
-                            
-                                <div class="c-footer__contact">
-                                    <div class="o-grid">
-
-                                    <div class="o-grid__col-md-3  o-grid__col-sm-6">
-                                        <div class="o-content">
-                                            <div class="o-content__body">
-                                                <h4>Location</h4>
-                                                <address>
-                                                    Portland, OR
-                                                </address>
-                                            </div>
-                                        </div><!-- /o-content -->
-                                    </div><!-- /o-grid__col -->
-
-                                    <div class="o-grid__col-md-3  o-grid__col-sm-6">
-                                        <div class="o-content">
-                                            <div class="o-content__body">
-                                                <h4>Phone</h4>
-                                                <p>
-                                                    534.456.886
-                                                </p>
-                                            </div>
-                                        </div><!-- /o-content -->
-                                    </div><!-- /o-grid__col -->
-
-                                    <div class="o-grid__col-md-3  o-grid__col-sm-6">
-                                        <div class="o-content">
-                                            <div class="o-content__body">
-                                                <a href="#" target="_blank" class="t-link-container">
-                                                    <h4>Web</h4>
-                                                    <p>
-                                                        <span class="t-link-container__item--blended">
-                                                            ruventhemes.com
-                                                        </span>
-                                                    </p>
-                                                </a><!-- /o-link-container -->
-                                            </div>
-                                        </div><!-- /o-content -->
-                                    </div><!-- /o-grid__col -->
-
-                                    <div class="o-grid__col-md-3  o-grid__col-sm-6">
-                                        <div class="o-content">
-                                            <div class="o-content__body">
-                                                <a href="#" target="_blank" class="t-link-container">
-                                                    <h4>Email</h4>
-                                                    <p>
-                                                        <span class="t-link-container__item--blended">
-                                                            hello@example.com
-                                                        </span>
-                                                    </p>
-                                                </a><!-- /o-link-container -->
-                                            </div>
-                                        </div><!-- /o-content -->
-                                    </div><!-- /o-grid__col -->
-
-                                </div><!-- /o-grid -->
-                                </div><!-- /c-footer__contact -->
-
-                                <hr class="c-footer__contact-divider" />
-
-                                <div class="o-content">
-                                    <div class="c-footer__bottom">
-                                        <div class="c-footer__brand">
-
-                                            <div class="c-brand">
-                                                <div class="o-content__body">
-                                                    <h1 class="c-brand__title  t-title">
-                                                        <span class="c-brand__sizer  c-brand__sizer--sm">
-                                                            <span class="a-footer  c-brand__first-word  t-title__first-word">
-                                                                Desmond
-                                                            </span>
-                                                            <span class="a-footer  c-brand__second-word  t-title__second-word">
-                                                                Rambowski
-                                                            </span>
-                                                        </span>
-                                                    </h1>
-                                                </div><!-- /o-content__body -->
-                                            </div><!-- /c-brand -->
-
-                                        </div><!-- /c-footer__brand -->
-
-                                        <ul class="c-footer__social-buttons  c-social-buttons  o-content__body">
-                                            <li class="a-footer">
-                                                <a href="https://www.facebook.com/RuvenThemes/" target="_blank" class="c-social-button  t-social-button">
-                                                    <i class="fab  fa-lg  fa-facebook-f"></i>
-                                                </a>
-                                            </li>
-                                            <li class="a-footer">
-                                                <a href="https://dribbble.com/" target="_blank" class="c-social-button  t-social-button">
-                                                    <i class="fab  fa-lg  fa-dribbble"></i>
-                                                </a>
-                                            </li>
-                                            <li class="a-footer">
-                                                <a href="https://twitter.com/_Ruven" target="_blank" class="c-social-button  t-social-button">
-                                                    <i class="fab  fa-lg  fa-twitter"></i>
-                                                </a>
-                                            </li>
-                                        </ul><!-- /c-footer__social-buttons -->
-
-                                    </div><!-- /c-footer__bottom -->
-                                </div><!-- /o-content -->
-
-                        </div><!-- /o-section__content -->
-
-                    </div><!-- /o-section__container -->
-                </div><!-- /o-container -->
-
-            </section><!-- /o-section -->
-
-
-
-        </div><!-- /c-main-container -->
-
-    </body>
-
-</html>

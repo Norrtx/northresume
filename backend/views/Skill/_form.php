@@ -18,7 +18,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'maxscore')->textInput() ?>
 
-    <?= $form->field($model, 'chart_type')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'chart_type')->textInput() ?>
 
     <?= $form->field($model, 'user_id')->textInput() ?>
 

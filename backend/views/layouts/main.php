@@ -26,6 +26,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <?php $this->registerCsrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
+    
 </head>
 <body >
 <?php $this->beginBody() ?>

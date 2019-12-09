@@ -27,7 +27,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'name',
             'score',
             'maxscore',
-            'chat_type',
+            'chart_type',
             //'user_id',
             //'date_create',
             //'date_update',

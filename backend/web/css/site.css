@@ -1,6 +1,7 @@
 html,
 body {
     height: 100%;
+    
 }
 
 .wrap {
@@ -285,3 +286,50 @@ a.desc:after {
       margin-left: 91.666667%;
     }
   }
+  .navbar-inverse {
+   
+   
+    border-bottom: 3px solid  #f71072;
+}
+/* form */
+.slick-slide img {
+  display: block;
+  width: 100%;
+}
+.theme-active {
+  border: 2px solid #ee2f74;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  -ms-interpolation-mode: bicubic;
+  display: inline-block;
+  vertical-align: middle;
+}
+.slick-slider {
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+.slick-initialized .slick-slide {
+  position: relative;
+}
+.slick-initialized .slick-slide {
+  display: block;
+}
+.slick-slide {
+  display: block;
+  padding: 10px;
+  float: left;
+}
+.slick-slide {
+  height: 100%;
+  min-height: 1px;
+  display: none;
+}

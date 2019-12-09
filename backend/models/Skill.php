@@ -11,7 +11,7 @@ use Yii;
  * @property string $name
  * @property int $score
  * @property int $maxscore
- * @property string $chat_type
+ * @property string $chart_type
  * @property int $user_id
  * @property int $date_create
  * @property int $date_update
@@ -34,7 +34,7 @@ class Skill extends \yii\db\ActiveRecord
     {
         return [
             [['score', 'maxscore', 'user_id', 'date_create', 'date_update', 'status'], 'integer'],
-            [['name', 'chat_type'], 'string', 'max' => 255],
+            [['name', 'chart_type'], 'string', 'max' => 255],
         ];
     }
 
@@ -48,7 +48,7 @@ class Skill extends \yii\db\ActiveRecord
             'name' => 'Name',
             'score' => 'Score',
             'maxscore' => 'Maxscore',
-            'chat_type' => 'Chat Type',
+            'chart_type' => 'Chart Type',
             'user_id' => 'User ID',
             'date_create' => 'Date Create',
             'date_update' => 'Date Update',

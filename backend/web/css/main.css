@@ -2319,7 +2319,7 @@ img[height] {
  */
 /* Body */
 body {
-    background: #2d2e2e;
+    background: #ffffff;
     color: #979899;
   }
   
@@ -2537,4 +2537,15 @@ body {
       box-shadow: 0 0 0 6px #2b2c2c;
     }
   }
-  
+  #step-1 {
+    background: #dfdfdf;
+    padding: 10px 10px 32px;
+    max-height: 331px;
+    position: relative;
+    overflow: hidden;
+}
+.row .row {
+    max-width: 75rem;
+    margin-left: auto;
+    margin-right: auto;
+}

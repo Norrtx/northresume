@@ -64,7 +64,7 @@ class SiteController extends Controller
     }
     public function actionHoho()
     {
-        // $this->layout='from';
+        $this->layout='from';
         return $this->render('hoho');
     }
     public function actionGgg()
