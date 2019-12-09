@@ -3,7 +3,10 @@
 
 
 
-
+ <link href="https://campus.campus-star.com/resume/assets/lightbox/dist/css/lightbox.min.css" rel="stylesheet"> <!--ตัวอย่าง-->
+<link rel="stylesheet" id="tiwanon-style-css"  href="https://campus.campus-star.com/resume/assets/css/style.min.css?ver=201804251416" type="text/css" media="all" />
+<script type="text/javascript" src="https://campus.campus-star.com/resume/assets/js/fb.js?ver=201804251415"></script>
+<script async="async" src="https://www.googletagservices.com/tag/js/gpt.js"></script>
 
 
 
@@ -11,24 +14,42 @@
 	
 	
  
-<div id="intro" class="row">
-	<header class="entry-header">
-		<h1 class="entry-title"> RESUME ONLINE </h1>							 
-	</header>
-</div> 	
 
+
+<form id="form-resume" action="https://campus.campus-star.com/resume/pdf.php" method="post" target="_blank" enctype="multipart/form-data">
+<input type="hidden" name="action" id="action" value="preview">	
+<input type="hidden" name="theme" id="theme" value="theme01">	
+<input type="hidden" name="language" id="language" value="th">	
+
+<div id="step-1" class="row">
+	<header class="entry-header">
+		<h2 class="entry-title"><span>1</span> เลือกรูปแบบของ RESUME</h2>							 
+	</header>
+	<div class="hilight row column section">
+		<div class="theme-slider">
+			<div><img class="seliect-tm theme-active" src="https://campus.campus-star.com/resume/theme/small/01.jpg" alt="theme01"><a class="bt_showtheme" href="https://campus.campus-star.com/resume/theme/big/01.jpg" data-lightbox="theme" data-title="theme 01"><i class="fa fa-search" aria-hidden="true"></i></a></div>
+			<div><img class="seliect-tm" src="https://campus.campus-star.com/resume/theme/small/01-2.jpg" alt="theme02"><a class="bt_showtheme" href="https://campus.campus-star.com/resume/theme/big/01-2.jpg" data-lightbox="theme" data-title="theme 01-2"><i class="fa fa-search" aria-hidden="true"></i></a></div>
+			<div><img class="seliect-tm" src="https://campus.campus-star.com/resume/theme/small/02.jpg" alt="theme03"><a class="bt_showtheme" href="https://campus.campus-star.com/resume/theme/big/02.jpg" data-lightbox="theme" data-title="theme 02"><i class="fa fa-search" aria-hidden="true"></i></a></div>
+			<div><img class="seliect-tm" src="https://campus.campus-star.com/resume/theme/small/02-2.jpg" alt="theme04"><a class="bt_showtheme" href="https://campus.campus-star.com/resume/theme/big/02-2.jpg" data-lightbox="theme" data-title="theme 02-2"><i class="fa fa-search" aria-hidden="true"></i></a></div>
+			<div><img class="seliect-tm" src="https://campus.campus-star.com/resume/theme/small/03.jpg" alt="theme05"><a class="bt_showtheme" href="https://campus.campus-star.com/resume/theme/big/03.jpg" data-lightbox="theme-03" data-title="theme 03"><i class="fa fa-search" aria-hidden="true"></i></a></div>
+			<div><img class="seliect-tm" src="https://campus.campus-star.com/resume/theme/small/03-2.jpg" alt="theme06"><a class="bt_showtheme" href="https://campus.campus-star.com/resume/theme/big/03-2.jpg" data-lightbox="theme" data-title="theme 03-2"><i class="fa fa-search" aria-hidden="true"></i></a></div>
+			<div><img class="seliect-tm" src="https://campus.campus-star.com/resume/theme/small/04.jpg" alt="theme07"><a class="bt_showtheme" href="https://campus.campus-star.com/resume/theme/big/04.jpg" data-lightbox="theme" data-title="theme 04"><i class="fa fa-search" aria-hidden="true"></i></a></div>
+			<div><img class="seliect-tm" src="https://campus.campus-star.com/resume/theme/small/04-2.jpg" alt="theme08"><a class="bt_showtheme" href="https://campus.campus-star.com/resume/theme/big/04-2.jpg" data-lightbox="theme" data-title="theme 04-2"><i class="fa fa-search" aria-hidden="true"></i></a></div>
+			<div><img class="seliect-tm" src="https://campus.campus-star.com/resume/theme/small/05.jpg" alt="theme09"><a class="bt_showtheme" href="https://campus.campus-star.com/resume/theme/big/05.jpg" data-lightbox="theme" data-title="theme 05"><i class="fa fa-search" aria-hidden="true"></i></a></div>
+			<div><img class="seliect-tm" src="https://campus.campus-star.com/resume/theme/small/05-2.jpg" alt="theme10"><a class="bt_showtheme" href="https://campus.campus-star.com/resume/theme/big/05-2.jpg" data-lightbox="theme" data-title="theme 05-2"><i class="fa fa-search" aria-hidden="true"></i></a></div>
+		 </div>
+		
+	</div>
+</div> 
 
 	
 <div id="step-2" class="row">
 
 	<header class="entry-header">
-		<h2 class="entry-title"><span>2</span> กรอกข้อมูลของ RESUME</h2>							 
+		<h2 class="entry-title">RESUME</h2>							 
 	</header>
 	
-	<section class="tab-language">
-		<a href="https://campus.campus-star.com/resume"  class="bt-language">ภาษาไทย</a>
-		<a href="https://campus.campus-star.com/resume/en" class="bt-language">ภาษาอังกฤษ</a>
-	</section>
+
 	 
 	<div class="content-area columns large-6">
 		
