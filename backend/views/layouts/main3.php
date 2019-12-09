@@ -43,7 +43,31 @@ AppAsset::register($this);
 <script async="async" src="https://www.googletagservices.com/tag/js/gpt.js"></script>
 
 
-
+<script type="text/javascript">
+	googletag.cmd.push(function() {
+		var mapTopbanner = googletag.sizeMapping().
+			addSize([1050, 200], [[980, 90], [970, 90], [728, 90]]).
+			addSize([0, 0], [320, 100]).
+			build();
+		googletag.defineSlot('/10983686/CampusStar/Campus_A_Top', [[980, 90], [970, 90], [728, 90], [320,100]], 'div-gpt-ad-1439191213787-0').
+			defineSizeMapping(mapTopbanner).
+			addService(googletag.pubads());
+		googletag.defineSlot('/10983686/CampusStar/Campus_B_Rec1', [300, 250], 'div-gpt-ad-1439191315498-0').addService(googletag.pubads());
+		googletag.defineSlot('/10983686/CampusStar/Campus_C_Rec2', [300, 250], 'div-gpt-ad-1439191335029-0').addService(googletag.pubads());
+		googletag.defineOutOfPageSlot('/10983686/CampusStar/Campus_D_Coverpage', 'coverpage').addService(googletag.pubads());
+		var map_adhesion = googletag.sizeMapping().
+			addSize([640, 0], []).
+			addSize([0, 0], [320, 50]).
+			build();
+		googletag.defineSlot('/10983686/CampusStar/Campus_AdhesionMB', [320, 50], 'dfp_adhesion').
+			defineSizeMapping(map_adhesion).
+			addService(googletag.pubads());
+		googletag.pubads().enableSingleRequest();
+		googletag.pubads().collapseEmptyDivs();
+		googletag.pubads().setTargeting('campusstar', ['campus']);
+		googletag.enableServices();
+	});
+</script>
 
 <script>
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

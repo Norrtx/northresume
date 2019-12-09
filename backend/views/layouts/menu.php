@@ -15,8 +15,7 @@ AppAsset::register($this);
 
 
 
-<nav class="mt-2">
-      <ul class="top-bar row" id="top-bar-menu">
+
       <?php
     NavBar::begin([
         //'brandLabel' => Yii::$app->name,
@@ -58,17 +57,9 @@ AppAsset::register($this);
       </nav>
       <!-- /.sidebar-menu -->
     </div>
-    <!-- /.sidebar -->
-  </aside>
+   
 
   <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <div class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-sm-6">
-         
-          </div><!-- /.col -->
+  
          
     <!-- /.content-header -->

@@ -1,11 +1,6 @@
 
  <!DOCTYPE html>
-<html class="no-js" lang="en-US" >
-<head>
-<meta charset="utf-8">
-<meta http-equiv="x-ua-compatible" content="ie=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="shortcut icon" type="image/x-icon" href="https://campus.campus-star.com/resume/favicon.ico"/>
+
 
 
 <title>ออกแบบ Resume ออนไลน์ ฟรี</title>

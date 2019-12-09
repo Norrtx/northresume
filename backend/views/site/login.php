@@ -10,11 +10,11 @@ use yii\helpers\Url;
 
 $this->title = 'Login';
 ?>
-<div class="site-login"><br><br><br><br><br><br><br><br><br>
+<div class="site-login"><br><br><br><br><br><br><br>
     
-    <div class="row2">
-    <h1><?= Html::encode($this->title) ?></h1><br><br>
-        <div class="col-lg-5"><br>
+    <div class="row">
+    <div align="center" > <h1><?= Html::encode($this->title) ?></h1><br></div>
+        <div class="col-lg-4 offset-lg-4"><br>
             <?php $form = ActiveForm::begin(['id' => 'login-form']); ?>
 
                 <?= $form->field($model, 'username')->textInput(['autofocus' => true]) ?>
