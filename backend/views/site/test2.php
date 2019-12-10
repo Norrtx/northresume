@@ -1,4 +1,13 @@
+<?php
 
+use yii\helpers\Html;
+use yii\widgets\ActiveForm;
+
+/* @var $this yii\web\View */
+/* @var $model app\models\Skill */
+/* @var $form yii\widgets\ActiveForm */
+?>
+    <?php $form = ActiveForm::begin(); ?>
 <div id="step-2" class="row">
 	<header class="entry-header">
 		<h2 class="entry-title">RESUME</h2>							 
@@ -201,58 +210,18 @@
 				</div>
 				</script>
 			</div>
-			<div class="row">
-				<div class="small-3 column">
-					<label>Marital status</label>
-				</div>
-				<div class="small-9 column">
-					<select name="marital_status">
-						<option value="single">Single</option>
-						<option value="married">Married</option>
-						<option value="widowed">Widowed</option>
-						<option value="married_no_children">Married with no children </option>
-						<option value="divorced">Divorced</option>
-					</select>
-				</div>
-			</div>
-			<div class="row row_military" >
-				<div class="small-3 column">
-					<label>Military Status</label>
-				</div>
-				<div class="small-9 column">
-					<select id="military" name="military">
-						<option value="exempted">Exempted</option>
-						<option value="completed">Completed</option>
-						<option value="wait">Wait</option>
-					</select>
-				</div>
-			</div>
-			<div class="row">
-				<div class="small-3 column">
-					<label>Nationality</label>
-				</div>
-				<div class="small-9 column">
-					 <input type="text" name="nationality"> 
-				</div>
-			</div>  
+			
       	</section>
       	
       	<section id="contact">		
 			<h2 class="post-headline-primary"><i class="fa fa-phone-square" aria-hidden="true"></i> Contact</h2>	
-			<div class="row">
-				<div class="small-3 column">
-					<label>Telephone</label>
-				</div>
-				<div class="small-9 column">
-					<input type="text" name="telephone">
-				</div>
-			</div>
+			
 			<div class="row">
 				<div class="small-3 column">
 					<label>Email</label>
 				</div>
 				<div class="small-9 column">
-					<input type="text" name="email">
+					<input type="text" name="mail">
 				</div>
 			</div>
 			<div class="row">
@@ -260,8 +229,25 @@
 					<label>Address</label>
 				</div>
 				<div class="small-9 column">
-					<textarea name="address"></textarea>
+                    <input name="city" type="text" class="form-control" placeholder="Prefecture"><br>
+                </div>
+                <div class="small-9 column">
+                    <input name="state" type="text" class="form-control" placeholder="State">
+                </div><br>	<div class="small-3 column">
+					<label>Zip code</label>
 				</div>
+                <div class="small-9 column">
+                    <input name="zip" type="text" class="form-control" placeholder="zip code">
+                </div><br>
+                <div class="small-9 column">
+                    <input name="latitude" type="text" class="form-control" placeholder="latitude">
+                </div><br>
+				<div class="small-3 column">
+					<label>Latitude</label>
+				</div>  
+				 <div class="small-9 column">
+                    <input name="longitude" type="text" class="form-control" placeholder="longitude">
+               </div><br>
 			</div>
       	</section>
  
@@ -2023,12 +2009,13 @@
 </div>  <!-- step 2 --> 
 
 <div class="content-area columns large-12">
-	<div class="row box-button">
-		<button id="btn-preview" class="button round success"><i class="fa fa-search-plus" aria-hidden="true"></i> Preview</button>
-		<button id="btn-save" class="button round alert"><i class="fa fa-floppy-o" aria-hidden="true"></i> Save</button>
+<div class="row box-button">
+<button id="btn-preview" class="button round success"><i class="fa fa-search-plus" aria-hidden="true"></i> Preview</button>
+		
 		<button id="btn-download" class="button round alert" style="display:none;"><i class="fa fa-floppy-o" aria-hidden="true"></i> Download</button>
-	</div>
-</div>
+		<button id="btn-save" class="button round alert"><i class="fa fa-floppy-o" aria-hidden="true"></i> Save</button>
+    </div>
+
  
 </form>	
 
@@ -2056,4 +2043,5 @@
 	});
 </script>
 	
+    <?php ActiveForm::end(); ?>
 	 

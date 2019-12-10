@@ -71,7 +71,8 @@ class SkillController extends Controller
 
         $name = Yii::$app->request->post('test');
 
-        $educationmodel->school_name=$name;
+        $name2 = Yii::$app->request->post('test2');
+        $educationmodel->school_name=$name.$name2;
         $educationmodel->save();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {

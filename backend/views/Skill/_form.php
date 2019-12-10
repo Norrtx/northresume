@@ -34,7 +34,12 @@ use yii\widgets\ActiveForm;
 
         <div class="help-block"></div>
     </div>
+    <div class="form-group field-skill-status">
+        <label class="control-label" for="skill-status">test2</label>
+        <input type="text" id="skill-status" class="form-control" name="test2" aria-invalid="false">
 
+        <div class="help-block"></div>
+    </div>
     <div class="form-group">
         <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
     </div>
