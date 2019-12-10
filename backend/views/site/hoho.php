@@ -12,6 +12,10 @@ use common\widgets\Alert;
 use yii\helpers\Url;
 AppAsset::register($this);
 ?>
+<link href="https://campus.campus-star.com/resume/assets/lightbox/dist/css/lightbox.min.css" rel="stylesheet"> <!--ตัวอย่าง-->
+<link rel="stylesheet" id="tiwanon-style-css"  href="https://campus.campus-star.com/resume/assets/css/style.min.css?ver=201804251416" type="text/css" media="all" />
+<script type="text/javascript" src="https://campus.campus-star.com/resume/assets/js/fb.js?ver=201804251415"></script>
+<script async="async" src="https://www.googletagservices.com/tag/js/gpt.js"></script>
 <link rel="stylesheet" id="tiwanon-style-css"  href="https://campus.campus-star.com/resume/assets/css/style.min.css?ver=201804251416" type="text/css" media="all" />
 <form id="form-resume" action="https://campus.campus-star.com/resume/pdf.php" method="post" target="_blank" enctype="multipart/form-data">
 <input type="hidden" name="action" id="action" value="preview">	

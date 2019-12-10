@@ -289,7 +289,7 @@ a.desc:after {
   .navbar-inverse {
    
    
-    border-bottom: 3px solid  #f71072;
+    border-bottom: 3px solid #5cb85c;
 }
 /* form */
 .slick-slide img {
@@ -297,7 +297,7 @@ a.desc:after {
   width: 100%;
 }
 .theme-active {
-  border: 2px solid #ee2f74;
+  border: 2px solid #5cb85c;
 }
 img {
   max-width: 100%;
@@ -332,4 +332,12 @@ img {
   height: 100%;
   min-height: 1px;
   display: none;
+}
+.icon-photo {
+  border: 5px solid #5cb85c;
+  border-radius: 100px;
+  text-align: center;
+  height: 4rem;
+  width: 4rem;
+  margin: 2rem auto;
 }

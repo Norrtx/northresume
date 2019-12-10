@@ -36,7 +36,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
       <!-- Sidebar Menu -->
       <?= $this->render('menu') ?>
-     
+        <!-- /.sidebar -->
 
     <!-- Main content -->
     <div class="container">
@@ -47,13 +47,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <?= Alert::widget() ?>
         <?= $content ?>
     </div>
-     <!-- /.sidebar -->
- 
-  <!-- /.content-wrapper -->
-
-  <!-- Control Sidebar -->
-  
-  <!-- /.control-sidebar -->
+    
 
 </div>
 <!-- ./wrapper -->
