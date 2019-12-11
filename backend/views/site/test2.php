@@ -7,7 +7,8 @@ use yii\widgets\ActiveForm;
 /* @var $model app\models\Skill */
 /* @var $form yii\widgets\ActiveForm */
 ?>
-    <?php $form = ActiveForm::begin(); ?>
+    <?php $form = ActiveForm::begin([
+    'options' => ['enctype' => 'multipart/form-data']]); ?>
 <div id="step-2" class="row">
 	<header class="entry-header">
 		<h2 class="entry-title">RESUME</h2>							 
@@ -21,9 +22,9 @@ use yii\widgets\ActiveForm;
 				</div>
 				<div class="column small-9">
 					 <label class="text-photo">Photos</label><label class="experience_demo">(Use vertical image)</label>
-					 <input id="avatar"  type="file" name="avatar"  >
+					 <input id="pro_img"  type="file" name="pro_img"  >
 				</div>
-			  </div> 
+			
 		 </section>
 		
 		<section id="profile">

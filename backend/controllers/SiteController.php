@@ -13,6 +13,7 @@ use app\models\Jobhistory;
 use app\models\Profile;
 use app\models\Themes;
 use common\models\User;
+use yii\web\UploadedFile;
 /**
  * Site controller
  */
@@ -79,6 +80,7 @@ class SiteController extends Controller
         $request = Yii::$app->request;
         if ($request->isPost) {
             
+           $profilemodel = new Profile();   
            $nameTH=$request->post('fullname_th');
            $nameEN=$request->post('fullname_en');
            $gender=$request->post('sex');
@@ -94,13 +96,36 @@ class SiteController extends Controller
            $mail=$request->post('mail');
            $facebook=$request->post('facebook');
            $link=$request->post('web_other_value');
-           $pro_img=$request->post('avatar');
+        // $pro_img=$request->post('avatar');
           
            $status=$request->post('');
-         
+       
+         $pathFolder = "../../frontend/web/uploads/" . str_pad($id, 5, '0', STR_PAD_LEFT) . "/";
 
+         if (!file_exists($pathFolder)) {
+           
+             if (mkdir($pathFolder, 0755, true)) { } else {
+                 die('failed');
+             }
+         }
+         $pro_img = UploadedFile::getInstanceByName('pro_img');
+        
+         if (isset($pro_img->error) && $pro_img->error == 0) {
+             $curFileName = $id . '_' . time() . '_';
+             $imageName = '.' . $pro_img->getExtension();
+             $path = $pathFolder . pathinfo($curFileName, PATHINFO_FILENAME);
+             try {
+                 if ($pro_img->saveAs($path . $imageName)) {
+                     $slip_name = $curFileName.$imageName;
+                   
+                     $profilemodel->pro_img = $slip_name;
+                 }
+             } catch (Exception $e) {
+             }
+         }
 
-           $profilemodel = new Profile();   
+       
+           
             
              $profilemodel->nameTH = $nameTH;
              $profilemodel->nameEN = $nameEN;
@@ -116,14 +141,14 @@ class SiteController extends Controller
              $profilemodel->facebook = $facebook;
              $profilemodel->link = $link;
              $profilemodel->user_id = $id;
-             $profilemodel->pro_img = $pro_img;
+           
              $profilemodel->date_create = time();
            
              $profilemodel->status = $status;
-             
-            
+                      
+          
              $profilemodel->save();
-        } 
+        }   
         
         $id = Yii::$app->user->identity->id;
         $request = Yii::$app->request;
