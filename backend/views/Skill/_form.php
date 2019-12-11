@@ -20,7 +20,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'chart_type')->textInput() ?>
 
-    <?= $form->field($model, 'user_id')->textInput() ?>
+    <?= $form->field($model, 'user_id')->textInput(['disabled' => 'disabled']) ?>
 
     <?= $form->field($model, 'date_create')->textInput() ?>
 

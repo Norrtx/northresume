@@ -13,9 +13,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <h1><?= Html::encode($this->title) ?></h1>
 
-    <p>
-        <?= Html::a('Create Profile', ['create'], ['class' => 'btn btn-success']) ?>
-    </p>
+    
 
 
     <?= GridView::widget([
@@ -28,19 +26,19 @@ $this->params['breadcrumbs'][] = $this->title;
             'nameEN',
             'gender',
             'birthday',
-            //'Age',
-            //'city',
-            //'state',
-            //'zip',
-            //'latitude',
-            //'longitude',
-            //'mail',
-            //'facebook',
-            //'link',
-            //'user_id',
-            //'pro_img',
-            //'date_create',
-            //'date_update',
+            'Age',
+            'city',
+            'state',
+            'zip',
+            'latitude',
+            'longitude',
+            'mail',
+            'facebook',
+            'link',
+            'user_id',
+            'pro_img',
+            'date_create',
+            'date_update',
             //'status',
 
             ['class' => 'yii\grid\ActionColumn'],

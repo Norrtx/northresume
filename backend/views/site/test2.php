@@ -41,7 +41,7 @@ use yii\widgets\ActiveForm;
 					</select>
 				</div>
 				<div class="small-6 columns">
-					 <input type="text" name="fullname_th" placeholder="Thai Language">
+					 <input required=""type="text" name="fullname_th" placeholder="Thai Language">
 				</div>
 			</div>
 			<div class="row">
@@ -49,7 +49,7 @@ use yii\widgets\ActiveForm;
 					<label>Fullname en</label>
 				</div>
 				<div class="small-9 column">
-					 <input type="text" name="fullname_en" placeholder="Eng Language"> 
+					 <input required=""type="text" name="fullname_en" placeholder="Eng Language"> 
 				</div>
 			</div>
 			<div class="row">
@@ -221,7 +221,7 @@ use yii\widgets\ActiveForm;
 					<label>Email</label>
 				</div>
 				<div class="small-9 column">
-					<input type="text" name="mail">
+					<input required=""type="text" name="mail"placeholder="Email">
 				</div>
 			</div>
 			<div class="row">
@@ -229,15 +229,15 @@ use yii\widgets\ActiveForm;
 					<label>Address</label>
 				</div>
 				<div class="small-9 column">
-                    <input name="city" type="text" class="form-control" placeholder="Prefecture"><br>
+                    <input required="" name="city" type="text" class="form-control" placeholder="Prefecture"><br>
                 </div>
                 <div class="small-9 column">
-                    <input name="state" type="text" class="form-control" placeholder="State">
+                    <input required="" name="state" type="text" class="form-control" placeholder="State">
                 </div><br>	<div class="small-3 column">
 					<label>Zip code</label>
 				</div>
                 <div class="small-9 column">
-                    <input name="zip" type="text" class="form-control" placeholder="zip code">
+                    <input required=""name="zip" type="text" class="form-control" placeholder="zip code">
                 </div><br>
                 <div class="small-9 column">
                     <input name="latitude" type="text" class="form-control" placeholder="latitude">
@@ -262,30 +262,7 @@ use yii\widgets\ActiveForm;
 					<input type="text" name="facebook" placeholder="Name / ID">
 				</div>
 			</div>
-			<div class="row">
-				<div class="small-3 column">
-					<label>Instagram</label>
-				</div>
-				<div class="small-9 column">
-					<input type="text" name="instagram" placeholder="Name / ID">
-				</div>
-			</div>
-			<div class="row">
-				<div class="small-3 column">
-					<label>Twitter</label>
-				</div>
-				<div class="small-9 column">
-					<input type="text" name="twitter" placeholder="Name / ID">
-				</div>
-			</div>
-			<div class="row">
-				<div class="small-3 column">
-					<input type="text" name="social_other_name" placeholder="Other">
-				</div>
-				<div class="small-9 column">
-					<input type="text" name="social_other_value" placeholder="Name / ID">
-				</div>
-			</div>
+		
 		</section>
  	
 		<section id="web">
@@ -378,7 +355,7 @@ use yii\widgets\ActiveForm;
 						<label>Since </label>
 					</div>
 					<div class="column small-3"> 
-						<select name="experience_year_start1" class="experience_select">
+						<select name="experience[]" class="experience_select">
 														<option value="2019">2019</option>
 							 							<option value="2018">2018</option>
 							 							<option value="2017">2017</option>
@@ -465,7 +442,7 @@ use yii\widgets\ActiveForm;
 						<label>to </label>
 					</div>
 					<div class="column small-3"> 
-						<select name="experience_year_end1" class="experience_select"> 
+						<select name="experienceyear[]" class="experience_select"> 
 														<option value="2019">2019</option>
 							 							<option value="2018">2018</option>
 							 							<option value="2017">2017</option>
@@ -557,13 +534,13 @@ use yii\widgets\ActiveForm;
 						<label> Company </label> 
 					</div> 
 					<div class="column small-4"> 
-						<input type="text" name="experience_company1" class="input-company"> 
+						<input type="text" name="company[]" class="input-company"> 
 					</div> 
 					<div class="column small-2"> 
 						<label> Position </label>
 					</div> 
 					<div class="column small-4"> 
-						<input type="text" name="experience_position1" class="input-position">
+						<input type="text" name="position[]" class="input-position">
 					</div> 
 				</div>
 			</div>
@@ -573,7 +550,7 @@ use yii\widgets\ActiveForm;
 						<label>Since </label>
 					</div>
 					<div class="column small-3"> 
-						<select name="experience_year_start2" class="experience_select">
+						<select name="experience[]" class="experience_select">
 														<option value="2019">2019</option>
 							 							<option value="2018">2018</option>
 							 							<option value="2017">2017</option>
@@ -660,7 +637,7 @@ use yii\widgets\ActiveForm;
 						<label>to </label>
 					</div>
 					<div class="column small-3"> 
-						<select name="experience_year_end2" class="experience_select"> 
+						<select name="experienceyear[]" class="experience_select"> 
 														<option value="2019">2019</option>
 							 							<option value="2018">2018</option>
 							 							<option value="2017">2017</option>
@@ -752,13 +729,13 @@ use yii\widgets\ActiveForm;
 						<label> Company </label> 
 					</div> 
 					<div class="column small-4"> 
-						<input type="text" name="experience_company2" class="input-company"> 
+						<input type="text" name="company[]" class="input-company"> 
 					</div> 
 					<div class="column small-2"> 
 						<label> Position </label>
 					</div> 
 					<div class="column small-4"> 
-						<input type="text" name="experience_position2" class="input-position">
+						<input type="text" name="position[]" class="input-position">
 					</div> 
 				</div>
 			</div>
@@ -768,7 +745,7 @@ use yii\widgets\ActiveForm;
 						<label>Since </label>
 					</div>
 					<div class="column small-3"> 
-						<select name="experience_year_start3" class="experience_select">
+						<select name="experience[]" class="experience_select">
 														<option value="2019">2019</option>
 							 							<option value="2018">2018</option>
 							 							<option value="2017">2017</option>
@@ -855,7 +832,7 @@ use yii\widgets\ActiveForm;
 						<label>to </label>
 					</div>
 					<div class="column small-3"> 
-						<select name="experience_year_end3" class="experience_select"> 
+						<select name="experienceyear[]" class="experience_select"> 
 														<option value="2019">2019</option>
 							 							<option value="2018">2018</option>
 							 							<option value="2017">2017</option>
@@ -947,13 +924,13 @@ use yii\widgets\ActiveForm;
 						<label> Company </label> 
 					</div> 
 					<div class="column small-4"> 
-						<input type="text" name="experience_company3" class="input-company"> 
+						<input type="text" name="company[]" class="input-company"> 
 					</div> 
 					<div class="column small-2"> 
 						<label> Position </label>
 					</div> 
 					<div class="column small-4"> 
-						<input type="text" name="experience_position3" class="input-position">
+						<input type="text" name="position[]" class="input-position">
 					</div> 
 				</div>
 			</div>
@@ -963,7 +940,7 @@ use yii\widgets\ActiveForm;
 						<label>Since </label>
 					</div>
 					<div class="column small-3"> 
-						<select name="experience_year_start4" class="experience_select">
+						<select name="experience[]" class="experience_select">
 														<option value="2019">2019</option>
 							 							<option value="2018">2018</option>
 							 							<option value="2017">2017</option>
@@ -1050,7 +1027,7 @@ use yii\widgets\ActiveForm;
 						<label>to </label>
 					</div>
 					<div class="column small-3"> 
-						<select name="experience_year_end4" class="experience_select"> 
+						<select name="experienceyear[]" class="experience_select"> 
 														<option value="2019">2019</option>
 							 							<option value="2018">2018</option>
 							 							<option value="2017">2017</option>
@@ -1142,13 +1119,13 @@ use yii\widgets\ActiveForm;
 						<label> Company </label> 
 					</div> 
 					<div class="column small-4"> 
-						<input type="text" name="experience_company4" class="input-company"> 
+						<input type="text" name="company[]" class="input-company"> 
 					</div> 
 					<div class="column small-2"> 
 						<label> Position </label>
 					</div> 
 					<div class="column small-4"> 
-						<input type="text" name="experience_position4" class="input-position">
+						<input type="text" name="position[]" class="input-position">
 					</div> 
 				</div>
 			</div>
@@ -1162,7 +1139,7 @@ use yii\widgets\ActiveForm;
 						<label>Since </label>
 					</div>
 					<div class="column small-3"> 
-						<select name="education_year_start1" class="education_select">
+						<select name="education[]" class="education_select">
 							 							<option value="2019">2019</option>
 							 							<option value="2018">2018</option>
 							 							<option value="2017">2017</option>
@@ -1249,7 +1226,7 @@ use yii\widgets\ActiveForm;
 						<label>to </label>
 					</div>
 					<div class="column small-3"> 
-						<select name="education_year_end1" class="education_select"> 
+						<select name="educationyear[]" class="education_select"> 
 														<option value="2019">2019</option>
 							 							<option value="2018">2018</option>
 							 							<option value="2017">2017</option>
@@ -1333,7 +1310,7 @@ use yii\widgets\ActiveForm;
 							 						</select>
 					</div>
 					<div class="column small-4"> 
-						<input type="text" name="faculty1" class="input-faculty" placeholder="Faculty">
+						<input type="text" name="gpa[]" class="input-faculty" placeholder="GPA">
 					</div>
 				</div>
 				<div class="small-12 column">
@@ -1350,7 +1327,7 @@ use yii\widgets\ActiveForm;
 						</select>
 					</div> 
 					<div class="column small-7"> 
-						<input type="text" name="academy1" class="input-academy" placeholder="Academy">
+						<input type="text" name="name[]" class="input-academy" placeholder="Academy">
 					</div>
 				</div>
 			</div>
@@ -1360,7 +1337,7 @@ use yii\widgets\ActiveForm;
 						<label>Since </label>
 					</div>
 					<div class="column small-3"> 
-						<select name="education_year_start2" class="education_select">
+						<select name="education[]" class="education_select">
 							 							<option value="2019">2019</option>
 							 							<option value="2018">2018</option>
 							 							<option value="2017">2017</option>
@@ -1447,7 +1424,7 @@ use yii\widgets\ActiveForm;
 						<label>to </label>
 					</div>
 					<div class="column small-3"> 
-						<select name="education_year_end2" class="education_select"> 
+						<select name="educationyear[]" class="education_select"> 
 														<option value="2019">2019</option>
 							 							<option value="2018">2018</option>
 							 							<option value="2017">2017</option>
@@ -1531,7 +1508,7 @@ use yii\widgets\ActiveForm;
 							 						</select>
 					</div>
 					<div class="column small-4"> 
-						<input type="text" name="faculty2" class="input-faculty" placeholder="Faculty">
+						<input type="text" name="gpa[]" class="input-faculty" placeholder="GPA">
 					</div>
 				</div>
 				<div class="small-12 column">
@@ -1548,457 +1525,31 @@ use yii\widgets\ActiveForm;
 						</select>
 					</div> 
 					<div class="column small-7"> 
-						<input type="text" name="academy2" class="input-academy" placeholder="Academy">
+						<input type="text" name="name[]" class="input-academy" placeholder="Academy">
 					</div>
-				</div>
-			</div>
-			<div class="row boxgray">
-				<div class="small-12 column">
-					<div class="column small-1"> 
-						<label>Since </label>
-					</div>
-					<div class="column small-3"> 
-						<select name="education_year_start3" class="education_select">
-							 							<option value="2019">2019</option>
-							 							<option value="2018">2018</option>
-							 							<option value="2017">2017</option>
-							 							<option value="2016">2016</option>
-							 							<option value="2015">2015</option>
-							 							<option value="2014">2014</option>
-							 							<option value="2013">2013</option>
-							 							<option value="2012">2012</option>
-							 							<option value="2011">2011</option>
-							 							<option value="2010">2010</option>
-							 							<option value="2009">2009</option>
-							 							<option value="2008">2008</option>
-							 							<option value="2007">2007</option>
-							 							<option value="2006">2006</option>
-							 							<option value="2005">2005</option>
-							 							<option value="2004">2004</option>
-							 							<option value="2003">2003</option>
-							 							<option value="2002">2002</option>
-							 							<option value="2001">2001</option>
-							 							<option value="2000">2000</option>
-							 							<option value="1999">1999</option>
-							 							<option value="1998">1998</option>
-							 							<option value="1997">1997</option>
-							 							<option value="1996">1996</option>
-							 							<option value="1995">1995</option>
-							 							<option value="1994">1994</option>
-							 							<option value="1993">1993</option>
-							 							<option value="1992">1992</option>
-							 							<option value="1991">1991</option>
-							 							<option value="1990">1990</option>
-							 							<option value="1989">1989</option>
-							 							<option value="1988">1988</option>
-							 							<option value="1987">1987</option>
-							 							<option value="1986">1986</option>
-							 							<option value="1985">1985</option>
-							 							<option value="1984">1984</option>
-							 							<option value="1983">1983</option>
-							 							<option value="1982">1982</option>
-							 							<option value="1981">1981</option>
-							 							<option value="1980">1980</option>
-							 							<option value="1979">1979</option>
-							 							<option value="1978">1978</option>
-							 							<option value="1977">1977</option>
-							 							<option value="1976">1976</option>
-							 							<option value="1975">1975</option>
-							 							<option value="1974">1974</option>
-							 							<option value="1973">1973</option>
-							 							<option value="1972">1972</option>
-							 							<option value="1971">1971</option>
-							 							<option value="1970">1970</option>
-							 							<option value="1969">1969</option>
-							 							<option value="1968">1968</option>
-							 							<option value="1967">1967</option>
-							 							<option value="1966">1966</option>
-							 							<option value="1965">1965</option>
-							 							<option value="1964">1964</option>
-							 							<option value="1963">1963</option>
-							 							<option value="1962">1962</option>
-							 							<option value="1961">1961</option>
-							 							<option value="1960">1960</option>
-							 							<option value="1959">1959</option>
-							 							<option value="1958">1958</option>
-							 							<option value="1957">1957</option>
-							 							<option value="1956">1956</option>
-							 							<option value="1955">1955</option>
-							 							<option value="1954">1954</option>
-							 							<option value="1953">1953</option>
-							 							<option value="1952">1952</option>
-							 							<option value="1951">1951</option>
-							 							<option value="1950">1950</option>
-							 							<option value="1949">1949</option>
-							 							<option value="1948">1948</option>
-							 							<option value="1947">1947</option>
-							 							<option value="1946">1946</option>
-							 							<option value="1945">1945</option>
-							 							<option value="1944">1944</option>
-							 							<option value="1943">1943</option>
-							 							<option value="1942">1942</option>
-							 							<option value="1941">1941</option>
-							 							<option value="1940">1940</option>
-							 						</select>
-					 </div>
-					<div class="column small-1"> 
-						<label>to </label>
-					</div>
-					<div class="column small-3"> 
-						<select name="education_year_end3" class="education_select"> 
-														<option value="2019">2019</option>
-							 							<option value="2018">2018</option>
-							 							<option value="2017">2017</option>
-							 							<option value="2016">2016</option>
-							 							<option value="2015">2015</option>
-							 							<option value="2014">2014</option>
-							 							<option value="2013">2013</option>
-							 							<option value="2012">2012</option>
-							 							<option value="2011">2011</option>
-							 							<option value="2010">2010</option>
-							 							<option value="2009">2009</option>
-							 							<option value="2008">2008</option>
-							 							<option value="2007">2007</option>
-							 							<option value="2006">2006</option>
-							 							<option value="2005">2005</option>
-							 							<option value="2004">2004</option>
-							 							<option value="2003">2003</option>
-							 							<option value="2002">2002</option>
-							 							<option value="2001">2001</option>
-							 							<option value="2000">2000</option>
-							 							<option value="1999">1999</option>
-							 							<option value="1998">1998</option>
-							 							<option value="1997">1997</option>
-							 							<option value="1996">1996</option>
-							 							<option value="1995">1995</option>
-							 							<option value="1994">1994</option>
-							 							<option value="1993">1993</option>
-							 							<option value="1992">1992</option>
-							 							<option value="1991">1991</option>
-							 							<option value="1990">1990</option>
-							 							<option value="1989">1989</option>
-							 							<option value="1988">1988</option>
-							 							<option value="1987">1987</option>
-							 							<option value="1986">1986</option>
-							 							<option value="1985">1985</option>
-							 							<option value="1984">1984</option>
-							 							<option value="1983">1983</option>
-							 							<option value="1982">1982</option>
-							 							<option value="1981">1981</option>
-							 							<option value="1980">1980</option>
-							 							<option value="1979">1979</option>
-							 							<option value="1978">1978</option>
-							 							<option value="1977">1977</option>
-							 							<option value="1976">1976</option>
-							 							<option value="1975">1975</option>
-							 							<option value="1974">1974</option>
-							 							<option value="1973">1973</option>
-							 							<option value="1972">1972</option>
-							 							<option value="1971">1971</option>
-							 							<option value="1970">1970</option>
-							 							<option value="1969">1969</option>
-							 							<option value="1968">1968</option>
-							 							<option value="1967">1967</option>
-							 							<option value="1966">1966</option>
-							 							<option value="1965">1965</option>
-							 							<option value="1964">1964</option>
-							 							<option value="1963">1963</option>
-							 							<option value="1962">1962</option>
-							 							<option value="1961">1961</option>
-							 							<option value="1960">1960</option>
-							 							<option value="1959">1959</option>
-							 							<option value="1958">1958</option>
-							 							<option value="1957">1957</option>
-							 							<option value="1956">1956</option>
-							 							<option value="1955">1955</option>
-							 							<option value="1954">1954</option>
-							 							<option value="1953">1953</option>
-							 							<option value="1952">1952</option>
-							 							<option value="1951">1951</option>
-							 							<option value="1950">1950</option>
-							 							<option value="1949">1949</option>
-							 							<option value="1948">1948</option>
-							 							<option value="1947">1947</option>
-							 							<option value="1946">1946</option>
-							 							<option value="1945">1945</option>
-							 							<option value="1944">1944</option>
-							 							<option value="1943">1943</option>
-							 							<option value="1942">1942</option>
-							 							<option value="1941">1941</option>
-							 							<option value="1940">1940</option>
-							 						</select>
-					</div>
-					<div class="column small-4"> 
-						<input type="text" name="faculty3" class="input-faculty" placeholder="Faculty">
-					</div>
-				</div>
-				<div class="small-12 column">
-					<div class="column small-1">&nbsp;</div>
-					<div class="column small-4"> 
-						<select name="degree3" class="degree_select"> 
-							<option value="">Degree</option>
-							<option value="Bachelor of Arts">Bachelor of Arts</option>
-							<option value="Master of Arts">Master of Arts</option>
-							<option value="Doctor of Philosophy">Doctor of Philosophy</option>						
-							<option value="High Vocational Certificate">High Vocational Certificate</option>
-							<option value="Vocational Certificate">Vocational Certificate</option>
-							<option value="Senior High School">Senior High School</option>				
-						</select>
-					</div> 
-					<div class="column small-7"> 
-						<input type="text" name="academy3" class="input-academy" placeholder="Academy">
-					</div>
-				</div>
-			</div>
-			<div class="row boxgray">
-				<div class="small-12 column">
-					<div class="column small-1"> 
-						<label>Since </label>
-					</div>
-					<div class="column small-3"> 
-						<select name="education_year_start4" class="education_select">
-							 							<option value="2019">2019</option>
-							 							<option value="2018">2018</option>
-							 							<option value="2017">2017</option>
-							 							<option value="2016">2016</option>
-							 							<option value="2015">2015</option>
-							 							<option value="2014">2014</option>
-							 							<option value="2013">2013</option>
-							 							<option value="2012">2012</option>
-							 							<option value="2011">2011</option>
-							 							<option value="2010">2010</option>
-							 							<option value="2009">2009</option>
-							 							<option value="2008">2008</option>
-							 							<option value="2007">2007</option>
-							 							<option value="2006">2006</option>
-							 							<option value="2005">2005</option>
-							 							<option value="2004">2004</option>
-							 							<option value="2003">2003</option>
-							 							<option value="2002">2002</option>
-							 							<option value="2001">2001</option>
-							 							<option value="2000">2000</option>
-							 							<option value="1999">1999</option>
-							 							<option value="1998">1998</option>
-							 							<option value="1997">1997</option>
-							 							<option value="1996">1996</option>
-							 							<option value="1995">1995</option>
-							 							<option value="1994">1994</option>
-							 							<option value="1993">1993</option>
-							 							<option value="1992">1992</option>
-							 							<option value="1991">1991</option>
-							 							<option value="1990">1990</option>
-							 							<option value="1989">1989</option>
-							 							<option value="1988">1988</option>
-							 							<option value="1987">1987</option>
-							 							<option value="1986">1986</option>
-							 							<option value="1985">1985</option>
-							 							<option value="1984">1984</option>
-							 							<option value="1983">1983</option>
-							 							<option value="1982">1982</option>
-							 							<option value="1981">1981</option>
-							 							<option value="1980">1980</option>
-							 							<option value="1979">1979</option>
-							 							<option value="1978">1978</option>
-							 							<option value="1977">1977</option>
-							 							<option value="1976">1976</option>
-							 							<option value="1975">1975</option>
-							 							<option value="1974">1974</option>
-							 							<option value="1973">1973</option>
-							 							<option value="1972">1972</option>
-							 							<option value="1971">1971</option>
-							 							<option value="1970">1970</option>
-							 							<option value="1969">1969</option>
-							 							<option value="1968">1968</option>
-							 							<option value="1967">1967</option>
-							 							<option value="1966">1966</option>
-							 							<option value="1965">1965</option>
-							 							<option value="1964">1964</option>
-							 							<option value="1963">1963</option>
-							 							<option value="1962">1962</option>
-							 							<option value="1961">1961</option>
-							 							<option value="1960">1960</option>
-							 							<option value="1959">1959</option>
-							 							<option value="1958">1958</option>
-							 							<option value="1957">1957</option>
-							 							<option value="1956">1956</option>
-							 							<option value="1955">1955</option>
-							 							<option value="1954">1954</option>
-							 							<option value="1953">1953</option>
-							 							<option value="1952">1952</option>
-							 							<option value="1951">1951</option>
-							 							<option value="1950">1950</option>
-							 							<option value="1949">1949</option>
-							 							<option value="1948">1948</option>
-							 							<option value="1947">1947</option>
-							 							<option value="1946">1946</option>
-							 							<option value="1945">1945</option>
-							 							<option value="1944">1944</option>
-							 							<option value="1943">1943</option>
-							 							<option value="1942">1942</option>
-							 							<option value="1941">1941</option>
-							 							<option value="1940">1940</option>
-							 						</select>
-					 </div>
-					<div class="column small-1"> 
-						<label>to </label>
-					</div>
-					<div class="column small-3"> 
-						<select name="education_year_end4" class="education_select"> 
-														<option value="2019">2019</option>
-							 							<option value="2018">2018</option>
-							 							<option value="2017">2017</option>
-							 							<option value="2016">2016</option>
-							 							<option value="2015">2015</option>
-							 							<option value="2014">2014</option>
-							 							<option value="2013">2013</option>
-							 							<option value="2012">2012</option>
-							 							<option value="2011">2011</option>
-							 							<option value="2010">2010</option>
-							 							<option value="2009">2009</option>
-							 							<option value="2008">2008</option>
-							 							<option value="2007">2007</option>
-							 							<option value="2006">2006</option>
-							 							<option value="2005">2005</option>
-							 							<option value="2004">2004</option>
-							 							<option value="2003">2003</option>
-							 							<option value="2002">2002</option>
-							 							<option value="2001">2001</option>
-							 							<option value="2000">2000</option>
-							 							<option value="1999">1999</option>
-							 							<option value="1998">1998</option>
-							 							<option value="1997">1997</option>
-							 							<option value="1996">1996</option>
-							 							<option value="1995">1995</option>
-							 							<option value="1994">1994</option>
-							 							<option value="1993">1993</option>
-							 							<option value="1992">1992</option>
-							 							<option value="1991">1991</option>
-							 							<option value="1990">1990</option>
-							 							<option value="1989">1989</option>
-							 							<option value="1988">1988</option>
-							 							<option value="1987">1987</option>
-							 							<option value="1986">1986</option>
-							 							<option value="1985">1985</option>
-							 							<option value="1984">1984</option>
-							 							<option value="1983">1983</option>
-							 							<option value="1982">1982</option>
-							 							<option value="1981">1981</option>
-							 							<option value="1980">1980</option>
-							 							<option value="1979">1979</option>
-							 							<option value="1978">1978</option>
-							 							<option value="1977">1977</option>
-							 							<option value="1976">1976</option>
-							 							<option value="1975">1975</option>
-							 							<option value="1974">1974</option>
-							 							<option value="1973">1973</option>
-							 							<option value="1972">1972</option>
-							 							<option value="1971">1971</option>
-							 							<option value="1970">1970</option>
-							 							<option value="1969">1969</option>
-							 							<option value="1968">1968</option>
-							 							<option value="1967">1967</option>
-							 							<option value="1966">1966</option>
-							 							<option value="1965">1965</option>
-							 							<option value="1964">1964</option>
-							 							<option value="1963">1963</option>
-							 							<option value="1962">1962</option>
-							 							<option value="1961">1961</option>
-							 							<option value="1960">1960</option>
-							 							<option value="1959">1959</option>
-							 							<option value="1958">1958</option>
-							 							<option value="1957">1957</option>
-							 							<option value="1956">1956</option>
-							 							<option value="1955">1955</option>
-							 							<option value="1954">1954</option>
-							 							<option value="1953">1953</option>
-							 							<option value="1952">1952</option>
-							 							<option value="1951">1951</option>
-							 							<option value="1950">1950</option>
-							 							<option value="1949">1949</option>
-							 							<option value="1948">1948</option>
-							 							<option value="1947">1947</option>
-							 							<option value="1946">1946</option>
-							 							<option value="1945">1945</option>
-							 							<option value="1944">1944</option>
-							 							<option value="1943">1943</option>
-							 							<option value="1942">1942</option>
-							 							<option value="1941">1941</option>
-							 							<option value="1940">1940</option>
-							 						</select>
-					</div>
-					<div class="column small-4"> 
-						<input type="text" name="faculty4" class="input-faculty" placeholder="Faculty">
-					</div>
-				</div>
-				<div class="small-12 column">
-					<div class="column small-1">&nbsp;</div>
-					<div class="column small-4"> 
-						<select name="degree4" class="degree_select"> 
-							<option value="">Degree</option>
-							<option value="Bachelor of Arts">Bachelor of Arts</option>
-							<option value="Master of Arts">Master of Arts</option>
-							<option value="Doctor of Philosophy">Doctor of Philosophy</option>						
-							<option value="High Vocational Certificate">High Vocational Certificate</option>
-							<option value="Vocational Certificate">Vocational Certificate</option>
-							<option value="Senior High School">Senior High School</option>				
-						</select>
-					</div> 
-					<div class="column small-7"> 
-						<input type="text" name="academy4" class="input-academy" placeholder="Academy">
-					</div>
-				</div>
-			</div>
-		</section>	
-		
+				</div>	
+		</section>
 		<section id="skill">
 			<h2 class="post-headline-primary"><i class="fa fa-star-o" aria-hidden="true"></i> Skills</h2>	 
 			<div class="row">
-				 <div class="small-9 column"><input type="text" name="skill_name1"></div>
-				 <div class="small-3 column">
-					<select name="skill_value1">
-						<option value="5">Excellent</option>
-						<option value="4">good</option>
-						<option value="3">Poor</option>
-						<option value="2">Low</option>
-						<option value="1">Lowest</option>
-					</select>
-				 </div>
+				 <div class="small-9 column"><input type="text" name="skill[]"placeholder="NameSkill"></div>
+				 <div class="small-3 column"><input type="text" name="skillvalue[]"placeholder="Score"></div>
+				 <div class="small-3 column"><input type="text" name="maxscore[]"placeholder="Maxscore"></div>
 			</div>
 			<div class="row">
-				 <div class="small-9 column"><input type="text" name="skill_name2"></div>
-				 <div class="small-3 column">
-					<select name="skill_value2">
-						<option value="5">Excellent</option>
-						<option value="4">good</option>
-						<option value="3">Poor</option>
-						<option value="2">Low</option>
-						<option value="1">Lowest</option>
-					</select>
-				 </div>
+				 <div class="small-9 column"><input type="text" name="skill[]"placeholder="NameSkill"></div>
+				 <div class="small-3 column"><input type="text" name="skillvalue[]"placeholder="Score"></div>
+				 <div class="small-3 column"><input type="text" name="maxscore[]"placeholder="Maxscore"></div>
 			</div>
 			<div class="row">
-				 <div class="small-9 column"><input type="text" name="skill_name3"></div>
-				 <div class="small-3 column">
-					<select name="skill_value3">
-						<option value="5">Excellent</option>
-						<option value="4">good</option>
-						<option value="3">Poor</option>
-						<option value="2">Low</option>
-						<option value="1">Lowest</option>
-					</select>
-				 </div>
+				 <div class="small-9 column"><input type="text"  name="skill[]"placeholder="NameSkill"></div>
+				 <div class="small-3 column"><input type="text" name="skillvalue[]"placeholder="Score"></div>
+				 <div class="small-3 column"><input type="text" name="maxscore[]"placeholder="Maxscore"></div>
 			</div>
 			<div class="row">
-				 <div class="small-9 column"><input type="text" name="skill_name4"></div>
-				 <div class="small-3 column">
-					<select name="skill_value4">
-						<option value="5">Excellent</option>
-						<option value="4">good</option>
-						<option value="3">Poor</option>
-						<option value="2">Low</option>
-						<option value="1">Lowest</option>
-					</select>
-				 </div>
+				 <div class="small-9 column"><input type="text" name="skill[]"placeholder="NameSkill"></div>
+				 <div class="small-3 column"><input type="text" name="skillvalue[]"placeholder="Score"></div>
+				 <div class="small-3 column"><input type="text" name="maxscore[]"placeholder="Maxscore"></div>
 			</div>
 	 
 		</section>

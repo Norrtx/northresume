@@ -28,9 +28,9 @@ $this->params['breadcrumbs'][] = $this->title;
             'score',
             'maxscore',
             'chart_type',
-            //'user_id',
-            //'date_create',
-            //'date_update',
+            'user_id',
+            'date_create',
+            'date_update',
             //'status',
 
             ['class' => 'yii\grid\ActionColumn'],

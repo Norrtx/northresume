@@ -38,7 +38,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'link')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'user_id')->textInput() ?>
+    <?= $form->field($model, 'user_id')->textInput(['disabled' => 'disabled']) ?>
 
     <?= $form->field($model, 'pro_img')->textInput(['maxlength' => true]) ?>
 
