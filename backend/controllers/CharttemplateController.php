@@ -33,17 +33,20 @@ class CharttemplateController extends Controller
      * Lists all Charttemplate models.
      * @return mixed
      */
+       
     public function actionIndex()
-    {
+    {       
+        // <--แสดงเฉาะuseridนั้นๆ
+        $id = Yii::$app->user->identity->id;
         $dataProvider = new ActiveDataProvider([
-            'query' => Charttemplate::find(),
+            'query' => Charttemplate::find()->where(['user_id'=>$id])
         ]);
-
+    // แสดงเฉาะuseridนั้นๆ-->
         return $this->render('index', [
             'dataProvider' => $dataProvider,
         ]);
     }
-
+  
     /**
      * Displays a single Charttemplate model.
      * @param integer $id

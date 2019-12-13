@@ -27,7 +27,9 @@ $this->params['breadcrumbs'][] = $this->title;
             'school_name',
             'date_from',
             'date_to',
+            'faculty',
             'gpa',
+            
             //'user_id',
             //'date_create',
             //'date_update',

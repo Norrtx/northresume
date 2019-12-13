@@ -14,11 +14,12 @@ class AppAsset extends AssetBundle
     public $baseUrl = '@web';
     public $css = [
        'css/site.css',
-       //'css/adminlte.css',
+      // 'css/adminlte.css',
        // 'css/layout.css',
         //'css/main.css',
     ];
     public $js = [
+        //'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'
        
     ];
     public $depends = [

@@ -35,8 +35,9 @@ class ProfileController extends Controller
      */
     public function actionIndex()
     {
+        $id = Yii::$app->user->identity->id;
         $dataProvider = new ActiveDataProvider([
-            'query' => Profile::find(),
+            'query' => Profile::find()->where(['user_id'=>$id])
         ]);
 
         return $this->render('index', [

@@ -17,6 +17,7 @@ class m191202_034655_create_education extends Migration
             'school_name' =>$this->string(),
             'date_from' => $this->integer(11),
             'date_to' => $this->integer(11),
+            'faculty' =>$this->string(),
             'gpa'=>$this->decimal(10,2),
             'user_id'=>$this->integer(),
             'date_create' => $this->integer(11),

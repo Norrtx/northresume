@@ -30,12 +30,12 @@ class Education extends \yii\db\ActiveRecord
     /**
      * {@inheritdoc}
      */
-    public function rules()
+    public function rules()   
     {
         return [
             [['date_from', 'date_to', 'user_id', 'date_create', 'date_update', 'status'], 'integer'],
             [['gpa'], 'number'],
-            [['school_name'], 'string', 'max' => 255],
+            [['school_name','faculty'], 'string', 'max' => 255],
         ];
     }
 
@@ -49,6 +49,7 @@ class Education extends \yii\db\ActiveRecord
             'school_name' => 'School Name',
             'date_from' => 'Date From',
             'date_to' => 'Date To',
+            'faculty' => 'Faculty',
             'gpa' => 'Gpa',
             'user_id' => 'User ID',
             'date_create' => 'Date Create',

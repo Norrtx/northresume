@@ -43,9 +43,9 @@ class Profile extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['birthday', 'zip', 'user_id', 'date_create', 'date_update', 'status'], 'integer'],
+            [['birthday', 'Age','zip', 'user_id', 'date_create', 'date_update', 'status'], 'integer'],
             [['latitude', 'longitude'], 'number'],
-            [['nameTH', 'nameEN', 'gender', 'Age', 'city', 'state', 'mail', 'facebook', 'link', 'pro_img'], 'string', 'max' => 255],
+            [['nameTH', 'nameEN', 'gender', 'city', 'state', 'mail', 'facebook', 'link', 'pro_img'], 'string', 'max' => 255],
         ];
     }
 

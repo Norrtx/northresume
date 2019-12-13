@@ -35,8 +35,9 @@ class EducationController extends Controller
      */
     public function actionIndex()
     {
+        $id = Yii::$app->user->identity->id;
         $dataProvider = new ActiveDataProvider([
-            'query' => Education::find(),
+            'query' => Education::find()->where(['user_id'=>$id])
         ]);
 
         return $this->render('index', [

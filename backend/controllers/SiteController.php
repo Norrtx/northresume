@@ -85,8 +85,6 @@ class SiteController extends Controller
            $nameEN=$request->post('fullname_en');
            $gender=$request->post('sex');
            $birthday=$request->post('birth_date');
-           $birthdaydate=$request->post('birth_month');
-           $birthdayyear=$request->post('birth_year');
            $Age=$request->post('age');
            $city=$request->post('state');
            $state=$request->post('state');
@@ -96,41 +94,33 @@ class SiteController extends Controller
            $mail=$request->post('mail');
            $facebook=$request->post('facebook');
            $link=$request->post('web_other_value');
-        // $pro_img=$request->post('avatar');
-          
            $status=$request->post('');
        
-         $pathFolder = "../../frontend/web/uploads/" . str_pad($id, 5, '0', STR_PAD_LEFT) . "/";
-
-         if (!file_exists($pathFolder)) {
-           
-             if (mkdir($pathFolder, 0755, true)) { } else {
-                 die('failed');
-             }
-         }
-         $pro_img = UploadedFile::getInstanceByName('pro_img');
+           $pathFolder = "../../frontend/web/uploads/" . str_pad($id, 5, '0', STR_PAD_LEFT) . "/";
+            if (!file_exists($pathFolder)) {
+                if (mkdir($pathFolder, 0755, true)) { } else {
+                         die('failed');
+                }
+            }
+                 $pro_img = UploadedFile::getInstanceByName('pro_img');
         
-         if (isset($pro_img->error) && $pro_img->error == 0) {
-             $curFileName = $id . '_' . time() . '_';
-             $imageName = '.' . $pro_img->getExtension();
-             $path = $pathFolder . pathinfo($curFileName, PATHINFO_FILENAME);
-             try {
-                 if ($pro_img->saveAs($path . $imageName)) {
+            if (isset($pro_img->error) && $pro_img->error == 0) {
+                $curFileName = $id . '_' . time() . '_';
+                $imageName = '.' . $pro_img->getExtension();
+                $path = $pathFolder . pathinfo($curFileName, PATHINFO_FILENAME);
+               try {
+                   if ($pro_img->saveAs($path . $imageName)) {
                      $slip_name = $curFileName.$imageName;
-                   
                      $profilemodel->pro_img = $slip_name;
-                 }
-             } catch (Exception $e) {
-             }
-         }
-
-       
-           
+                    }
+               } catch (Exception $e) {
+                  }
+            }           
             
              $profilemodel->nameTH = $nameTH;
              $profilemodel->nameEN = $nameEN;
              $profilemodel->gender = $gender;
-             $profilemodel->birthday = $birthday.$birthdaydate.$birthdayyear;
+             $profilemodel->birthday =  strtotime($birthday);
              $profilemodel->Age = $Age;
              $profilemodel->city = $city;
              $profilemodel->state = $state;
@@ -141,7 +131,7 @@ class SiteController extends Controller
              $profilemodel->facebook = $facebook;
              $profilemodel->link = $link;
              $profilemodel->user_id = $id;
-           
+          
              $profilemodel->date_create = time();
            
              $profilemodel->status = $status;
@@ -183,13 +173,13 @@ class SiteController extends Controller
        
         $id = Yii::$app->user->identity->id;
         $request = Yii::$app->request;
-        if ($request->isPost) {
+         if ($request->isPost) {
             
            $school_name=$request->post('name');
            $date_from=$request->post('education');
            $date_to=$request->post('educationyear');
            $gpa=$request->post('gpa');
-          
+           $faculty=$request->post('faculty');
         
             
            foreach ($school_name as $key => $name) {
@@ -198,6 +188,7 @@ class SiteController extends Controller
                    $educationmodel->school_name = ($name != null) ? $name : null;
                    $educationmodel->date_from =($date_from[$key] != null) ?  $date_from[$key] : null;
                    $educationmodel->date_to = ($date_to[$key] != null) ?  $date_to[$key] : null;
+                   $educationmodel->faculty = ($faculty[$key] != null) ?  $faculty[$key] : null;
                    $educationmodel->gpa = ($gpa[$key] != null) ?  $gpa[$key] : null;
                    $educationmodel->user_id = $id;
                    $educationmodel->date_create = time();
@@ -206,10 +197,10 @@ class SiteController extends Controller
                    $educationmodel->save();
                 }   
            } 
-        }  
+         }  
         $id = Yii::$app->user->identity->id;
         $request = Yii::$app->request;
-        if ($request->isPost) {
+         if ($request->isPost) {
           
             $company_name=$request->post('company');
             $position=$request->post('position');
@@ -230,17 +221,15 @@ class SiteController extends Controller
                     $jobhistorymodel->description = $description;
                     $jobhistorymodel->user_id = $id;
                     $jobhistorymodel->date_create =time();
-                
-                   
-            
                     $jobhistorymodel->save();
                 }
 
            }  
-        }return $this->render('test2');
+         }
+         return $this->render('test2');  //<--end-->
         $id = Yii::$app->user->identity->id;
         $request = Yii::$app->request;
-        if ($request->isPost) {
+         if ($request->isPost) {
             
              
             $name=$request->post('namem');
@@ -263,10 +252,10 @@ class SiteController extends Controller
              $charttemplatemodel->zip = $zip;
              
              $charttemplatemodel->save();
-        }
+         }
         $id = Yii::$app->user->identity->id;
         $request = Yii::$app->request;
-        if ($request->isPost) {
+         if ($request->isPost) {
             
            $name=$request->post('namem');
            $mail=$request->post('mail');
@@ -288,7 +277,7 @@ class SiteController extends Controller
              $jobhistorymodel->zip = $zip;
             
              $jobhistorymodel->save();
-        }
+         }
 
 
 

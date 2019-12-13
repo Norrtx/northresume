@@ -37,10 +37,10 @@ class SkillController extends Controller
      */
     public function actionIndex()
     {
+        $id = Yii::$app->user->identity->id;
         $dataProvider = new ActiveDataProvider([
-            'query' => Skill::find(),
+            'query' => Skill::find()->where(['user_id'=>$id])
         ]);
-
         return $this->render('index', [
             'dataProvider' => $dataProvider,
         ]);

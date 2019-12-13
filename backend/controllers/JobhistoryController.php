@@ -35,8 +35,9 @@ class JobhistoryController extends Controller
      */
     public function actionIndex()
     {
+        $id = Yii::$app->user->identity->id;
         $dataProvider = new ActiveDataProvider([
-            'query' => Jobhistory::find(),
+            'query' => Jobhistory::find()->where(['user_id'=>$id])
         ]);
 
         return $this->render('index', [

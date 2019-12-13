@@ -35,8 +35,9 @@ class ThemesController extends Controller
      */
     public function actionIndex()
     {
+        $id = Yii::$app->user->identity->id;
         $dataProvider = new ActiveDataProvider([
-            'query' => Themes::find(),
+            'query' => Themes::find()->where(['user_id'=>$id])
         ]);
 
         return $this->render('index', [
