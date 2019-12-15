@@ -13,9 +13,6 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <h1><?= Html::encode($this->title) ?></h1>
 
-    
-
-
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'columns' => [
@@ -37,6 +34,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'link',
             'user_id',
             'pro_img',
+            'description:ntext',
             'date_create',
             'date_update',
             //'status',

@@ -2104,11 +2104,11 @@ img[height] {
 .c-work__timeframe,
 .c-work__location {
   opacity: .6;
-  font-size: 0.7rem;
+  font-size: 1rem;
 }
 
 .c-work__title {
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 .c-social-button {
@@ -2539,4 +2539,10 @@ body {
     }
   }
   
-  
+  .circle {
+    height: 200px;
+    width: 100%;
+    border: 3px solid #fff;
+    border-radius: 150%;
+    box-shadow: 0 0 100px rgba(0, 10, 1, 1);
+}

@@ -29,6 +29,7 @@ class m191202_034433_create_profile extends Migration
             'link' => $this->string(),
             'user_id'=>$this->integer(),
             'pro_img' =>$this->string(),
+            'description'=>$this->text(),
             'date_create' => $this->integer(11),
             'date_update' => $this->integer(11),
             'status'=>$this->boolean(),

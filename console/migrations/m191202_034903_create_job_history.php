@@ -18,7 +18,7 @@ class m191202_034903_create_job_history extends Migration
             'position' =>$this->string(),
             'date_from' => $this->integer(11),
             'date_to' => $this->integer(11),
-            'description'=>$this->text(),
+           
             'user_id'=>$this->integer(),
             'date_create' => $this->integer(11),
             'date_update' => $this->integer(11),

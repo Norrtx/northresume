@@ -14,7 +14,13 @@ use frontend\models\PasswordResetRequestForm;
 use frontend\models\ResetPasswordForm;
 use frontend\models\SignupForm;
 use frontend\models\ContactForm;
-
+use common\models\Profile;
+use common\models\Skill;
+use common\models\User;
+use common\models\Education;
+use common\models\Themes;
+use common\models\Jobhistory;
+use common\models\Charttemplate;
 /**
  * Site controller
  */
@@ -74,7 +80,20 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index');
+        $profileModel = Profile::find()->one();
+        $skillModel = Skill::find()->all();
+        $educationModel = Education::find()->all();
+        $themesModel = Themes::find()->one();
+        $jobhistoryModel = Jobhistory::find()->all();
+        $charttemplateModel = Charttemplate::find()->one();
+        return $this->render('index', [
+            'profileModel' => $profileModel,
+            'skillModel' => $skillModel,
+            'educationModel' => $educationModel,
+            'themesModel' => $themesModel,
+            'jobhistoryModel' => $jobhistoryModel,
+            'charttemplateModel' => $charttemplateModel,
+        ]);
     }
 
     /**

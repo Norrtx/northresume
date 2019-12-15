@@ -1,10 +1,32 @@
 <?php
-
+use yii\helpers\Url;
+use yii\helpers\Html;
+use yii\bootstrap\Nav;
+use yii\bootstrap\NavBar;
+use yii\widgets\Breadcrumbs;
+use frontend\assets\AppAsset;
+use common\widgets\Alert;
+use common\models\Profile;
+use common\models\Skill;
+use common\models\User;
+use common\models\Education;
+use common\models\Themes;
+use common\models\Jobhistory;
+use common\models\Charttemplate;
 /* @var $this yii\web\View */
 
 $this->title = 'My Yii Application';
 Yii ::$app->db->open();
-?>
+$id = Yii::$app->request->get('id');
+$profile=profile::find()->where(['user_id' => $id])->one();
+$skillModel=Skill::find()->where(['user_id' => $id])->all();
+$educationModel=Education::find()->where(['user_id' => $id])->all();
+$themesModel=Themes::find()->where(['user_id' => $id])->one();
+$jobhistoryModel=Jobhistory::find()->where(['user_id' => $id])->all();
+$charttemplateModel=Charttemplate::find()->where(['user_id' => $id])->one();
+$path = Url::to(["/uploads"]) ."/". str_pad($id, 5, '0', STR_PAD_LEFT) . "/";
+if($id != null) {
+ ?>
 <div class="site-index">
 
     
@@ -88,7 +110,7 @@ Yii ::$app->db->open();
 
                                     <div class="c-header__avatar">
                                         <div class="a-header  c-avatar">
-                                            <img class="c-avatar__img" src="assets/images/header/avatar.jpg" alt="">
+                                            <img class="circle" src="<?=$path.$profile->pro_img?>" alt="">
                                         </div><!-- /c-avatar -->
                                     </div><!-- /c-header-avatar -->
 
@@ -215,7 +237,76 @@ Yii ::$app->db->open();
             </section><!-- /o-section -->
 
 
+            <!-- ################################ -->
+            <!-- ########### PROFILES ########### -->
+            <!-- ################################ -->
+            
+               
+          <section class="o-section  t-section  ">
 
+                <div class="o-section__header-bg  t-section__header"></div>
+                <div class="o-section__content-bg  t-section__content"></div>
+
+                <div class="o-container">
+                    <div class="o-section__container">
+
+                        <header class="o-section__header  t-section__header">
+                            <div class="o-content">
+                                <h2 class="o-section__heading">
+                                PROFILES
+                                </h2>
+                              
+                            </div>
+                        </header><!-- /o-section__header -->
+
+                        <div class="o-section__content  t-section__content  ">
+                            
+                            <div class="o-grid">
+
+                                <div class="o-grid__col-md-4  o-grid__col-sm-6">
+                                    <div class="o-content">
+                                        <hr class="c-deco-line  t-primary-color-line" />
+                                        <div class="o-content__body">
+                                            <h3>Unicorn Developer Award 2016</h3>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, justo eget porttitor mauris sit amet felis. Neque id cursus faucibus.
+                                            </p>
+                                        </div>
+                                    </div><!-- /o-content -->
+                                </div><!-- /o-grid__col -->
+
+                                <div class="o-grid__col-md-4  o-grid__col-sm-6">
+                                    <div class="o-content">
+                                        <hr class="c-deco-line  t-primary-color-line" />
+                                        <div class="o-content__body">
+                                            <h3>Website of the Year Award 2015</h3>
+                                            <p>
+                                                Praesent dapibus dolor sit amet, justo eget porttitor mauris sit amet. Neque id cursus faucibus.
+                                            </p>
+                                        </div>
+                                    </div><!-- /o-content -->
+                                </div><!-- /o-grid__col -->
+
+                                <div class="o-grid__col-md-4  o-grid__col-sm-6">
+                                    <div class="o-content">
+                                        <hr class="c-deco-line  t-primary-color-line" />
+                                        <div class="o-content__body">
+                                            <h3>1st Place at CSShacker Conference</h3>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, justo eget porttitor mauris sit amet felis. Neque id cursus faucibus.
+                                            </p>
+                                        </div>
+                                    </div><!-- /o-content -->
+                                </div><!-- /o-grid__col -->
+
+                            </div><!-- /o-grid -->
+
+                        </div><!-- /o-section__content -->
+
+                    </div><!-- /o-section__container -->
+                </div><!-- /o-container -->
+
+            </section><!-- /o-section -->
             <!-- ################################ -->
             <!-- ############ INTRO ############# -->
             <!-- ################################ -->
@@ -233,9 +324,7 @@ Yii ::$app->db->open();
                                 <h2 class="o-section__heading">
                                     Intro
                                 </h2>
-                                <div class="o-content__body  o-section__description">
-                                    What I am all about.
-                                </div>
+                                
                             </div>
                         </header><!-- /o-section__header -->
 
@@ -245,11 +334,7 @@ Yii ::$app->db->open();
                                 <div class="c-intro">
                                     <div class="o-content__body">
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aaliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed
-                                            <a href="#" target="_blank">pretium</a>, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Nulla vitae mauris non felis mollis faucibus.
-                                        </p>
-                                        <p>
-                                            Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna. Fusce lacinia arcu et nulla. Nulla vitae mauris non felis mollis.
+                                        <?= $profileModel->description?>
                                         </p>
                                     </div>
                                 </div>
@@ -262,139 +347,6 @@ Yii ::$app->db->open();
 
             </section><!-- /o-section -->
 
-
-
-            <!-- ################################ -->
-            <!-- ########## EXPERTISE ########### -->
-            <!-- ################################ -->
-            
-            <section class="o-section  t-section  ">
-
-                <div class="o-section__header-bg  t-section__header"></div>
-                <div class="o-section__content-bg  t-section__content"></div>
-
-                <div class="o-container">
-                    <div class="o-section__container">
-
-                        <header class="o-section__header  t-section__header">
-                            <div class="o-content">
-                                <h2 class="o-section__heading">
-                                    Expertise
-                                </h2>
-                                <div class="o-content__body  o-section__description">
-                                    Batman would be jealous.
-                                </div>
-                            </div>
-                        </header><!-- /o-section__header -->
-
-                        <div class="o-section__content  t-section__content  ">
-                            
-                            <div class="o-grid">
-
-                                <div class="o-grid__col-sm-6">
-                                    <div class="o-media  o-media--block  o-content">
-                                        <div class="o-media__figure">
-                                            <div class="c-number  t-primary-color">
-                                                01
-                                            </div>
-                                        </div>
-                                        <div class="o-media__body  o-content__body">
-                                            <h3>Advanced CSS</h3>
-                                            <p>
-                                                Cras ornare tristique elit lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id.
-                                            </p>
-                                        </div>
-                                    </div><!-- /o-media o-content -->
-                                </div><!-- /o-grid__col -->
-
-                                <div class="o-grid__col-sm-6">
-                                    <div class="o-media  o-media--block  o-content">
-                                        <div class="o-media__figure">
-                                            <div class="c-number  t-primary-color">
-                                                02
-                                            </div>
-                                        </div>
-                                        <div class="o-media__body  o-content__body">
-                                            <h3>Front-end Design</h3>
-                                            <p>
-                                                Sed adipiscing ornare risus. Morbi est est, blandit sit amet, sagittis vel, euismod vel, velit. Pellentesque egestas sem. Suspendisse commodo ullamcorper magna. Ut aliquam sollicitudin leo.
-                                            </p>
-                                        </div>
-                                    </div><!-- /o-media o-content -->
-                                </div><!-- /o-grid__col -->
-
-                                <div class="o-grid__col-sm-6">
-                                    <div class="o-media  o-media--block  o-content">
-                                        <div class="o-media__figure">
-                                            <div class="c-number  t-primary-color">
-                                                03
-                                            </div>
-                                        </div>
-                                        <div class="o-media__body  o-content__body">
-                                            <h3>Ruby on Rails</h3>
-                                            <p>
-                                                Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis. Vivamus vestibulum nulla cras ornare tristique elit nec ante.
-                                            </p>
-                                        </div>
-                                    </div><!-- /o-media o-content -->
-                                </div><!-- /o-grid__col -->
-
-                                <div class="o-grid__col-sm-6">
-                                    <div class="o-media  o-media--block  o-content">
-                                        <div class="o-media__figure">
-                                            <div class="c-number  t-primary-color">
-                                                04
-                                            </div>
-                                        </div>
-                                        <div class="o-media__body  o-content__body">
-                                            <h3>Object-oriented PHP</h3>
-                                            <p>
-                                                Morbi in sem quis dui placerat ornare. Ut aliquam sollicitudin leo. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras ante. Vivamus vestibulum nulla nec ante.
-                                            </p>
-                                        </div>
-                                    </div><!-- /o-media o-content -->
-                                </div><!-- /o-grid__col -->
-
-                                <div class="o-grid__col-sm-6">
-                                    <div class="o-media  o-media--block  o-content">
-                                        <div class="o-media__figure">
-                                            <div class="c-number  t-primary-color">
-                                                05
-                                            </div>
-                                        </div>
-                                        <div class="o-media__body  o-content__body">
-                                            <h3>WordPress</h3>
-                                            <p>
-                                                Phasellus ultrices nulla quis nibh. Fusce lobortis lorem. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Nam nulla quam, gravida non, sodales sit amet, nisi.
-                                            </p>
-                                        </div>
-                                    </div><!-- /o-media o-content -->
-                                </div><!-- /o-grid__col -->
-
-                                <div class="o-grid__col-sm-6">
-                                    <div class="o-media  o-media--block  o-content">
-                                        <div class="o-media__figure">
-                                            <div class="c-number  t-primary-color">
-                                                06
-                                            </div>
-                                        </div>
-                                        <div class="o-media__body  o-content__body">
-                                            <h3>JavaScript / jQuery</h3>
-                                            <p>
-                                                Cras ornare tristique elit lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id.
-                                            </p>
-                                        </div>
-                                    </div><!-- /o-media o-content -->
-                                </div><!-- /o-grid__col -->
-
-                            </div><!-- /o-grid -->
-
-                        </div><!-- /o-section__content -->
-
-                    </div><!-- /o-section__container -->
-                </div><!-- /o-container -->
-
-            </section><!-- /o-section -->
 
 
 
@@ -416,7 +368,7 @@ Yii ::$app->db->open();
                                     Skills
                                 </h2>
                                 <div class="o-content__body  o-section__description">
-                                    Progress bars, anyone?
+                                   
                                 </div>
                             </div>
                         </header><!-- /o-section__header -->
@@ -424,150 +376,27 @@ Yii ::$app->db->open();
                         <div class="o-section__content  t-section__content  ">
                             
                             <div class="o-grid">
-
-                                <div class="o-grid__col-sm-6">
-                                    <div class="o-content">
-                                        <div class="o-media  o-media--block">
-                                            <div class="o-media__figure">
+                                <?php foreach ($skillModel as $key => $skill) { ?>
+                                     <div class="o-grid__col-sm-6">
+                                        <div class="o-content">
+                                            <div class="o-media  o-media--block">
+                                                <div class="o-media__figure">
+                                           
                                                 <div class="c-number  t-primary-color">
-                                                    80<small>%</small>
+                                                <?= $skill->score ?><small>%</small>
                                                 </div>
                                             </div>
-                                            <div class="o-media__body">
-                                                <h3>Photoshop</h3>
+                                                    <div class="o-media__body">
+                                                <h3><?= $skill->name ?></h3>
+                                                    </div>
+                                        </div>
+                                            <div class="c-progress-bar  o-content__body  t-border-color-bg  u-mt-text">
+                                                 <div class="a-progress-bar  c-progress-bar__filler  t-primary-bg in-view" data-percent="<?= $skill->score ?>" style="width: <?= $skill->score ?>%;"></div>
                                             </div>
                                         </div>
-                                        <div class="c-progress-bar  o-content__body  t-border-color-bg  u-mt-text">
-                                            <div class="a-progress-bar  c-progress-bar__filler  t-primary-bg in-view" data-percent="80" style="width: 80%;"></div>
-                                        </div>
-                                    </div>
-                                </div><!-- /o-grid__col -->
-
-                                <div class="o-grid__col-sm-6">
-                                    <div class="o-content">
-                                        <div class="o-media  o-media--block">
-                                            <div class="o-media__figure">
-                                                <div class="c-number  t-primary-color">
-                                                    75<small>%</small>
-                                                </div>
-                                            </div>
-                                            <div class="o-media__body">
-                                                <h3>Illustrator</h3>
-                                            </div>
-                                        </div>
-                                        <div class="c-progress-bar  o-content__body  t-border-color-bg  u-mt-text">
-                                        <div class="a-progress-bar  c-progress-bar__filler  t-primary-bg in-view" data-percent="75" style="width: 75%;"></div>
-                                        </div>
-                                    </div>
-                                </div><!-- /o-grid__col -->
-
-                                <div class="o-grid__col-sm-6">
-                                    <div class="o-content">
-                                        <div class="o-media  o-media--block">
-                                            <div class="o-media__figure">
-                                                <div class="c-number  t-primary-color">
-                                                    70<small>%</small>
-                                                </div>
-                                            </div>
-                                            <div class="o-media__body">
-                                                <h3>Git</h3>
-                                            </div>
-                                        </div>
-                                        <div class="c-progress-bar  o-content__body  t-border-color-bg  u-mt-text">
-                                        <div class="a-progress-bar  c-progress-bar__filler  t-primary-bg in-view" data-percent="70" style="width: 70%;"></div>
-                                        </div>
-                                    </div>
-                                </div><!-- /o-grid__col -->
-
-                                <div class="o-grid__col-sm-6">
-                                    <div class="o-content">
-                                        <div class="o-media  o-media--block">
-                                            <div class="o-media__figure">
-                                                <div class="c-number  t-primary-color">
-                                                    65<small>%</small>
-                                                </div>
-                                            </div>
-                                            <div class="o-media__body">
-                                                <h3>After Effects</h3>
-                                            </div>
-                                        </div>
-                                        <div class="c-progress-bar  o-content__body  t-border-color-bg  u-mt-text">
-                                            <div class="a-progress-bar  c-progress-bar__filler  t-primary-bg in-view" data-percent="65" style="width: 65%;"></div>
-                                        </div>
-                                    </div>
-                                </div><!-- /o-grid__col -->
-
-                                <div class="o-grid__col-sm-6">
-                                    <div class="o-content">
-                                        <div class="o-media  o-media--block">
-                                            <div class="o-media__figure">
-                                                <div class="c-number  t-primary-color">
-                                                    90<small>%</small>
-                                                </div>
-                                            </div>
-                                            <div class="o-media__body">
-                                                <h3>Sketch</h3>
-                                            </div>
-                                        </div>
-                                        <div class="c-progress-bar  o-content__body  t-border-color-bg  u-mt-text">
-                                        <div class="a-progress-bar  c-progress-bar__filler  t-primary-bg in-view" data-percent="90" style="width: 90%;"></div>
-                                        </div>
-                                    </div>
-                                </div><!-- /o-grid__col -->
-
-                                <div class="o-grid__col-sm-6">
-                                    <div class="o-content">
-                                        <div class="o-media  o-media--block">
-                                            <div class="o-media__figure">
-                                                <div class="c-number  t-primary-color">
-                                                    50<small>%</small>
-                                                </div>
-                                            </div>
-                                            <div class="o-media__body">
-                                                <h3>CSS3 Animation</h3>
-                                            </div>
-                                        </div>
-                                        <div class="c-progress-bar  o-content__body  t-border-color-bg  u-mt-text">
-                                        <div class="a-progress-bar  c-progress-bar__filler  t-primary-bg in-view" data-percent="50" style="width: 50%;"></div>
-                                        </div>
-                                    </div>
-                                </div><!-- /o-grid__col -->
-
-                                <div class="o-grid__col-sm-6">
-                                    <div class="o-content">
-                                        <div class="o-media  o-media--block">
-                                            <div class="o-media__figure">
-                                                <div class="c-number  t-primary-color">
-                                                    85<small>%</small>
-                                                </div>
-                                            </div>
-                                            <div class="o-media__body">
-                                                <h3>PageSpeed Insights</h3>
-                                            </div>
-                                        </div>
-                                        <div class="c-progress-bar  o-content__body  t-border-color-bg  u-mt-text">
-                                        <div class="a-progress-bar  c-progress-bar__filler  t-primary-bg in-view" data-percent="85" style="width: 85%;"></div>
-                                        </div>
-                                    </div>
-                                </div><!-- /o-grid__col -->
-
-                                <div class="o-grid__col-sm-6">
-                                    <div class="o-content">
-                                        <div class="o-media  o-media--block">
-                                            <div class="o-media__figure">
-                                                <div class="c-number  t-primary-color">
-                                                    95<small>%</small>
-                                                </div>
-                                            </div>
-                                            <div class="o-media__body">
-                                                <h3>SEO</h3>
-                                            </div>
-                                        </div>
-                                        <div class="c-progress-bar  o-content__body  t-border-color-bg  u-mt-text">
-                                        <div class="a-progress-bar  c-progress-bar__filler  t-primary-bg in-view" data-percent="95" style="width: 95%;"></div>
-                                        </div>
-                                    </div>
-                                </div><!-- /o-grid__col -->
+                                     </div><!-- /o-grid__col -->
+                                <?php } ?>
+                          
 
                             </div><!-- /o-grid -->
 
@@ -597,96 +426,40 @@ Yii ::$app->db->open();
                                 <h2 class="o-section__heading">
                                     Experience
                                 </h2>
-                                <div class="o-content__body  o-section__description">
-                                    Yes. I&#39;ve been around.
-                                </div>
                             </div>
                         </header><!-- /o-section__header -->
 
                         <div class="o-section__content  t-section__content  u-pb-0">
                             
                             <div class="a-experience-timeline  c-timeline  t-border-color">
-
+                            <?php foreach ($jobhistoryModel as $key => $jobhistory) { ?>
                                 <div class="c-timeline__item">
                                     <div class="c-timeline__point  t-timeline__point  t-primary-bg"></div>
                                     <div class="o-content">
                                         <div class="o-grid">
                                             <div class="o-grid__col-md-5">
-                                                <div class="c-work__timeframe">
-                                                    2015 &ndash; Present
-                                                </div>
-                                                <h3 class="c-work__heading">
-                                                    Unicorn Incubator Inc.
-                                                </h3>
-                                                <h4 class="c-work__title">
-                                                    Senior Interface Designer
-                                                </h4>
-                                                <div class="c-work__location">
-                                                    Portland, OR
-                                                </div>
+                                            
+                                                    <div class="c-work__timeframe">
+                                                        <?= $jobhistory->date_from ?> &ndash; <?= $jobhistory->date_to ?>
+                                                    </div>
+                                                    <h3 class="c-work__heading">
+                                                        <?= $jobhistory->company_name?>
+                                                    </h3>
+                                                     <h4 class="c-work__title">
+                                                        <?= $jobhistory->position?>
+                                                    </h4>
+                                                                                              
                                             </div>
                                             <div class="o-grid__col-md-7">
                                                 <p>
-                                                    Consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aaliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.
+                                                
                                                 </p>
                                             </div>
                                         </div><!-- /o-grid -->
                                     </div><!-- /o-content -->
                                 </div><!-- /c-timeline__item -->
-
-                                <div class="c-timeline__item">
-                                    <div class="c-timeline__point  t-timeline__point  t-primary-bg"></div>
-                                    <div class="o-content">
-                                        <div class="o-grid">
-                                            <div class="o-grid__col-md-5">
-                                                <div class="c-work__timeframe">
-                                                    2013 &ndash; 2015
-                                                </div>
-                                                <h3 class="c-work__heading">
-                                                    California Design Bureau
-                                                </h3>
-                                                <h4 class="c-work__title">
-                                                    Creative Director
-                                                </h4>
-                                                <div class="c-work__location">
-                                                    Cupertino, CA
-                                                </div>
-                                            </div>
-                                            <div class="o-grid__col-md-7">
-                                                <p>
-                                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aaliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis.
-                                                </p>
-                                            </div>
-                                        </div><!-- /o-grid -->
-                                    </div><!-- /o-content -->
-                                </div><!-- /c-timeline__item -->
-
-                                <div class="c-timeline__item">
-                                    <div class="c-timeline__point  t-timeline__point  t-primary-bg"></div>
-                                    <div class="o-content">
-                                        <div class="o-grid">
-                                            <div class="o-grid__col-md-5">
-                                                <div class="c-work__timeframe">
-                                                    2010 &ndash; 2013
-                                                </div>
-                                                <h3 class="c-work__heading">
-                                                    Dreamland Creative
-                                                </h3>
-                                                <h4 class="c-work__title">
-                                                    Front-end Designer
-                                                </h4>
-                                                <div class="c-work__location">
-                                                    New York, NY
-                                                </div>
-                                            </div>
-                                            <div class="o-grid__col-md-7">
-                                                <p>
-                                                    Fusce lacinia arcu et nulla. Nulla vitae mauris non felis mollis faucibus. Phasellus hendrerit. Pellentesque aaliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh.
-                                                </p>
-                                            </div>
-                                        </div><!-- /o-grid -->
-                                    </div><!-- /o-content -->
-                                </div><!-- /c-timeline__item -->
+                             <?php } ?>                     
+                      
 
                             </div><!-- /c-timeline -->
 
@@ -716,9 +489,7 @@ Yii ::$app->db->open();
                                 <h2 class="o-section__heading">
                                     Education
                                 </h2>
-                                <div class="o-content__body  o-section__description">
-                                    Lazy isn&#39;t in my vocabulary.
-                                </div>
+                                
                             </div>
                         </header><!-- /o-section__header -->
 
@@ -727,87 +498,35 @@ Yii ::$app->db->open();
                             <div class="o-content">
                                 <div class="a-education-timeline  c-timeline  t-border-color  o-section__full-top-space">
                                     <div class="c-timeline__end  t-border-color"></div>
-
+                                 <?php foreach ($educationModel as $key => $education) { ?>
                                     <div class="c-timeline__item">
                                         <div class="c-timeline__point  t-timeline__point  t-primary-bg"></div>
                                         <div class="o-content">
                                             <div class="o-grid">
                                                 <div class="o-grid__col-md-5">
                                                     <div class="c-work__timeframe">
-                                                        2008 &ndash; 2010
+                                                        <?= $education->date_from ?> &ndash;  <?= $education->date_to ?>
                                                     </div>
                                                     <h3 class="c-work__heading">
-                                                        Webster Tech University
+                                                         <?= $education->school_name ?>
                                                     </h3>
                                                     <h4 class="c-work__title">
-                                                        Master of Computer Science
+                                                         <?= $education->faculty ?>
                                                     </h4>
                                                     <div class="c-work__location">
-                                                        Miami, FL
+                                                        GPA : <?= $education->gpa ?>
                                                     </div>
                                                 </div>
                                                 <div class="o-grid__col-md-7">
                                                     <p>
-                                                        Consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aaliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh.
+                                                      
                                                     </p>
                                                 </div>
                                             </div><!-- /o-grid -->
                                         </div><!-- /o-content -->
                                     </div><!-- /c-timeline__item -->
-
-                                    <div class="c-timeline__item">
-                                        <div class="c-timeline__point  t-timeline__point  t-primary-bg"></div>
-                                        <div class="o-content">
-                                            <div class="o-grid">
-                                                <div class="o-grid__col-md-5">
-                                                    <div class="c-work__timeframe">
-                                                        2003 &ndash; 2008
-                                                    </div>
-                                                    <h3 class="c-work__heading">
-                                                        Ninsei University
-                                                    </h3>
-                                                    <h4 class="c-work__title">
-                                                        Bachelor of Computer Science
-                                                    </h4>
-                                                    <div class="c-work__location">
-                                                        Tokyo, Japan
-                                                    </div>
-                                                </div>
-                                                <div class="o-grid__col-md-7">
-                                                    <p>
-                                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aaliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero.
-                                                    </p>
-                                                </div>
-                                            </div><!-- /o-grid -->
-                                        </div><!-- /o-content -->
-                                    </div><!-- /c-timeline__item -->
-
-                                    <div class="c-timeline__item">
-                                        <div class="c-timeline__point  t-timeline__point  t-primary-bg"></div>
-                                        <div class="o-content">
-                                            <div class="o-grid">
-                                                <div class="o-grid__col-md-5">
-                                                    <div class="c-work__timeframe">
-                                                        2000 &ndash; 2003
-                                                    </div>
-                                                    <h3 class="c-work__heading">
-                                                        Academy of Fine Arts
-                                                    </h3>
-                                                    <h4 class="c-work__title">
-                                                        Master of Arts
-                                                    </h4>
-                                                    <div class="c-work__location">
-                                                        Berlin, Germany
-                                                    </div>
-                                                </div>
-                                                <div class="o-grid__col-md-7">
-                                                    <p>
-                                                        Fusce lacinia arcu et nulla. Nulla vitae mauris non felis mollis faucibus. Phasellus hendrerit. Pellentesque aaliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales.
-                                                    </p>
-                                                </div>
-                                            </div><!-- /o-grid -->
-                                        </div><!-- /o-content -->
-                                    </div><!-- /c-timeline__item -->
+                                    <?php } ?> 
+                                    
 
                                 </div><!-- /c-timeline -->
                             </div><!-- /o-content -->
@@ -818,177 +537,6 @@ Yii ::$app->db->open();
                 </div><!-- /o-container -->
 
             </section><!-- /o-section -->
-
-
-
-            <!-- ################################ -->
-            <!-- ########### PROFILES ########### -->
-            <!-- ################################ -->
-            
-            <section class="o-section  t-section  ">
-
-                <div class="o-section__header-bg  t-section__header"></div>
-                <div class="o-section__content-bg  t-section__content"></div>
-
-                <div class="o-container">
-                    <div class="o-section__container">
-
-                        <header class="o-section__header  t-section__header">
-                            <div class="o-content">
-                                <h2 class="o-section__heading">
-                                    Profiles
-                                </h2>
-                                <div class="o-content__body  o-section__description">
-                                    Busy as usual.
-                                </div>
-                            </div>
-                        </header><!-- /o-section__header -->
-
-                        <div class="o-section__content  t-section__content  ">
-                            
-                            <div class="o-grid">
-
-                                <div class="o-grid__col-xl-4  o-grid__col-sm-6">
-                                    <div class="o-content">
-                                        <a href="http://themeforest.net/user/ruventhemes/portfolio" target="_blank" class="t-link-container">
-                                            <div class="o-media  o-media--block">
-                                                <div class="o-media__figure">
-                                                    <div class="c-profile__icon">
-                                                        <i class="fab  fa-lg  fa-envira"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="o-media__body  o-content__body">
-                                                    <h3 class="t-link-container__item">
-                                                        Themeforest
-                                                    </h3>
-                                                    <p>
-                                                        An overview of the themes and templates that I sell.
-                                                    </p>
-                                                </div>
-                                            </div><!-- /o-media -->
-                                        </a><!-- /t-link-container -->
-                                    </div><!-- /o-content -->
-                                </div><!-- /o-grid__col -->
-
-                                <div class="o-grid__col-xl-4  o-grid__col-sm-6">
-                                    <div class="o-content">
-                                        <a href="https://github.com/hatra-e/" target="_blank" class="t-link-container">
-                                            <div class="o-media  o-media--block">
-                                                <div class="o-media__figure">
-                                                    <div class="c-profile__icon">
-                                                        <i class="fab  fa-lg  fa-github-alt"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="o-media__body  o-content__body">
-                                                    <h3 class="t-link-container__item">
-                                                        GitHub
-                                                    </h3>
-                                                    <p>
-                                                        All my open source projects for you analyze.
-                                                    </p>
-                                                </div>
-                                            </div><!-- /o-media -->
-                                        </a><!-- /t-link-container -->
-                                    </div><!-- /o-content -->
-                                </div><!-- /o-grid__col -->
-
-                                <div class="o-grid__col-xl-4  o-grid__col-sm-6">
-                                    <div class="o-content">
-                                        <a href="http://wordpress.com" target="_blank" class="t-link-container">
-                                            <div class="o-media  o-media--block">
-                                                <div class="o-media__figure">
-                                                    <div class="c-profile__icon">
-                                                        <i class="fab  fa-lg  fa-medium"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="o-media__body  o-content__body">
-                                                    <h3 class="t-link-container__item">
-                                                        Medium
-                                                    </h3>
-                                                    <p>
-                                                        Yes. I'm also a blogger and here you find my writings.
-                                                    </p>
-                                                </div>
-                                            </div><!-- /o-media -->
-                                        </a><!-- /t-link-container -->
-                                    </div><!-- /o-content -->
-                                </div><!-- /o-grid__col -->
-
-                                <div class="o-grid__col-xl-4  o-grid__col-sm-6">
-                                    <div class="o-content">
-                                        <a href="https://dribbble.com" target="_blank" class="t-link-container">
-                                            <div class="o-media  o-media--block">
-                                                <div class="o-media__figure">
-                                                    <div class="c-profile__icon">
-                                                        <i class="fab  fa-lg  fa-dribbble"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="o-media__body  o-content__body">
-                                                    <h3 class="t-link-container__item">
-                                                        Dribbble
-                                                    </h3>
-                                                    <p>
-                                                        Whenever a design is finalized, it lands right here.
-                                                    </p>
-                                                </div>
-                                            </div><!-- /o-media -->
-                                        </a><!-- /t-link-container -->
-                                    </div><!-- /o-content -->
-                                </div><!-- /o-grid__col -->
-
-                                <div class="o-grid__col-xl-4  o-grid__col-sm-6">
-                                    <div class="o-content">
-                                        <a href="https://www.flickr.com" target="_blank" class="t-link-container">
-                                            <div class="o-media  o-media--block">
-                                                <div class="o-media__figure">
-                                                    <div class="c-profile__icon">
-                                                        <i class="fab  fa-lg  fa-flickr"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="o-media__body  o-content__body">
-                                                    <h3 class="t-link-container__item">
-                                                        Flickr
-                                                    </h3>
-                                                    <p>
-                                                        A selection of photos I shot throughout the years.
-                                                    </p>
-                                                </div>
-                                            </div><!-- /o-media -->
-                                        </a><!-- /t-link-container -->
-                                    </div><!-- /o-content -->
-                                </div><!-- /o-grid__col -->
-
-                                <div class="o-grid__col-xl-4  o-grid__col-sm-6">
-                                    <div class="o-content">
-                                        <a href="http://www.deviantart.com" target="_blank" class="t-link-container">
-                                            <div class="o-media  o-media--block">
-                                                <div class="o-media__figure">
-                                                    <div class="c-profile__icon">
-                                                        <i class="fab  fa-lg  fa-deviantart"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="o-media__body  o-content__body">
-                                                    <h3 class="t-link-container__item">
-                                                        DeviantArt
-                                                    </h3>
-                                                    <p>
-                                                        A place for my sketches and drawings.
-                                                    </p>
-                                                </div>
-                                            </div><!-- /o-media -->
-                                        </a><!-- /t-link-container -->
-                                    </div><!-- /o-content -->
-                                </div><!-- /o-grid__col -->
-
-                            </div><!-- /o-grid -->
-
-                        </div><!-- /o-section__content -->
-
-                    </div><!-- /o-section__container -->
-                </div><!-- /o-container -->
-
-            </section><!-- /o-section -->
-
 
 
             <!-- ################################ -->
@@ -1369,3 +917,4 @@ Yii ::$app->db->open();
 
 </html>
 </div>
+<?php } ?>

@@ -6,12 +6,12 @@ use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
 use common\models\LoginForm;
-use app\models\Education;
-use app\models\ Skill;
-use app\models\Charttemplate;
-use app\models\Jobhistory;
-use app\models\Profile;
-use app\models\Themes;
+use common\models\Education;
+use common\models\ Skill;
+use common\models\Charttemplate;
+use common\models\Jobhistory;
+use common\models\Profile;
+use common\models\Themes;
 use common\models\User;
 use yii\web\UploadedFile;
 /**
@@ -95,7 +95,7 @@ class SiteController extends Controller
            $facebook=$request->post('facebook');
            $link=$request->post('web_other_value');
            $status=$request->post('');
-       
+           $description=$request->post('introduce');
            $pathFolder = "../../frontend/web/uploads/" . str_pad($id, 5, '0', STR_PAD_LEFT) . "/";
             if (!file_exists($pathFolder)) {
                 if (mkdir($pathFolder, 0755, true)) { } else {
@@ -131,7 +131,7 @@ class SiteController extends Controller
              $profilemodel->facebook = $facebook;
              $profilemodel->link = $link;
              $profilemodel->user_id = $id;
-          
+             $profilemodel->description = $description;
              $profilemodel->date_create = time();
            
              $profilemodel->status = $status;
@@ -206,7 +206,7 @@ class SiteController extends Controller
             $position=$request->post('position');
             $date_from=$request->post('experience');
             $date_to=$request->post('experienceyear');
-            $description=$request->post('introduce');
+           
        
             
            foreach ($company_name as $key => $company) {
@@ -218,7 +218,7 @@ class SiteController extends Controller
                     $jobhistorymodel->position =($position[$key] != null) ?  $position[$key] : null;
                     $jobhistorymodel->date_from = ($date_from[$key] != null) ?  $date_from[$key] : null;
                     $jobhistorymodel->date_to = ($date_to[$key] != null) ?  $date_to[$key] : null;
-                    $jobhistorymodel->description = $description;
+                    
                     $jobhistorymodel->user_id = $id;
                     $jobhistorymodel->date_create =time();
                     $jobhistorymodel->save();
