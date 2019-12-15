@@ -65,7 +65,8 @@ class ProfileController extends Controller
      * @return mixed
      */
     public function actionCreate()
-    {
+    {   
+       
         $model = new Profile();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
@@ -85,8 +86,15 @@ class ProfileController extends Controller
      * @throws NotFoundHttpException if the model cannot be found
      */
     public function actionUpdate($id)
-    {  
-      
+    {   
+        $request = Yii::$app->request;
+        if ($request->isPost) {
+        $date_update=time();
+         
+        $profilemodel = new Profile();   
+        $profilemodel->date_update = $date_update;
+        $profilemodel->save();
+        }
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {

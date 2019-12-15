@@ -133,7 +133,6 @@ class SiteController extends Controller
              $profilemodel->user_id = $id;
              $profilemodel->description = $description;
              $profilemodel->date_create = time();
-           
              $profilemodel->status = $status;
                       
           
