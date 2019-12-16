@@ -90,11 +90,7 @@ class ProfileController extends Controller
         $id = Yii::$app->user->identity->id;
         $request = Yii::$app->request;
         $profilemodel = Profile::find()->where(['user_id'=>$id])->one();
-
-        
-       
-        if ($request->isPost) {
-            
+       if ($request->isPost) {
            $nameTH=$request->post('fullname_th');
            $nameEN=$request->post('fullname_en');
            $gender=$request->post('sex');
@@ -113,7 +109,7 @@ class ProfileController extends Controller
            $pathFolder = "../../frontend/web/uploads/" . str_pad($id, 5, '0', STR_PAD_LEFT) . "/";
             if (!file_exists($pathFolder)) {
                 if (mkdir($pathFolder, 0755, true)) { } else {
-                         die('failed');
+                    die('failed');
                 }
             }
                 $pro_img = UploadedFile::getInstanceByName('pro_img');
@@ -158,10 +154,7 @@ class ProfileController extends Controller
                 print_r($profilemodel->getErrors());
                 die();
             }
-
-           
         }
-
         return $this->render('update', [
             'profilemodel' => $profilemodel,
         ]);

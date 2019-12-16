@@ -34,26 +34,26 @@ use yii\helpers\Url;
            <h2 class="post-headline-primary"><i class="fa fa-user" aria-hidden="true"></i> Profile</h2>	
            <div class="row">
                <div class="small-3 columns">
-                   <label>Fullname th</label>
+                   <label>Fullname EN</label>
                </div>
-               <div class="small-3 columns">
+               <!-- <div class="small-3 columns">
                    <select id="prefix" name="prefix">
                        <option value="Mr.">Mr.</option>
                        <option value="Ms.">Ms.</option>
                        <option value="Miss">Miss</option>
                        <option value="Mrs">Mrs.</option>
                    </select>
-               </div>
-               <div class="small-6 columns">
-                    <input value="<?= $profilemodel->nameTH ?>" type="text" name="fullname_th" placeholder="Thai Language">
+               </div> -->
+               <div class="small-9 columns">
+                    <input value="<?= $profilemodel->nameEN ?>" type="text" name="fullname_en" placeholder="Eng Language">
                </div>
            </div>
            <div class="row">
                <div class="small-3 column">
-                   <label>Fullname en</label>
+                   <label>Fullname TH</label>
                </div>
                <div class="small-9 column">
-                    <input value="<?= $profilemodel->nameEN ?>"type="text" name="fullname_en" placeholder="Eng Language"> 
+                    <input value="<?= $profilemodel->nameTH ?>"type="text" name="fullname_th" placeholder="Thai Language"> 
                </div>
            </div>
            <div class="row">
@@ -98,21 +98,18 @@ use yii\helpers\Url;
                    <label>Years old</label>
                </div>
                </script>
-           </div>
-           
-         </section>
-         
+           </div>    
+         </section>       
          <section id="contact">		
-           <h2 class="post-headline-primary"><i class="fa fa-phone-square" aria-hidden="true"></i> Contact</h2>	
-           
-           <div class="row">
-               <div class="small-3 column">
-                   <label>Email</label>
-               </div>
-               <div class="small-9 column">
-                   <input value="<?= $profilemodel->mail ?>"type="text" name="mail"placeholder="Email">
-               </div>
-           </div>
+           <h2 class="post-headline-primary"><i class="fa fa-phone-square" aria-hidden="true"></i> Contact</h2>	          
+                <div class="row">
+                    <div class="small-3 column">
+                    <label>Email</label>
+                </div>
+                    <div class="small-9 column">
+                        <input value="<?= $profilemodel->mail ?>"type="text" name="mail"placeholder="Email">
+                    </div>
+                </div>
            <div class="row">
                <div class="small-3 column">
                    <label>Address</label>

@@ -46,9 +46,6 @@ if($id != null) {
 
         <!-- Google Font: Lato -->
         <link href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-
-    
-
     </head>
 
     <body>
@@ -58,9 +55,6 @@ if($id != null) {
         </div>
 
         <div class="c-main-container  js-main-container">
-
-
-
             <!-- ################################ -->
             <!-- ############ HEADER ############ -->
             <!-- ################################ -->
@@ -97,10 +91,10 @@ if($id != null) {
                                                 <h1 class="c-brand__title  t-title">
                                                     <span class="c-brand__sizer">
                                                         <span class="a-header  c-brand__first-word  t-title__first-word">
-                                                            Desmond
+                                                            <?= $profile->nameEN?>
                                                         </span>
                                                         <span class="a-header  c-brand__second-word  t-title__second-word">
-                                                            Rambowski
+                                                            <?= $profile->nameTH?>
                                                         </span>
                                                     </span>
                                                 </h1>
@@ -204,8 +198,6 @@ if($id != null) {
 
                 </div><!-- /c-header -->
             </section><!-- /o-section -->
-
-
             <!-- ################################ -->
             <!-- ########### PROFILES ########### -->
             <!-- ################################ -->
@@ -315,10 +307,6 @@ if($id != null) {
                 </div><!-- /o-container -->
 
             </section><!-- /o-section -->
-
-
-
-
             <!-- ################################ -->
             <!-- ############ SKILLS ############ -->
             <!-- ################################ -->
@@ -365,7 +353,7 @@ if($id != null) {
                                         </div>
                                      </div><!-- /o-grid__col -->
                                 <?php } ?>
-                          
+           
 
                             </div><!-- /o-grid -->
 
@@ -375,9 +363,6 @@ if($id != null) {
                 </div><!-- /o-container -->
 
             </section><!-- /o-section -->
-
-
-
             <!-- ################################ -->
             <!-- ########## EXPERIENCE ########## -->
             <!-- ################################ -->
@@ -438,9 +423,6 @@ if($id != null) {
                 </div><!-- /o-container -->
 
             </section><!-- /o-section -->
-
-
-
             <!-- ################################ -->
             <!-- ########### EDUCATION ########## -->
             <!-- ################################ -->
@@ -506,8 +488,6 @@ if($id != null) {
                 </div><!-- /o-container -->
 
             </section><!-- /o-section -->
-
-
             <!-- ################################ -->
             <!-- ############ HEADER ############ -->
             <!-- ################################ -->
@@ -579,42 +559,7 @@ if($id != null) {
                 </div><!-- /o-container -->
 
             </section><!-- /o-section -->
-
-
-
-
-
-            <!-- ################################ -->
-            <!-- ############ CLIENTS ########### -->
-            <!-- ################################ -->
             
-            <section class="o-section  t-section  ">
-
-                <div class="o-section__header-bg  t-section__header"></div>
-                <div class="o-section__content-bg  t-section__content"></div>
-
-                <div class="o-container">
-                    <div class="o-section__container">
-
-                        <header class="o-section__header  t-section__header">
-                            <div class="o-content">
-                                <h2 class="o-section__heading">
-                                    Clients
-                                </h2>
-                                <div class="o-content__body  o-section__description">
-                                    Happy people.
-                                </div>
-                            </div>
-                        </header><!-- /o-section__header -->
-
-
-                    </div><!-- /o-section__container -->
-                </div><!-- /o-container -->
-
-            </section><!-- /o-section -->
-
-
-
             <!-- ################################ -->
             <!-- ############ FOOTER ############ -->
             <!-- ################################ -->
@@ -632,9 +577,6 @@ if($id != null) {
                                 <h2 class="o-section__heading">
                                     Contact
                                 </h2>
-                                <div class="o-content__body  o-section__description">
-                                    Call me, maybe.
-                                </div>
                             </div>
                         </header><!-- /o-section__header -->
 
@@ -644,12 +586,16 @@ if($id != null) {
                                     <div class="o-grid">
 
                                     <div class="o-grid__col-md-3  o-grid__col-sm-6">
-                                        <div class="o-content">
+                                         <div class="o-content">
                                             <div class="o-content__body">
-                                                <h4>Location</h4>
-                                                <address>
-                                                    Portland, OR
-                                                </address>
+                                                <a href="#" target="_blank" class="t-link-container">
+                                                    <h4>Email</h4>
+                                                    <p>
+                                                        <span class="t-link-container__item--blended">
+                                                            hello@example.com
+                                                        </span>
+                                                    </p>
+                                                </a><!-- /o-link-container -->
                                             </div>
                                         </div><!-- /o-content -->
                                     </div><!-- /o-grid__col -->
@@ -681,37 +627,24 @@ if($id != null) {
                                     </div><!-- /o-grid__col -->
 
                                     <div class="o-grid__col-md-3  o-grid__col-sm-6">
-                                        <div class="o-content">
+                                       <div class="o-content">
                                             <div class="o-content__body">
-                                                <a href="#" target="_blank" class="t-link-container">
-                                                    <h4>Email</h4>
-                                                    <p>
-                                                        <span class="t-link-container__item--blended">
-                                                            hello@example.com
-                                                        </span>
-                                                    </p>
-                                                </a><!-- /o-link-container -->
-                                            </div>
-                                        </div><!-- /o-content -->
+                                                <h4>Location</h4>
+                                                <address>
+                                                <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m8!1m3!1d987.6116628354984!2d
+                                                    <?= $profile->longitude ?>!3d<?= $profile->latitude ?>!3m2!1i1024!2i768!4f13.1!4m6!3e0!4m0!4m3!3m2!1d
+                                                    <?= $profile->latitude ?>!2d<?= $profile->longitude ?>!5e1!3m2!1sen!2sth!4v1574764346603!5m2!1sen!2sth"
+                                                    width="250" height="250" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                                                </address>
+                                        </div>
                                     </div><!-- /o-grid__col -->
-
-                                </div><!-- /o-grid -->
-                              
-                                       
-
+                            </div><!-- /o-grid -->
                         </div><!-- /o-section__content -->
-
                     </div><!-- /o-section__container -->
                 </div><!-- /o-container -->
-
             </section><!-- /o-section -->
-
-
-
         </div><!-- /c-main-container -->
-
     </body>
-
 </html>
 </div>
 <?php } ?>

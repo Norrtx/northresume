@@ -2014,7 +2014,7 @@ img[height] {
     margin-bottom: 1.4rem;
   }
   .c-brand__sizer {
-    font-size: 100%;
+    font-size:80%;
   }
   .c-brand__sizer--sm {
     font-size: 80%;
@@ -2395,11 +2395,11 @@ body {
   
   /* Brand Colors */
   .t-title__first-word {
-    color: #a4a5a6;
+    color: #e0a80d;
   }
   
   .t-title__second-word {
-    color: #e0a80d;
+    color: #a4a5a6;
   }
   
   .t-sub-title {
@@ -2409,7 +2409,7 @@ body {
   /* Brand Typography */
   .t-title {
     font-size: 4.8rem;
-    line-height: 0.91;
+    line-height: 1.4;
   }
   
   .t-title__first-word {
