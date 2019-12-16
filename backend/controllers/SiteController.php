@@ -102,7 +102,7 @@ class SiteController extends Controller
                          die('failed');
                 }
             }
-                 $pro_img = UploadedFile::getInstanceByName('pro_img');
+                $pro_img = UploadedFile::getInstanceByName('pro_img');
         
             if (isset($pro_img->error) && $pro_img->error == 0) {
                 $curFileName = $id . '_' . time() . '_';
@@ -117,26 +117,24 @@ class SiteController extends Controller
                   }
             }           
             
-             $profilemodel->nameTH = $nameTH;
-             $profilemodel->nameEN = $nameEN;
-             $profilemodel->gender = $gender;
-             $profilemodel->birthday =  strtotime($birthday);
-             $profilemodel->Age = $Age;
-             $profilemodel->city = $city;
-             $profilemodel->state = $state;
-             $profilemodel->zip = $zip;
-             $profilemodel->latitude = $latitude;
-             $profilemodel->longitude = $longitude;
-             $profilemodel->mail = $mail;
-             $profilemodel->facebook = $facebook;
-             $profilemodel->link = $link;
-             $profilemodel->user_id = $id;
-             $profilemodel->description = $description;
-             $profilemodel->date_create = time();
-             $profilemodel->status = $status;
-                      
-          
-             $profilemodel->save();
+            $profilemodel->nameTH = $nameTH;
+            $profilemodel->nameEN = $nameEN;
+            $profilemodel->gender = $gender;
+            $profilemodel->birthday =  strtotime($birthday);
+            $profilemodel->Age = $Age;
+            $profilemodel->city = $city;
+            $profilemodel->state = $state;
+            $profilemodel->zip = $zip;
+            $profilemodel->latitude = $latitude;
+            $profilemodel->longitude = $longitude;
+            $profilemodel->mail = $mail;
+            $profilemodel->facebook = $facebook;
+            $profilemodel->link = $link;
+            $profilemodel->user_id = $id;
+            $profilemodel->description = $description;
+            $profilemodel->date_create = time();
+            $profilemodel->status = $status;
+            $profilemodel->save();
         }   
         
         $id = Yii::$app->user->identity->id;
@@ -191,8 +189,6 @@ class SiteController extends Controller
                    $educationmodel->gpa = ($gpa[$key] != null) ?  $gpa[$key] : null;
                    $educationmodel->user_id = $id;
                    $educationmodel->date_create = time();
-                   
-                 
                    $educationmodel->save();
                 }   
            } 
@@ -240,17 +236,17 @@ class SiteController extends Controller
             $zip=$request->post('zip');
              
             
-             $charttemplatemodel = new Charttemplate();
-             $charttemplatemodel->name = $name;
-             $charttemplatemodel->mail = $mail;
-             $charttemplatemodel->discription = $des;
-             $charttemplatemodel->link = $link;
-             $charttemplatemodel->user_id = $id;
-             $charttemplatemodel->state = $state;
-             $charttemplatemodel->city = $city;
-             $charttemplatemodel->zip = $zip;
+            $charttemplatemodel = new Charttemplate();
+            $charttemplatemodel->name = $name;
+            $charttemplatemodel->mail = $mail;
+            $charttemplatemodel->discription = $des;
+            $charttemplatemodel->link = $link;
+            $charttemplatemodel->user_id = $id;
+            $charttemplatemodel->state = $state;
+            $charttemplatemodel->city = $city;
+            $charttemplatemodel->zip = $zip;
              
-             $charttemplatemodel->save();
+            $charttemplatemodel->save();
          }
         $id = Yii::$app->user->identity->id;
         $request = Yii::$app->request;
@@ -277,11 +273,6 @@ class SiteController extends Controller
             
              $jobhistorymodel->save();
          }
-
-
-
-
-       
         return $this->render('test2');
     }
     /**

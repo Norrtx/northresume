@@ -303,7 +303,7 @@ if($id != null) {
                                 <div class="c-intro">
                                     <div class="o-content__body">
                                         <p>
-                                        <?= $profileModel->description?>
+                                        <?= $profile->description?>
                                         </p>
                                     </div>
                                 </div>

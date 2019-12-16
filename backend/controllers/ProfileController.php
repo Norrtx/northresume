@@ -85,24 +85,85 @@ class ProfileController extends Controller
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
      */
-    public function actionUpdate($id)
+    public function actionUpdate()
     {   
+        $id = Yii::$app->user->identity->id;
         $request = Yii::$app->request;
-        if ($request->isPost) {
-        $date_update=time();
-         
-        $profilemodel = new Profile();   
-        $profilemodel->date_update = $date_update;
-        $profilemodel->save();
-        }
-        $model = $this->findModel($id);
+        $profilemodel = Profile::find()->where(['user_id'=>$id])->one();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+        
+       
+        if ($request->isPost) {
+            
+           $nameTH=$request->post('fullname_th');
+           $nameEN=$request->post('fullname_en');
+           $gender=$request->post('sex');
+           $birthday=$request->post('birth_date2');
+           $Age=$request->post('age');
+           $city=$request->post('state');
+           $state=$request->post('state');
+           $zip=$request->post('zip');
+           $latitude=$request->post('latitude');
+           $longitude=$request->post('longitude');
+           $mail=$request->post('mail');
+           $facebook=$request->post('facebook');
+           $link=$request->post('web_other_value');
+           $status=$request->post('');
+           $description=$request->post('introduce');
+           $pathFolder = "../../frontend/web/uploads/" . str_pad($id, 5, '0', STR_PAD_LEFT) . "/";
+            if (!file_exists($pathFolder)) {
+                if (mkdir($pathFolder, 0755, true)) { } else {
+                         die('failed');
+                }
+            }
+                $pro_img = UploadedFile::getInstanceByName('pro_img');
+        
+            if (isset($pro_img->error) && $pro_img->error == 0) {
+                $curFileName = $id . '_' . time() . '_';
+                $imageName = '.' . $pro_img->getExtension();
+                $path = $pathFolder . pathinfo($curFileName, PATHINFO_FILENAME);
+               try {
+                   if ($pro_img->saveAs($path . $imageName)) {
+                     $slip_name = $curFileName.$imageName;
+                     $profilemodel->pro_img = $slip_name;
+                    }
+               } catch (Exception $e) {
+                  }
+            }           
+            
+            $profilemodel->nameTH = $nameTH;
+            $profilemodel->nameEN = $nameEN;
+            $profilemodel->gender = $gender;
+            $profilemodel->birthday =  strtotime($birthday);
+            $profilemodel->Age = $Age;
+            $profilemodel->city = $city;
+            $profilemodel->state = $state;
+            $profilemodel->zip = $zip;
+            $profilemodel->latitude = $latitude;
+            $profilemodel->longitude = $longitude;
+            $profilemodel->mail = $mail;
+            $profilemodel->facebook = $facebook;
+            $profilemodel->link = $link;
+            $profilemodel->user_id = $id;
+            $profilemodel->description = $description;
+            $profilemodel->date_create = time();
+            $profilemodel->date_update = time();
+            $profilemodel->status = $status;
+            $profilemodel->save();
+       
+            if ($profilemodel->save()) {
+                return $this->redirect(['view', 'id' => $profilemodel->id]);
+
+            } else {
+                print_r($profilemodel->getErrors());
+                die();
+            }
+
+           
         }
 
         return $this->render('update', [
-            'model' => $model,
+            'profilemodel' => $profilemodel,
         ]);
     }
 
