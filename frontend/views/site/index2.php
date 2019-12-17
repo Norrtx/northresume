@@ -612,7 +612,7 @@ $path = Url::to(["/uploads"]) ."/". str_pad($id, 5, '0', STR_PAD_LEFT) . "/";
                                 </button>
                             </div>
                         </form>
-                    </div>
+                    </div>                   
                     <!--FORM LOADER-->
                     <div id="form-loader" class="progress is-hidden">
                         <div class="indeterminate"></div>
