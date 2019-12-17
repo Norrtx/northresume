@@ -27,66 +27,45 @@ $charttemplateModel=Charttemplate::find()->where(['user_id' => $id])->one();
 $path = Url::to(["/uploads"]) ."/". str_pad($id, 5, '0', STR_PAD_LEFT) . "/";
 if($id != null) {
  ?>
-<div class="site-index">
-
-    
+<div class="site-index">    
 <!doctype html>
-
 <html lang="en">
-
     <head>
-
         <title>Desmond Resume Template</title>
-
         <meta name="description" content="">
-
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-
         <!-- Google Font: Lato -->
         <link href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     </head>
-
     <body>
-
         <div class="c-preloader  js-preloader">
             <div class="c-preloader__spinner  t-preloader__spinner"></div>
         </div>
-
         <div class="c-main-container  js-main-container">
             <!-- ################################ -->
             <!-- ############ HEADER ############ -->
-            <!-- ################################ -->
-            
+            <!-- ################################ -->            
             <section class="o-section o-section--header  t-section  t-section--header">
                 <div class="c-header">
-
                     <div class="o-section__header-bg  t-section__header"></div>
                     <div class="o-section__content-bg  t-section__content"></div>
-
                     <div class="o-container">
                         <div class="o-section__container">
-
                             <header class="o-section__header  c-header__header  t-section__header">
                                 <div class="c-header__inner-header">
-
                                     <div class="c-header__avatar">
                                         <div class="a-header  c-avatar">
-                                            <img class="circle" src="<?=$path.$profile->pro_img?>" alt="">
+                                            <img class="circle" src="<?=$path.$profile->pro_img?>" alt="" align="center">
                                         </div><!-- /c-avatar -->
                                     </div><!-- /c-header-avatar -->
-
                                 </div><!-- /c-header__inner-header -->
                             </header><!-- /o-section__header -->
-
                             <div class="o-section__content  c-header__content  t-section__content">
                                 <div class="c-header__inner-content">
-
                                     <div class="c-header__top">
-
                                         <div class="c-header__brand">
-
                                             <div class="c-brand">
                                                 <h1 class="c-brand__title  t-title">
                                                     <span class="c-brand__sizer">
@@ -104,11 +83,8 @@ if($id != null) {
                                                     </span>
                                                 </h2>
                                             </div><!-- /c-brand -->
-
                                         </div><!-- /c-header__brand -->
-
-                                        <ul class="c-header__social-buttons  c-social-buttons">
-                                            
+                                        <ul class="c-header__social-buttons  c-social-buttons">                                           
                                             <li class="a-header">
                                                 <a href="https://www.facebook.com/RuvenThemes/" target="_blank" class="c-social-button  t-social-button">
                                                     <i class="fab  fa-lg  fa-facebook-f"></i>
@@ -125,15 +101,10 @@ if($id != null) {
                                                 </a>
                                             </li>
                                         </ul><!-- /c-header__social-buttons -->
-
                                     </div><!-- /c-header__top -->
-
                                     <div class="c-header__contact">
-
                                         <hr class="a-header  c-header__contact-divider" />
-
                                         <div class="o-grid">
-
                                             <div class="o-grid__col-md-3  o-grid__col-sm-6">
                                                 <div class="a-header  o-content">
                                                     <div class="o-content__body">
@@ -144,7 +115,6 @@ if($id != null) {
                                                     </div>
                                                 </div><!-- /o-content -->
                                             </div><!-- /o-grid__col -->
-
                                             <div class="o-grid__col-md-3  o-grid__col-sm-6">
                                                 <div class="a-header  o-content">
                                                     <div class="o-content__body">
@@ -155,7 +125,6 @@ if($id != null) {
                                                     </div>
                                                 </div><!-- /o-content -->
                                             </div><!-- /o-grid__col -->
-
                                             <div class="o-grid__col-md-3  o-grid__col-sm-6">
                                                 <div class="a-header  o-content">
                                                     <div class="o-content__body">
@@ -170,7 +139,6 @@ if($id != null) {
                                                     </div>
                                                 </div><!-- /o-content -->
                                             </div><!-- /o-grid__col -->
-
                                             <div class="o-grid__col-md-3  o-grid__col-sm-6">
                                                 <div class="a-header  o-content">
                                                     <div class="o-content__body">
@@ -185,45 +153,31 @@ if($id != null) {
                                                     </div>
                                                 </div><!-- /o-content -->
                                             </div><!-- /o-grid__col -->
-
                                         </div><!-- /o-grid -->
                                     </div><!-- /c-header__contact -->
-
                                 </div><!-- /c-header__inner-content -->
                             </div><!-- /o-section__content -->
-
                         </div><!-- /o-section__container -->
-
                     </div><!-- /o-container -->
-
                 </div><!-- /c-header -->
             </section><!-- /o-section -->
             <!-- ################################ -->
             <!-- ########### PROFILES ########### -->
-            <!-- ################################ -->
-            
-               
+            <!-- ################################ -->               
           <section class="o-section  t-section  ">
-
                 <div class="o-section__header-bg  t-section__header"></div>
                 <div class="o-section__content-bg  t-section__content"></div>
-
                 <div class="o-container">
                     <div class="o-section__container">
-
                         <header class="o-section__header  t-section__header">
                             <div class="o-content">
                                 <h2 class="o-section__heading">
                                 PROFILES
-                                </h2>
-                              
+                                </h2>                            
                             </div>
                         </header><!-- /o-section__header -->
-
-                        <div class="o-section__content  t-section__content  ">
-                            
+                        <div class="o-section__content  t-section__content  ">                          
                             <div class="o-grid">
-
                                 <div class="o-grid__col-md-4  o-grid__col-sm-6">
                                     <div class="o-content">
                                         <hr class="c-deco-line  t-primary-color-line" />
@@ -235,7 +189,6 @@ if($id != null) {
                                         </div>
                                     </div><!-- /o-content -->
                                 </div><!-- /o-grid__col -->
-
                                 <div class="o-grid__col-md-4  o-grid__col-sm-6">
                                     <div class="o-content">
                                         <hr class="c-deco-line  t-primary-color-line" />
@@ -247,7 +200,6 @@ if($id != null) {
                                         </div>
                                     </div><!-- /o-content -->
                                 </div><!-- /o-grid__col -->
-
                                 <div class="o-grid__col-md-4  o-grid__col-sm-6">
                                     <div class="o-content">
                                         <hr class="c-deco-line  t-primary-color-line" />
@@ -259,38 +211,27 @@ if($id != null) {
                                         </div>
                                     </div><!-- /o-content -->
                                 </div><!-- /o-grid__col -->
-
                             </div><!-- /o-grid -->
-
                         </div><!-- /o-section__content -->
-
                     </div><!-- /o-section__container -->
                 </div><!-- /o-container -->
-
             </section><!-- /o-section -->
             <!-- ################################ -->
             <!-- ############ INTRO ############# -->
-            <!-- ################################ -->
-            
+            <!-- ################################ -->           
             <section class="o-section  t-section  ">
-
                 <div class="o-section__header-bg  t-section__header"></div>
                 <div class="o-section__content-bg  t-section__content"></div>
-
                 <div class="o-container">
                     <div class="o-section__container">
-
                         <header class="o-section__header  t-section__header">
                             <div class="o-content">
                                 <h2 class="o-section__heading">
                                     Intro
-                                </h2>
-                                
+                                </h2>                               
                             </div>
                         </header><!-- /o-section__header -->
-
-                        <div class="o-section__content  t-section__content  ">
-                            
+                        <div class="o-section__content  t-section__content  ">                            
                             <div class="o-content">
                                 <div class="c-intro">
                                     <div class="o-content__body">
@@ -300,38 +241,26 @@ if($id != null) {
                                     </div>
                                 </div>
                             </div>
-
                         </div><!-- /o-section__content -->
-
                     </div><!-- /o-section__container -->
                 </div><!-- /o-container -->
-
             </section><!-- /o-section -->
             <!-- ################################ -->
             <!-- ############ SKILLS ############ -->
-            <!-- ################################ -->
-            
+            <!-- ################################ -->            
             <section class="o-section  t-section  ">
-
                 <div class="o-section__header-bg  t-section__header"></div>
                 <div class="o-section__content-bg  t-section__content"></div>
-
                 <div class="o-container">
                     <div class="o-section__container">
-
-                        <header class="o-section__header  t-section__header">
+                       <header class="o-section__header  t-section__header">
                             <div class="o-content">
                                 <h2 class="o-section__heading">
                                     Skills
-                                </h2>
-                                <div class="o-content__body  o-section__description">
-                                   
-                                </div>
+                                </h2>                              
                             </div>
                         </header><!-- /o-section__header -->
-
-                        <div class="o-section__content  t-section__content  ">
-                            
+                        <div class="o-section__content  t-section__content  ">                           
                             <div class="o-grid">
                                 <?php foreach ($skillModel as $key => $skill) { ?>
                                      <div class="o-grid__col-sm-6">
@@ -352,29 +281,20 @@ if($id != null) {
                                             </div>
                                         </div>
                                      </div><!-- /o-grid__col -->
-                                <?php } ?>
-           
-
+                                <?php } ?>          
                             </div><!-- /o-grid -->
-
                         </div><!-- /o-section__content -->
-
                     </div><!-- /o-section__container -->
                 </div><!-- /o-container -->
-
             </section><!-- /o-section -->
             <!-- ################################ -->
             <!-- ########## EXPERIENCE ########## -->
-            <!-- ################################ -->
-            
+            <!-- ################################ -->           
             <section class="o-section  t-section  ">
-
                 <div class="o-section__header-bg  t-section__header"></div>
                 <div class="o-section__content-bg  t-section__content"></div>
-
                 <div class="o-container">
                     <div class="o-section__container">
-
                         <header class="o-section__header  t-section__header">
                             <div class="o-content">
                                 <h2 class="o-section__heading">
@@ -382,17 +302,14 @@ if($id != null) {
                                 </h2>
                             </div>
                         </header><!-- /o-section__header -->
-
-                        <div class="o-section__content  t-section__content  u-pb-0">
-                            
+                        <div class="o-section__content  t-section__content  u-pb-0">                          
                             <div class="a-experience-timeline  c-timeline  t-border-color">
                             <?php foreach ($jobhistoryModel as $key => $jobhistory) { ?>
                                 <div class="c-timeline__item">
                                     <div class="c-timeline__point  t-timeline__point  t-primary-bg"></div>
                                     <div class="o-content">
                                         <div class="o-grid">
-                                            <div class="o-grid__col-md-5">
-                                            
+                                            <div class="o-grid__col-md-5">                                           
                                                     <div class="c-work__timeframe">
                                                         <?= $jobhistory->date_from ?> &ndash; <?= $jobhistory->date_to ?>
                                                     </div>
@@ -401,8 +318,7 @@ if($id != null) {
                                                     </h3>
                                                      <h4 class="c-work__title">
                                                         <?= $jobhistory->position?>
-                                                    </h4>
-                                                                                              
+                                                    </h4>                                                                                              
                                             </div>
                                             <div class="o-grid__col-md-7">
                                                 <p>
@@ -412,40 +328,28 @@ if($id != null) {
                                         </div><!-- /o-grid -->
                                     </div><!-- /o-content -->
                                 </div><!-- /c-timeline__item -->
-                             <?php } ?>                     
-                      
-
+                             <?php } ?>                                         
                             </div><!-- /c-timeline -->
-
                         </div><!-- /o-section__content -->
-
                     </div><!-- /o-section__container -->
                 </div><!-- /o-container -->
-
             </section><!-- /o-section -->
             <!-- ################################ -->
             <!-- ########### EDUCATION ########## -->
-            <!-- ################################ -->
-            
+            <!-- ################################ -->          
             <section class="o-section  t-section  ">
-
                 <div class="o-section__header-bg  t-section__header"></div>
                 <div class="o-section__content-bg  t-section__content"></div>
-
                 <div class="o-container">
                     <div class="o-section__container">
-
                         <header class="o-section__header  t-section__header">
                             <div class="o-content">
                                 <h2 class="o-section__heading">
                                     Education
-                                </h2>
-                                
+                                </h2>                              
                             </div>
                         </header><!-- /o-section__header -->
-
-                        <div class="o-section__content  t-section__content  u-pt-0">
-                            
+                        <div class="o-section__content  t-section__content  u-pt-0">                         
                             <div class="o-content">
                                 <div class="a-education-timeline  c-timeline  t-border-color  o-section__full-top-space">
                                     <div class="c-timeline__end  t-border-color"></div>
@@ -476,30 +380,21 @@ if($id != null) {
                                             </div><!-- /o-grid -->
                                         </div><!-- /o-content -->
                                     </div><!-- /c-timeline__item -->
-                                    <?php } ?> 
-                                    
-
+                                    <?php } ?>                                   
                                 </div><!-- /c-timeline -->
                             </div><!-- /o-content -->
-
                         </div><!-- /o-section__content -->
-
                     </div><!-- /o-section__container -->
                 </div><!-- /o-container -->
-
             </section><!-- /o-section -->
             <!-- ################################ -->
             <!-- ############ HEADER ############ -->
-            <!-- ################################ -->
-            
+            <!-- ################################ -->           
             <section class="o-section  t-section  ">
-
                 <div class="o-section__header-bg  t-section__header"></div>
                 <div class="o-section__content-bg  t-section__content"></div>
-
                 <div class="o-container">
                     <div class="o-section__container">
-
                         <header class="o-section__header  t-section__header">
                             <div class="o-content">
                                 <h2 class="o-section__heading">
@@ -510,11 +405,8 @@ if($id != null) {
                                 </div>
                             </div>
                         </header><!-- /o-section__header -->
-
-                        <div class="o-section__content  t-section__content  ">
-                            
+                        <div class="o-section__content  t-section__content  ">                          
                             <div class="o-grid">
-
                                 <div class="o-grid__col-md-4  o-grid__col-sm-6">
                                     <div class="o-content">
                                         <hr class="c-deco-line  t-primary-color-line" />
@@ -526,7 +418,6 @@ if($id != null) {
                                         </div>
                                     </div><!-- /o-content -->
                                 </div><!-- /o-grid__col -->
-
                                 <div class="o-grid__col-md-4  o-grid__col-sm-6">
                                     <div class="o-content">
                                         <hr class="c-deco-line  t-primary-color-line" />
@@ -538,7 +429,6 @@ if($id != null) {
                                         </div>
                                     </div><!-- /o-content -->
                                 </div><!-- /o-grid__col -->
-
                                 <div class="o-grid__col-md-4  o-grid__col-sm-6">
                                     <div class="o-content">
                                         <hr class="c-deco-line  t-primary-color-line" />
@@ -550,28 +440,19 @@ if($id != null) {
                                         </div>
                                     </div><!-- /o-content -->
                                 </div><!-- /o-grid__col -->
-
                             </div><!-- /o-grid -->
-
                         </div><!-- /o-section__content -->
-
                     </div><!-- /o-section__container -->
                 </div><!-- /o-container -->
-
-            </section><!-- /o-section -->
-            
+            </section><!-- /o-section -->         
             <!-- ################################ -->
             <!-- ############ FOOTER ############ -->
-            <!-- ################################ -->
-            
+            <!-- ################################ -->          
             <section class="o-section  t-section  o-section--footer">
-
                 <div class="o-section__header-bg  t-section__header"></div>
                 <div class="o-section__content-bg  t-section__content"></div>
-
                 <div class="o-container">
                     <div class="o-section__container">
-
                         <header class="o-section__header  t-section__header">
                             <div class="o-content">
                                 <h2 class="o-section__heading">
@@ -579,9 +460,7 @@ if($id != null) {
                                 </h2>
                             </div>
                         </header><!-- /o-section__header -->
-
-                        <div class="o-section__content  t-section__content  ">
-                            
+                        <div class="o-section__content  t-section__content  ">                         
                                 <div class="c-footer__contact">
                                     <div class="o-grid">
 
@@ -599,7 +478,6 @@ if($id != null) {
                                             </div>
                                         </div><!-- /o-content -->
                                     </div><!-- /o-grid__col -->
-
                                     <div class="o-grid__col-md-3  o-grid__col-sm-6">
                                         <div class="o-content">
                                             <div class="o-content__body">
@@ -610,7 +488,6 @@ if($id != null) {
                                             </div>
                                         </div><!-- /o-content -->
                                     </div><!-- /o-grid__col -->
-
                                     <div class="o-grid__col-md-3  o-grid__col-sm-6">
                                         <div class="o-content">
                                             <div class="o-content__body">
@@ -625,23 +502,21 @@ if($id != null) {
                                             </div>
                                         </div><!-- /o-content -->
                                     </div><!-- /o-grid__col -->
-
                                     <div class="o-grid__col-md-3  o-grid__col-sm-6">
                                        <div class="o-content">
                                             <div class="o-content__body">
                                                 <h4>Location</h4>
-                                                <address>
-                                                <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m8!1m3!1d987.6116628354984!2d
-                                                    <?= $profile->longitude ?>!3d<?= $profile->latitude ?>!3m2!1i1024!2i768!4f13.1!4m6!3e0!4m0!4m3!3m2!1d
-                                                    <?= $profile->latitude ?>!2d<?= $profile->longitude ?>!5e1!3m2!1sen!2sth!4v1574764346603!5m2!1sen!2sth"
-                                                    width="250" height="250" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-                                                </address>
-                                        </div>
-                                    </div><!-- /o-grid__col -->
-                            </div><!-- /o-grid -->
-                        </div><!-- /o-section__content -->
-                    </div><!-- /o-section__container -->
-                </div><!-- /o-container -->
+                                                <iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d1921.1034369964689!2d
+                                                    <?= $profile->longitude ?>!3d<?= $profile->latitude ?>!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e0!4m0!4m3!3m2!1d
+                                                    <?= $profile->latitude ?>!2d <?= $profile->longitude ?>!5e0!3m2!1sen!2sth!4v1576553184899!5m2!1sen!2sth"
+                                                    width="" height="" frameborder="0" style="border:0;" allowfullscreen="">
+                                                </iframe>                                          
+                                            </div>
+                                       </div><!-- /o-grid__col -->
+                                    </div><!-- /o-grid -->
+                               </div><!-- /o-section__content -->
+                        </div><!-- /o-section__container -->
+                    </div><!-- /o-container -->
             </section><!-- /o-section -->
         </div><!-- /c-main-container -->
     </body>

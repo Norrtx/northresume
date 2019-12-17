@@ -95,6 +95,23 @@ class SiteController extends Controller
             'charttemplateModel' => $charttemplateModel,
         ]);
     }
+    public function actionIndex2()
+    {
+        $profileModel = Profile::find()->one();
+        $skillModel = Skill::find()->all();
+        $educationModel = Education::find()->all();
+        $themesModel = Themes::find()->one();
+        $jobhistoryModel = Jobhistory::find()->all();
+        $charttemplateModel = Charttemplate::find()->one();
+        return $this->render('index2', [
+            'profileModel' => $profileModel,
+            'skillModel' => $skillModel,
+            'educationModel' => $educationModel,
+            'themesModel' => $themesModel,
+            'jobhistoryModel' => $jobhistoryModel,
+            'charttemplateModel' => $charttemplateModel,
+        ]);
+    }
 
     /**
      * Logs in a user.
